@@ -1,0 +1,10 @@
+body
+,html{margin:0;padding:0;background:#000;height:100%;color:#eee;font-family:Arial;font-size:10px;}
+h1{margin:20px;}
+a{color:#FC0;}
+p{margin:20px;}
+div.magnifyme{height:80px;padding:30px;position:absolute;top:0;left:0;width:2000px;}
+div.wrapper{margin:20px;height:160px;border:2px solid #999;overflow:hidden;width:600px;position:relative;}
+div.slider{position:absolute;bottom:5px;left:30px;width:542px;height:19px;background:url(../images/jquery.coverflow_p_012.png) no-repeat;}
+div.ui-slider-handle{position:absolute;cursor:pointer;cursor:hand;top:0;left:0;height:100%;width:181px;background:url(../images/jquery.coverflow_p_011.png) no-repeat;}
+div.magnifyme img{width:64px;height:64px;float:left;margin:5px;position:relative;border:1px solid #999;}

@@ -1,0 +1,10 @@
+.BYContainer a{outline-style:none;}
+.BYContainer ul
+,li{margin:0;padding:0;list-style-type:none;}
+.BYContainer a.link{width:200px;height:100px;display:block;background:url(../images/jquery.byc_006.jpg) no-repeat bottom center;text-indent:-9999px;}
+.BYContainer ul#menuback{margin:50px auto;list-style:none;background:url(../images/jquery.byc_001.jpg);width:800px;overflow:auto;}
+.BYContainer ul#menuback li.shutter{width:200px;height:100px;display:block;float:left;}
+.BYContainer ul#menuback li#shutter1{background:url(../images/jquery.byc_002.jpg) no-repeat;}
+.BYContainer ul#menuback li#shutter2{background:url(../images/jquery.byc_005.jpg) no-repeat;}
+.BYContainer ul#menuback li#shutter3{background:url(../images/jquery.byc_004.jpg) no-repeat;}
+.BYContainer ul#menuback li#shutter4{background:url(../images/jquery.byc_003.jpg) no-repeat;}

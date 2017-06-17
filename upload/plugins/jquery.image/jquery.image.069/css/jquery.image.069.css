@@ -1,0 +1,52 @@
+*{padding:0;margin:0;list-style:none;}
+html{overflow-x:hidden;}
+body{background:#FFF;color:#333;font:12px Arial,Helvetica,sans-serif;background-attachment:fixed;}
+a{color:#333;text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
+.banner{width:1600px;margin:0 auto;height:355px;position:relative;left:50%;margin-left:-800px;text-align:center;}
+html>body .banner_reg{background:url(../images/banner_reg.png) no-repeat;width:960px;height:55px;position:absolute;left:50%;margin-left:-480px;bottom:0;z-index:999;}
+.banner_reg{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/banner_reg.png',sizingMethod='scale');width:960px;height:55px;position:absolute;left:50%;margin-left:-480px;bottom:0;z-index:999;}
+.reg_a{display:block;position:absolute;z-index:9999;left:50%;top:307px;width:87px;height:33px;margin-left:-181px;text-indent:-9999em;}
+#slider{position:relative;width:1600px;height:355px;}
+#slider ul li{height:355px;}
+.slider_01{background:url(../images/jquery.image.069_004.jpg) center 0 no-repeat;width:1600px;height:355px;position:relative;}
+.slider_02{background:url(../images/jquery.image.069_004.jpg) center 0 no-repeat;width:1600px;height:355px;display:none;}
+.slider_03{background:url(../images/jquery.image.069_004.jpg) center 0 no-repeat;width:1600px;height:355px;display:none;}
+.slider_04{background:url(../images/jquery.image.069_004.jpg) center 0 no-repeat;width:1600px;height:355px;display:none;}
+.slider_05{background:url(../images/jquery.image.069_004.jpg) center 0 no-repeat;width:1600px;height:355px;display:none;}
+.bg_1{width:960px;position:absolute;left:50%;margin-left:-480px;height:355px;background:url(../images/slider_001.jpg) no-repeat;}
+.bg_2{width:960px;position:absolute;left:50%;margin-left:-480px;height:355px;background:url(../images/slider_002.jpg) no-repeat;}
+.bg_3{width:960px;position:absolute;left:50%;margin-left:-480px;height:355px;background:url(../images/slider_003.jpg) no-repeat;}
+.bg_4{width:960px;position:absolute;left:50%;margin-left:-480px;height:355px;background:url(../images/slider_004.jpg) no-repeat;}
+.bg_5{width:960px;position:absolute;left:50%;margin-left:-480px;height:355px;background:url(../images/slider_005.jpg) no-repeat;}
+.pager{position:absolute;top:60px;left:50%;margin-left:326px;z-index:9999;}
+.pager li{list-style:none;}
+html>body .one a{background:url(../images/jquery.image.069_p_007.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.one a{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_007.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .one a:hover
+,html>body .one.current .cur0{background:url(../images/jquery.image.069_p_012.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.one a:hover
+,.one.current .cur0{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_012.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .two a{background:url(../images/jquery.image.069_p_008.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.two a{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_008.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .two a:hover
+,html>body .current .cur1{background:url(../images/jquery.image.069_p_013.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.two a:hover
+,.current .cur1{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_013.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .three a{background:url(../images/jquery.image.069_p_009.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.three a{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_009.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .three a:hover
+,html>body .current .cur2{background:url(../images/jquery.image.069_p_014.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.three a:hover
+,.current .cur2{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_014.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .four a{background:url(../images/jquery.image.069_p_010.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.four a{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_010.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .four a:hover
+,html>body .current .cur3{background:url(../images/jquery.image.069_p_015.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.four a:hover
+,.current .cur3{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_015.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .five a{background:url(../images/jquery.image.069_p_011.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.five a{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_011.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+html>body .five a:hover
+,html>body .current .cur4{background:url(../images/jquery.image.069_p_016.png) no-repeat;display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}
+.five a:hover
+,.current .cur4{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/jquery.image.069_p_016.png',sizingMethod='scale');display:block;width:138px;height:47px;text-indent:-9999em;cursor:pointer;}

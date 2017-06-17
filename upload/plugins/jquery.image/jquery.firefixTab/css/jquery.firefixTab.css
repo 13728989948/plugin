@@ -1,0 +1,23 @@
+*{margin:0;padding:0;list-style-type:none;}
+a
+,img{border:0;}
+body{font:12px/180% Arial,Helvetica,sans-serif,"新宋体";}
+.scroller{border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-khtml-border-radius:5px;border:4px solid #AEC3CF;background-color:#CCC;width:600px;margin:50px auto 0 auto;}
+.scroller-inner{border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-khtml-border-radius:3px;border:1px solid #06C;background-color:#FFF;position:relative;height:250px;overflow:hidden;}
+.window{height:220px;}
+.window ol.teaser-items{position:relative;}
+.window ol.teaser-items li{width:588px;height:210px;position:absolute;top:5px;left:5px;display:none;}
+.teaser-header{-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-o-border-radius:0 0 3px 3px;-khtml-border-radius:0 0 3px 3px;position:absolute;bottom:0;left:0;width:100%;background:url("../images/jquery.firefixTab_g_007.gif") repeat-x;}
+.teaser-header ol{border-top:1px solid #AEC3CF;padding:0 45px;}
+.teaser-header ol li{float:left;margin-left:20px;display:inline;position:relative;top:-1px;}
+.teaser-header ol li a{font-size:12px;line-height:28px;color:#06C;text-decoration:none;font-weight:bold;}
+.teaser-header li.selected{background:url("../images/jquery.firefixTab_p_008.png") no-repeat center top;}
+.teaser-header li.selected a{color:#f60;}
+.slideshow-controls .prev
+,.slideshow-controls .next{background:url("../images/jquery.firefixTab_p_006.png") no-repeat;position:absolute;left:8px;bottom:15px;cursor:pointer;display:block;overflow:hidden;height:27px;width:27px;text-decoration:none;text-indent:-5000px;}
+.slideshow-controls .prev{background-position:0 0;}
+.slideshow-controls .prev:hover{background-position:0 -50px;}
+.slideshow-controls .prev:active{background-position:0 -100px;}
+.slideshow-controls .next{background-position:0 -150px;left:auto;right:8px;}
+.slideshow-controls .next:hover{background-position:0 -200px;}
+.slideshow-controls .next:active{background-position:0 -250px;}

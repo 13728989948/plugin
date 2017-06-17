@@ -1,0 +1,33 @@
+<!DOCTYPE HTML> 
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.fluxSlider</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.fluxSlider.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/flux.slider.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ <body>
+  <section class="container">
+   <h1><span class="flux">Flux</span> <span class="slider">Slider</span></h1>
+   <h2>Hardware accelerated image transitions using CSS3.</h2>
+   <div id="slider">
+    <img src="images/jquery.fluxSlider_001.jpg" alt="" />
+    <img src="images/jquery.fluxSlider_002.jpg" alt="" />
+    <img src="images/jquery.fluxSlider_003.jpg" alt="" />
+   </div>
+  </section>
+ </body>
+<script>
+$(function(){
+  if(!flux.browser.supportsTransitions)
+   alert("Flux Slider requires a browser that supports CSS3 transitions");
+  window.f = new flux.slider('#slider', {
+   pagination: true
+  });
+});
+</script>
+</html>

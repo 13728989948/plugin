@@ -1,0 +1,14 @@
+body{font:italic .8em/0.8em Georgia,"Times New Roman",Times,serif;color:#999;padding:50px;text-align:center;background:white;}
+a{text-decoration:none;color:#999;}
+ul{list-style:none;margin:10px 0;padding:0;}
+ul li{padding:0;margin:0 2px 0 0;list-style:none;display:inline;}
+ul li a{display:inline-block!important;overflow:hidden;height:90px;line-height:90px;width:128px;white-space:nowrap;text-align:left;}
+ul li a p{padding:0 0 0 135px;line-height:normal;}
+ul li a p strong{font-size:24px;color:#360;}
+ul li a.home{background:url(../images/jquery.horizontalSlideNavigation_002.jpg) top left no-repeat;}
+ul li a.blog{background:url(../images/jquery.horizontalSlideNavigation_001.jpg) top left no-repeat;}
+ul li a.services{background:url(../images/jquery.horizontalSlideNavigation_004.jpg) top left no-repeat;}
+ul li a.portfolio{background:url(../images/jquery.horizontalSlideNavigation_003.jpg) top left no-repeat;}
+p.info{width:500px;margin:10px auto;border-top:dotted 1px #ccc;border-bottom:dotted 1px #ccc;color:#666;padding:10px 0;text-align:left;line-height:normal;display:inline-block;}
+p.info a:hover{color:red;}
+p.info h1 a{text-decoration:underline;color:#999;}

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.navigation.hz.009</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.navigation.hz.009.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="nav">
+   <div class="l"></div>
+   <ul class="c">
+    <li>
+    <span class="v">
+     <a href="#" target="_blank">首页</a>
+    </span> 
+    <div class="kind_menu" style="left:50px">jsfoot 网页特效主要有jquery 特效 js特效 flash特效 div+css教程 html5教程！</div></li>
+    <li>
+    <span class="v">
+     <a href="#">jquery图片特效</a>
+    </span> 
+    <div class="kind_menu" style="left:40px">
+    <a href="#">jquery图片切换</a>
+    <span>|</span> 
+    <a href="#">jquery幻灯片</a>
+    <span>|</span> 
+    <a href="#">jquery图片滚动</a>
+    <span>|</span> 
+    <a href="#">jquery图片放大镜</a></div></li>
+    <li>
+    <span class="v">
+     <a href="#">jquery导航菜单</a>
+    </span> 
+    <div class="kind_menu">
+    <a href="#">jquery动画菜单</a>
+    <span>|</span> 
+    <a href="#">jquery树形菜单</a>
+    <span>|</span> 
+    <a href="#">jquery下拉菜单</a>
+    <span>|</span> 
+    <a href="#">jquery右键菜单</a></div></li>
+    <li>
+    <span class="v">
+     <a href="#">jquery选项卡特效</a>
+    </span> 
+    <div class="kind_menu" style="left:40px">
+    <a href="#">jquery选项卡切换</a>
+    <span>|</span> 
+    <a href="#">jquery滑动选项卡</a></div></li>
+    <li>
+    <span class="v">
+     <a href="#">jquery文字特效</a>
+    </span> 
+    <div class="kind_menu" style="left:40px">
+    <a href="#">jquery文字滚动</a>
+    <span>|</span> 
+    <a href="#">jquery文字闪烁</a>
+    <span>|</span> 
+    <a href="#">jquery文字切换</a>
+    <span>|</span> 
+    <a href="#">jquery文字数量</a>
+    <span>|</span> 
+    <a href="#">jquery文字改变</a></div></li>
+    <li>
+    <span class="v">
+     <a href="#">jquery表单特效</a>
+    </span> 
+    <div class="kind_menu" style="left:40px">
+    <a href="#">jquery表单验证</a>
+    <span>|</span> 
+    <a href="#">jquery表单美化</a>
+    <span>|</span> 
+    <a href="#">jquery搜索提示</a>
+    <span>|</span> 
+    <a href="#">jquery全选反选</a></div></li>
+   </ul>
+  </div>
+<!--nav-->
+ </body>
+<script type="text/javascript">
+var site_url = window.location.href.toLowerCase(); 
+switch (true) {
+ case site_url.indexOf("/jsfoot") > 0 || site_url.indexOf("/jquery") > 0 || site_url.indexOf("/js") > 0 : 
+  // 判断当前频道属于哪个根目录模块就设置频道标签高亮
+  $("#nav li").attr("class","");
+  $("#nav li").eq(1).attr("class","nav_lishw"); //设置当前频道标签高亮
+  $(".nav_lishw .v a").attr("class","sele");
+  $(".nav_lishw .kind_menu").show();
+  break;
+ default :
+  $("#nav li").attr("class","");
+  $("#nav li").eq(0).attr("class","nav_lishw");
+  $(".nav_lishw .v a").attr("class","sele");
+  $(".nav_lishw .kind_menu").show();
+}
+
+$("#nav li").hover(
+ function(){
+  clearTimeout(setTimeout("0")-1);
+  $("#nav .kind_menu").hide(); 
+  $("#nav li .v .sele").attr("class","shutAhover");
+  $(this).attr("id","nav_hover")
+  $("#nav_hover .v a").attr("class","sele");
+  $("#nav_hover .kind_menu").show(); 
+ },
+ function(){
+  
+  if($(this).attr("class") != "nav_lishw"){
+   $("#nav_hover .v .sele").attr("class","");
+   $("#nav_hover .kind_menu").hide(); 
+  }
+  $(this).attr("id","")
+  $("#nav li .v .shutAhover").attr("class","sele");
+  setTimeout(function(){
+   $(".nav_lishw .kind_menu").show();
+   $(".nav_lishw .v a").attr("class","sele");
+  },50); 
+ }
+);
+</script>
+</html>

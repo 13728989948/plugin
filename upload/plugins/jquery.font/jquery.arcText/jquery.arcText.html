@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.arcText</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.arcText.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.arctext.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="container">
+
+
+   <div class="example">
+    <h3 id="example3">
+     I have straight letter
+    </h3>
+   </div>
+   <div class="code">
+    <h4>
+     Example 1 - No rotation
+    </h4>
+    <p>
+     Non-rotated letters
+    </p><code>$example3.arctext({radius: 500, rotate: false})</code>
+   </div>
+   <div class="clr">
+   </div>
+   <div class="example">
+    <h3 id="example4">
+     See me change
+    </h3>
+   </div>
+   <div class="code">
+    <h4>
+     Example 2 - Set/animate
+    </h4>
+    <p>
+     Set or animate
+    </p><code>$example4.arctext({radius: 300})</code> 
+    <p class="buttons">
+     <a id="button_set" href="#"><span>Set me</span><span>radius: 140,<br>
+      dir: -1</span></a> <a id="button_anim1" href="#"><span>Animate me</span><span>radius: 300,<br>
+      dir: -1,<br>
+      animation: 300ms ease-out</span></a> <a id="button_anim2" href="#"><span>Animate me</span><span>radius: 200,<br>
+      dir: 1,<br>
+      animation: 300ms</span></a> <a id="button_reset" href="#"><span>Reset me</span><span>radius: 300,<br>
+      dir: 1</span></a>
+    </p>
+   </div>
+   <div class="clr">
+   </div>
+   <div class="clr">
+   </div>
+  </div>
+ </body>
+<script type="text/javascript">
+   var $headline = $('#headline').hide();
+   var $word1  = $('#arc-wrapper').find('h3').hide();
+   var $word2  = $('#arc-wrapper').find('h4').hide();
+   var $example1 = $('#example1').hide();
+   var $example2 = $('#example2').hide();
+   var $example3 = $('#example3').hide();
+   var $example4 = $('#example4').hide();
+
+   init();
+
+   function init() {
+    $headline.show().arctext({radius: 400});
+    $word1.show().arctext();
+    $word2.show().arctext({radius: 148, dir: -1});
+    $example1.show().arctext({radius: 300});
+    $example2.show().arctext({radius: 400, dir: -1});
+    $example3.show().arctext({radius: 500, rotate: false});
+    $example4.show().arctext({radius: 300});
+    $('#button_set').on('click', function() {
+     $example4.arctext('set', {
+      radius  : 140,
+      dir   : -1
+     });
+     return false;
+    });
+    $('#button_anim1').on('click', function() {
+     $example4.arctext('set', {
+      radius  : 300, 
+      dir   : -1,
+      animation : {
+       speed : 300,
+       easing  : 'ease-out'
+      }
+     });
+     return false;
+    });
+    $('#button_anim2').on('click', function() {
+     $example4.arctext('set', {
+      radius  : 200, 
+      dir   : 1, 
+      animation : {
+       speed : 300
+      }
+     });
+     return false;
+    });
+    $('#button_reset').on('click', function() {
+     $example4.arctext('set', {
+      radius  : 300, 
+      dir   : 1
+     });
+     return false;
+    });
+   };
+  </script>
+</html>

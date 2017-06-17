@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.004</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.004.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.form.004.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ 
+ <body>
+  <div id="page">
+   <h1>Google Powered Site Search</h1>
+   <form id="searchForm" method="post">
+    <fieldset>
+     <input id="s" type="text" />
+     <input type="submit" value="Submit" id="submitButton" />
+     <div id="searchInContainer">
+      <input type="radio" name="check" value="site" id="searchSite" checked />
+      <label for="searchSite" id="siteNameLabel">Search</label>
+      <input type="radio" name="check" value="web" id="searchWeb" />
+      <label for="searchWeb">Search The Web</label>
+     </div>
+     <ul class="icons">
+      <li class="web" title="Web Search" data-searchType="web">Web</li>
+      <li class="images" title="Image Search" data-searchType="images">Images</li>
+      <li class="news" title="News Search" data-searchType="news">News</li>
+      <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+     </ul>
+    </fieldset>
+   </form>
+   <div id="resultsDiv"></div>
+  </div>
+ </body>
+</html>

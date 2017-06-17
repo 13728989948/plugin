@@ -1,0 +1,16 @@
+﻿*{margin:0;padding:0;list-style-type:none;}
+a
+,img{border:0;}
+body{font:12px/180% Arial,Helvetica,sans-serif,"新宋体";}
+#banner{margin:30px auto 0 auto;width:950px;height:400px;}
+.slides{margin:0 auto;width:950px;height:400px;overflow:hidden;position:relative;}
+.slide-pic{width:950px;overflow:hidden;list-style:none;}
+.slide-pic img{width:950px;height:400px;}
+.slide-pic li{display:none;}
+.slide-pic li.cur{display:block;}
+.slide-li{left:0;bottom:0;position:absolute;}
+.slide-li li{width:190px;height:10px;float:left;overflow:hidden;list-style:none;}
+.slide-li a{width:190px;height:10px;color:#000;font-size:12px;display:block;}
+.slide-li a:hover{color:#F00;text-decoration:none;}
+.op li{background:#999;filter:alpha(opacity=60);opacity:.6;}
+.op li.cur{background:#666;}

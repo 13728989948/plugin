@@ -1,0 +1,17 @@
+*{margin:0;padding:0;list-style-type:none;}
+a
+,img{border:0;text-decoration:none;}
+body{background:#eee;font:12px/180% Arial,Helvetica,sans-serif,"新宋体";}
+.redtitle{height:30px;background:#C00;margin-bottom:10px;border-bottom:2px solid #900;position:relative;}
+.redtitle h2{background:#fff;width:80px;font-size:12px;height:26px;line-height:26px;overflow:hidden;position:absolute;bottom:-2px;left:20px;padding:0 5px;font-weight:400;text-align:center;}
+.dhooo_tab{width:460px;margin:30px auto;background:#fff;border:1px solid #aaa;position:relative;}
+.main{width:360px;height:190px;overflow:hidden;margin:10px auto;text-align:left;font-size:12px;}
+#main1 ul{width:9999px;}
+#main1 ul li{float:left;width:360px;height:100%;}
+#main2 ul li{height:190px;overflow:hidden;}
+.tab_btn{overflow:hidden;height:28px;padding-left:20px;padding-top:5px;background:#00a1d2;}
+.tab_btn li{float:left;width:60px;height:24px;line-height:24px;text-align:center;padding:0 10px;margin:0 5px 0 0;display:inline;color:#fff;cursor:pointer;}
+.tab_btn li.hot{background:#fff;color:#333;font-weight:bold;}
+.tab_btn_num{position:absolute;right:50px;bottom:15px;}
+.tab_btn_num li{width:20px;height:20px;background:#C30;border:2px solid #930;overflow:hidden;color:#fff;filter:alpha(opacity=80);opacity:.8;float:left;font-size:12px;line-height:20px;margin:0 5px;cursor:pointer;text-align:center;}
+.tab_btn_num li.hot{background:#FC0;color:#930;border:2px solid #F00;}

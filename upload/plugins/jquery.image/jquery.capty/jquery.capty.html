@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.capty</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.capty.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.capty.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="default-demo" class="session">
+   With default options:
+  </div><img id="default" src="../../../images/common/common_s_001.svg" alt="Super Mario Bros.®" width="342" height="262">
+  <div class="source">
+   $('#default').capty();<br>
+   <br>
+  </div>
+  <br>
+  <span class="comment-script">- The tag "alt" is used to apply the caption by default.</span> <br>
+  <div id="animation-demo" class="session">
+   With animation and a custom speed:
+  </div><img id="animation" src="../../../images/common/common_s_001.svg" alt="Super Mario Bros.®" width="342" height="262">
+  <div class="source">
+   $('#animation').capty({<br>
+      animation: 'fade',<br>
+      speed:     400<br>
+    });<br>
+   <br>
+  </div>
+  <div id="fixed-demo" class="session">
+   With fixed caption:
+  </div><img id="fixed" src="../../../images/common/common_s_001.svg" alt="Super Mario Bros.®" width="342" height="262">
+  <div class="source">
+   $('#fixed').capty({<br>
+      animation: 'fixed'<br>
+    });<br>
+   <br>
+  </div>
+  <div id="content-demo" class="session">
+   A custom caption with a external content:
+  </div><img id="content" src="../../../images/common/common_s_001.svg" alt="" name="#content-target" width="342" height="262">
+  <div id="content-target">
+   <span style="color: #F00;">Mario</span> - Super Mario Bros.®<br>
+    <a href="javascript:void(0);">http://www.mariobros.com</a>
+  </div>
+  <div class="source">
+   $('#content').capty({<br>
+      height:   46,<br>
+      opacity:  .6<br>
+    });<br>
+   <br>
+    <b>#content-target</b>" width="342" height="262"/><br>
+   <br>
+  </div><br>
+   <span class="comment-script">- The tag "name" is used to link the external content.</span> <br>
+  <div id="fix-demo" class="session">
+   A group of elements with sufix, prefix and a custom style:
+  </div>
+  <div style="height:170px;">
+   <img src="../../../images/common/common_s_001.svg" alt="" class="fix" width="240" height="161">
+    <img src="../../../images/common/common_s_001.svg" alt="" class="fix" width="240" height="161">
+    <img src="../../../images/common/common_s_001.svg" alt="" class="fix" width="240" height="161">
+  </div>
+  
+<script type="text/javascript">
+  $(function() {
+   $('#default').capty();
+   $('#animation').capty({
+    animation: 'fade',
+    speed:  400
+   });
+   $('#fixed').capty({
+    animation: 'fixed'
+   });
+   $('#content').capty({
+    height:  46,
+    opacity: .6
+   });
+   $('.fix').capty({
+    cWrapper: 'capty-tile',
+    prefix:  '<span style="color: #35BB87;">Luigui</span> - ',
+    sufix:  'Super Mario Bros.&reg;'
+   });
+  });
+ </script>
+ </body>
+</html>

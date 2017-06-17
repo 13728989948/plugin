@@ -1,0 +1,26 @@
+*{margin:0;padding:0;}
+body{font-family:Arial;background:#fff url(../images/jquery.awesomeBubbleNavigation_002.jpg) no-repeat top left;}
+.title{width:548px;height:119px;position:absolute;top:400px;left:150px;background:transparent url(../images/jquery.awesomeBubbleNavigation_p_012.png) no-repeat top left;}
+a.back{background:transparent url(../images/jquery.awesomeBubbleNavigation_p_001.png) no-repeat top left;position:fixed;width:150px;height:27px;outline:none;bottom:0;left:0;}
+#content{margin:0 auto;}
+
+.navigation{margin:0 auto;font-family:"Trebuchet MS",sans-serif;font-size:24px;font-style:normal;font-weight:bold;letter-spacing:1.4px;}
+.navigation .item{position:absolute;}
+.user{top:125px;left:110px;}
+.home{top:50px;left:360px;}
+.shop{top:90px;left:625px;}
+.camera{top:230px;left:835px;}
+.fav{top:420px;left:950px;}
+a.icon{width:52px;height:52px;position:absolute;top:0;left:0;cursor:pointer;}
+.user a.icon{background:transparent url(../images/jquery.awesomeBubbleNavigation_p_013.png) no-repeat 0 0;}
+.home a.icon{background:transparent url(../images/jquery.awesomeBubbleNavigation_p_010.png) no-repeat 0 0;}
+.shop a.icon{background:transparent url(../images/jquery.awesomeBubbleNavigation_p_011.png) no-repeat 0 0;}
+.camera a.icon{background:transparent url(../images/jquery.awesomeBubbleNavigation_p_008.png) no-repeat 0 0;}
+.fav a.icon{background:transparent url(../images/jquery.awesomeBubbleNavigation_p_009.png) no-repeat 0 0;}
+.navigation .item a.active{background-position:0 -52px;}
+.item img.circle{position:absolute;top:0;left:0;width:52px;height:52px;opacity:.1;}
+.item h2{position:absolute;width:147px;height:52px;color:#222;font-size:18px;top:0;left:52px;text-indent:10px;line-height:52px;text-shadow:1px 1px 1px #fff;text-transform:uppercase;}
+.item h2.active{color:#fff;text-shadow:1px 0 1px #555;}
+.item ul{list-style:none;position:absolute;top:60px;left:25px;display:none;}
+.item ul li a{font-size:15px;text-decoration:none;letter-spacing:1.5px;text-transform:uppercase;color:#222;padding:3px;float:left;clear:both;width:100px;text-shadow:1px 1px 1px #fff;}
+.item ul li a:hover{background-color:#fff;color:#444;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:1px 1px 4px #666;-webkit-box-shadow:1px 1px 4px #666;box-shadow:1px 1px 4px #666;}

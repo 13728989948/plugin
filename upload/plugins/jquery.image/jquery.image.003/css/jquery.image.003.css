@@ -1,0 +1,5 @@
+.thumbnail-item{position:relative;float:left;margin:0 5px;}
+.thumbnail-item a{display:block;}
+.thumbnail-item img.thumbnail{border:3px solid #ccc;}
+.tooltip{display:none;position:absolute;padding:8px 0 0 8px;}
+.tooltip span.overlay{background:url(../images/jquery.image.003_p_007.png) no-repeat;position:absolute;top:0;left:0;display:block;width:350px;height:200px;}

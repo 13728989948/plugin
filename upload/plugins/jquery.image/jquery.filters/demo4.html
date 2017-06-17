@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.filters</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.filters.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.easing.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.filters.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.filters.demo.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="content">
+   <div class="info">
+    <div class="demo">Demos:
+     <a href="jquery.filters.html">Basic CSS3</a>
+     <a href="demo2.html">Basic fade in/out</a>
+     <a href="demo3.html">Fixed position</a>
+     <a href="demo4.html">Custom CSS3 transition</a>
+    </div>
+   </div>
+   <pre class="dd">
+   $('.filters').filters({
+    css3: {
+     transform: {
+      scale: '0',
+      rotate: '-90deg',
+      skew: '45deg'
+     }
+    }
+   });
+   </pre>
+   <div class="filters demo4">
+    <div class="filter">
+     <a href="#" rel="city">City</a>
+     <a href="#" rel="cars">Cars</a>
+     <a href="#" rel="other">Other</a>
+     <a href="#" rel="all">All</a>
+    </div>
+    <div class="container">
+     <ul>
+      <li class="cars">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="city">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="cars">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="city">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="cars">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="cars">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="city">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="cars">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="other">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+      <li class="city">
+       <a href="#"><img src="images/jquery.filters_009.jpg" alt="" />
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

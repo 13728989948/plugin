@@ -1,0 +1,9 @@
+body{margin:100px 200px;}
+.CheckBoxClass
+,.RadioClass{display:none;}
+.CheckBoxLabelClass{background:url("../images/jquery.form.028_p_004.png") no-repeat;padding-left:30px;padding-top:3px;margin:5px;height:28px;width:150px;display:block;}
+.CheckBoxLabelClass:hover
+,.RadioLabelClass:hover{text-decoration:underline;}
+.LabelSelected{background:url("../images/jquery.form.028_p_001.png") no-repeat;}
+.RadioLabelClass{background:url("../images/jquery.form.028_p_003.png") no-repeat;padding-left:30px;padding-top:3px;margin:5px;height:28px;width:70px;display:block;float:left;}
+.RadioSelected{background:url("../images/jquery.form.028_p_002.png") no-repeat;}

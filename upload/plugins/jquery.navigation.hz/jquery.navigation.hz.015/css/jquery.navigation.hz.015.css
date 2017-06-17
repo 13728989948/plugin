@@ -1,0 +1,20 @@
+body{font-size:.85em;font-family:Verdana,Arial,Helvetica,sans-serif;}
+.kwicks{list-style:none;position:relative;margin:0;padding:0;background-image:url(../images/jquery.navigation.hz.015_003.jpg);}
+.kwicks li{display:block;overflow:hidden;padding:0;cursor:pointer;float:left;width:125px;height:40px;margin-right:0;background-image:url(../images/jquery.navigation.hz.015_002.jpg);background-repeat:no-repeat;}
+.kwicks a{display:block;height:40px;text-indent:-9999px;outline:none;}
+#kwick1{background-position:0 0;}
+#kwick2{background-position:-200px 0;}
+#kwick3{background-position:-400px 0;}
+#kwick4{background-position:-600px 0;}
+#kwick1.active
+,#kwick1:hover{background-position:0 bottom;}
+#kwick2.active
+,#kwick2:hover{background-position:-200px bottom;}
+#kwick3.active
+,#kwick3:hover{background-position:-400px bottom;}
+#kwick4.active
+,#kwick4:hover{background-position:-600px bottom;}
+#kwick1 a{background-image:url(../images/jquery.navigation.hz.015_001.jpg);background-repeat:no-repeat;background-position:left 0;}
+#kwick1 a:hover{background-position:left -80px;}
+#kwick4 a{background-image:url(../images/jquery.navigation.hz.015_001.jpg);background-repeat:no-repeat;background-position:right -40px;}
+#kwick4 a:hover{background-position:right -120px;}

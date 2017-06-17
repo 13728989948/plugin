@@ -1,0 +1,9 @@
+.NAContainer #slide{z-index:1;top:6px;height:24px;position:absolute;background:#89957a;}
+*{margin:0;padding:0;}
+.NAContainer{position:relative;background:#C0CBB2;height:40px;width:459px;}
+.NAContainer ul{z-index:2;list-style:none;padding:9px 5px;position:absolute;}
+.NAContainer li{float:left;}
+.NAContainer a
+,.NAContainer a:active
+,.NAContainer a:visited
+,.NAContainer a:hover{color:#fff;padding:10px;text-decoration:none;}

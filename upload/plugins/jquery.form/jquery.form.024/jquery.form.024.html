@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.024</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.024.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <BODY class="has-js">
+  <DIV id="sizer">
+   <FORM action="#" method="get" accept-charset="utf-8">
+    <FIELDSET class="checkboxes">
+     <LABEL class="label_check" for="checkbox-01"><INPUT name="sample-checkbox-01" id="checkbox-01" value="1" type="checkbox" checked=""> I agree to the terms &amp; conditions.</LABEL>
+     <LABEL class="label_check" for="checkbox-02"><INPUT name="sample-checkbox-02" id="checkbox-02" value="1" type="checkbox"> Please send me regular updates.</LABEL>
+    </FIELDSET>
+    <FIELDSET class="radios">
+     <LABEL class="label_radio r_on" for="radio-01"><INPUT name="sample-radio" id="radio-01" value="1" type="radio" checked=""> This is option A...</LABEL>
+     <LABEL class="label_radio" for="radio-02"><INPUT name="sample-radio" id="radio-02" value="2" type="radio"> and this is option B...</LABEL>
+     <LABEL class="label_radio" for="radio-03"><INPUT name="sample-radio" id="radio-03" value="3" type="radio"> or simply choose option C</LABEL>
+    </FIELDSET>
+   </FORM>
+   <DIV id="footer" style="color:#999;">
+   </DIV>
+  </DIV>
+<SCRIPT>
+function setupLabel() {
+   if ($('.label_check input').length) {
+       $('.label_check').each(function () {
+           $(this).removeClass('c_on');
+       });
+       $('.label_check input:checked').each(function () {
+           $(this).parent('label').addClass('c_on');
+       });
+   }
+   ;
+   if ($('.label_radio input').length) {
+       $('.label_radio').each(function () {
+           $(this).removeClass('r_on');
+       });
+       $('.label_radio input:checked').each(function () {
+           $(this).parent('label').addClass('r_on');
+       });
+   }
+   ;
+};
+$(document).ready(function () {
+   $('.label_check, .label_radio').click(function () {
+       setupLabel();
+   });
+   setupLabel();
+});
+</SCRIPT>
+ </BODY>
+</HTML>

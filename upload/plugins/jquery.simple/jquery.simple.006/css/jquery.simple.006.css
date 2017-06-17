@@ -1,0 +1,10 @@
+*{padding:0;margin:0;font-size:12px;}
+ol
+,ul
+,li{list-style:none;}
+img{border:none;}
+.box{width:564px;height:361px;margin:20px auto;position:relative;display:none;}
+.ad_time{width:554px;height:351px;background:#000;filter:alpha(opacity=50);-moz-opacity:.5;opacity:.5;padding:5px;position:absolute;top:0;left:0;color:#fff;}
+.ad_time span{font-weight:bold;color:#cc0;padding:0 5px;}
+.close{width:49px;height:20px;background:url(../images/jquery.simple.006_p_002.png) no-repeat;position:absolute;top:0;right:0;cursor:pointer;}
+.btn{width:100px;height:30px;background:#eee;border:1px solid #ddd;font:normal 12px/30px '微软雅黑';text-align:center;margin:20px auto;cursor:pointer;}

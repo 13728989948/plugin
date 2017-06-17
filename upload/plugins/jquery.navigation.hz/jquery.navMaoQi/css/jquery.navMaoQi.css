@@ -1,0 +1,37 @@
+*{margin:0;padding:0;}
+html{height:100%;}
+body{color:#555;background:#F6BC51;font-family:"verdana","ms song","宋体","Arial","微软雅黑","Helvetica","sans-serif";font-size:9pt;min-height:101%;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset
+,img{border:0;}
+ul{word-break:break-all;}
+li{list-style:none;}
+h1
+,h2
+,h3
+,h4
+,h5
+,h6{font-size:100%;font-weight:normal;}
+a:link{color:#555;text-decoration:none;}
+a:visited{color:#555;text-decoration:none;}
+a:hover{color:#F56400;text-decoration:underline;}
+a:active{color:#555;text-decoration:none;}
+.clear{clear:both;}
+
+#home{margin:0 auto;width:950px;}
+#header{padding-bottom:5px;}
+#blogTitle{height:265px;clear:both;}
+#blogTitle h1{font-family:微软雅黑,黑体;font-size:24px;font-weight:300;line-height:1.5em;position:relative;left:218px;top:194px;width:50%;}
+#blogTitle a{color:#A83838;}
+#blogTitle h2{font-family:Verdana,宋体,sans-serif;color:#A83838;font-size:12px;line-height:1.5em;width:50%;position:relative;left:218px;top:194px;}
+#blogLogo{float:right;}
+#navigator{height:40px;border:#d59f4b 1px solid;clear:both;}
+#navList{min-height:40px;float:left;}
+#navList li{float:left;}
+#navList a{display:block;width:70px;height:31px;float:left;text-align:center;padding-top:9px;border-right:1px solid #d59f4b;font-size:14px;font-family:微软雅黑,宋体;}
+#navList a:link
+,#navList a:visited
+,#navList a:active{color:#555;}
+#navList a:hover{color:white;text-decoration:none;}
+#navList img{padding-top:6px;}
+.blogStats{float:right;color:#555;margin-top:12px;margin-right:10px;text-align:right;}

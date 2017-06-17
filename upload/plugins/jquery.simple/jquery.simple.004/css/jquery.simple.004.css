@@ -1,0 +1,8 @@
+*{margin:0;padding:0;list-style-type:none;font-family:"微软雅黑";}
+a
+,img{border:0;}
+a{color:#666;font-size:14px;text-decoration:none;}
+a:hover{color:#999;}
+.news{width:958px;margin:40px auto;border:1px solid #ccc;height:28px;overflow:hidden;box-shadow:1px 1px 10px #aaa;position:relative;}
+.news .list{width:920px;margin:0 20px;position:absolute;top:0;left:0;}
+.news .list li{width:900px;padding:3px 0 3px 20px;background:url('../images/jquery.simple.004_p_001.png') no-repeat center left;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;}

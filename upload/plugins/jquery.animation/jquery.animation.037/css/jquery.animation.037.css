@@ -1,0 +1,6 @@
+html
+  ,body{margin:0;padding:0;background:#2A140E;text-align:center;color:brown;}
+a{color:#fff;text-decoration:none;}
+#wrap{margin:0 auto;width:800px;position:relative;}
+#viewport{position:relative;width:800px;height:600px;overflow:hidden;background:url('../images/jquery.animation.037_001.jpg') 0 0 no-repeat;}
+#viewport .smoke{position:absolute;width:250px;height:250px;background:url('../images/jquery.animation.037_p_002.png') no-repeat;bottom:150px;margin-left:0;}

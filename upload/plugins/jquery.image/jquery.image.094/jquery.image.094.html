@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.image.094</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.image.094.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.image.094.slideMenu.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.easing.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="wrapper">
+   <div id="menu-container">
+    <div id="loading">
+    </div>
+    <ul>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">LCD Projectors</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Screens</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Plasma Displays</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Video Cameras</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Cables &amp; Accessories</a>
+      </h4>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Speakers</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Microphones</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Mixers</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Communication</a>
+      </h4>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Laptops</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Desktops</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Networking</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Scanners</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Printers</a>
+      </h4>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Audiovisual</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Audience Response</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Stage &amp; Lighting</a>
+      </h4>
+     </li>
+     <li>
+      <a href="#"><img src="images/jquery.image.094_003.jpg">
+      </a>
+      <h4>
+       <a href="#">Teleprompters</a>
+      </h4>
+     </li>
+    </ul>
+   </div>
+   <div id="menu-controls">
+    <a href="#" data-target="0" class="active">Pro Video</a> <a href="#" data-target="1">Pro Audio</a> <a href="#" data-target="2">Computer &amp; Office</a> <a href="#" data-target="3">Meeting &amp; Event</a>
+   </div>
+   <div class="options">
+    <div id="xray">
+     <a href="#">Toggle X-Ray</a><br>
+     <br>
+     <span>OFF</span>
+    </div>
+    <div id="auto">
+     <a href="#">Toggle Auto</a><br>
+     <br>
+     <span>OFF</span>
+    </div>
+   </div>
+</div><script type="text/javascript">
+$(document).ready(function(){
+ /**
+  * MENU OPTIONS (default values in parenthesis)
+  * ------------
+  * div:        Where the slide-menu will go. ("#menu-container")
+  * controls:   Where are the controls for the menu. ("#menu-controls")
+  * loader:     If you are using a loading graphic, the menu will hide it for you once loaded. If not,
+  *               set it to 'false' or ''. (false)
+  * x:          Total width of list item including margins and padding in px. (150)
+  * y:          Total height of list item including margins and padding in px. (150)
+  * start:      Index of <ul> to open first. (0)
+  * speed:      Speed of all animations in ms . (300)
+  * delay:      Delay between list item animations when transitioning in ms. (60)
+  * easing:     Type of easing to use for list item animations, use '' for no easing effect. ('')
+  *               FYI - "easeOutBackSmall" is a custom addition I made for this demo, it is not included in the
+  *               standard set of easing animations.
+  * easeIn:     Type of easing to use for initial drop-in animation, use '' for none. ('')
+  *               This demo includes the jQuery easing plugin: http://gsgd.co.uk/sandbox/jquery/easing/
+  *               Supported easing methods in the plugin are listed and demoed at the above url.
+  * preloadAll: Wait for all menu images to load before animating in, or just the first set? (false)
+  *               By default, with this set to false, the menu will wait until all images in the first menu set are
+  *               loaded before the beginning animation is fired. If set to true, it will wait for all menu images to load.
+  */
+ var options = {
+  div: "#menu-container",
+  controls: "#menu-controls",
+  loader: "#loading",
+  x: 150,
+  y: 200,
+  easing: "easeOutBackSmall",
+  easeIn: "easeOutBack",
+  preloadAll: true
+ };
+ var menu = new slideMenu(options);
+ /*
+  The menu will wait until images are loaded before initializing, see "preloadAll" above.
+  If you want to wait until EVERYTHING on the page is loaded, simply do this:
+  $(window).load(function(){
+   var menu = new slideMenu(options);
+  });
+ */
+ /*----------------------------------------------------------------------------------
+  * Demo stuff, not required for menu to work
+  *---------------------------------------------------------------------------------*/
+ var auto = false, x, inc;
+ // Toggle x-ray
+ $("#xray a").click(function(){
+  toggle_xray();
+  return false;
+ });
+ // Toggle auto
+ $("#auto a").click(function(){
+  toggle_auto();
+  return false;
+ });
+ // If xray enabled on load, make it so!
+ if (window.location.hash.substring(1) == 'xray') toggle_xray();
+ function toggle_xray(){
+  $(options.div).toggleClass("xray");
+  $("#xray span").text($(options.div).hasClass("xray") ? 'ON' : 'OFF');
+  window.location.hash = $(options.div).hasClass("xray") ? 'xray' : '';
+ }
+ function toggle_auto(){
+  if (auto === false){
+   x = $("#menu-controls a.active").data("target");
+   auto_advance();
+   inc = setInterval(auto_advance, 3000);
+   auto = true;
+  }
+  else{
+   clearInterval(inc);
+   auto = false;
+  }
+  $("#auto span").text(auto === true ? 'ON' : 'OFF');
+ }
+ function auto_advance(){
+  // Max index is 3, so don't go over
+  x = x < 3 ? x + 1 : 0;
+  // Using the switchTo method, we can advance the menu to a desired index
+  menu.switchTo(x);
+ }
+});
+</script>
+ </body>
+</html>

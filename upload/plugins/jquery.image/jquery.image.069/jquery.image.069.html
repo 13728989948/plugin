@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.image.069</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.image.069.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.image.069.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="banner">
+   <div id="cc_video" style="display: none; z-index: 9999999;">
+   </div>
+   <div id="slider">
+    <ul>
+     <li class="slider_01" style="position:absolute;top:0px;left:0px;display:block;z-index:6;opacity:1;width:1600px;height:355px;"></li>
+     <li class="slider_02" style="position:absolute;top:0px;left:-1600px;display:none;z-index:5;opacity:1;width:1600px;height:355px;"></li>
+     <li class="slider_03" style="position:absolute;top:0px;left:-1600px;display:none;z-index:5;opacity:1;width:1600px;height:355px;"></li>
+     <li class="slider_04" style="position:absolute;top:0px;left:-1600px;display:none;z-index:5;opacity:1;width:1600px;height:355px;"></li>
+     <li class="slider_05" style="position:absolute;top:0px;left:-1600px;display:none;z-index:5;opacity:1;width:1600px;height:355px;"></li>
+    </ul>
+    <dl class="pager"></dl>
+    <div class="pager">
+     <li class="one current">
+      <a href="#" class="cur0"></a>
+     </li>
+     <li class="two">
+      <a href="#" class="cur1"></a>
+     </li>
+     <li class="three">
+      <a href="#" class="cur2"></a>
+     </li>
+     <li class="four">
+      <a href="#" class="cur3"></a>
+     </li>
+     <li class="five">
+      <a href="#" class="cur4"></a>
+     </li>
+    </div>
+   </div>
+  </div>
+ </body>
+<script type="text/javascript">
+$(document).ready(function () {
+   $('#slider ul').after("<dl class='pager'>").cycle({
+       fx: 'scrollHorz',
+       pager: '.pager',
+       pagerAnchorBuilder: function (index, dom) {
+           var indexText = '';
+           if (index == 0) {
+               indexText = 'one';
+           } else if (index == 1) {
+               indexText = 'two';
+           } else if (index == 2) {
+               indexText = 'three';
+           } else if (index == 3) {
+               indexText = 'four';
+           } else if (index == 4) {
+               indexText = 'five';
+           }
+       },
+       speed: 300,
+       pause: 1,
+       pauseOnPagerHover: 1,
+       activePagerClass: "current",
+       timeout: 7000
+   });
+});
+</script>
+</html>

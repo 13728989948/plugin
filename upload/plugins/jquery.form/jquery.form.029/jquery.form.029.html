@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.029</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.029.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="box">
+   <div id="contactFormContainer">
+    <div id="contactForm">
+    <fieldset>
+     <label for="Name">Name *</label>
+     <input id="name" type="text" />
+     <label for="Email">Email address *</label>
+     <input id="Email" type="text" />
+     <label for="Message">Your message *</label>
+     <textarea id="Message" rows="3" cols="20"></textarea>
+     <input id="sendMail" type="submit" name="submit" onClick="closeForm()" />
+     <span id="messageSent">Your message has been sent successfully!</span>
+    </fieldset>
+    </div>
+    <div id="contactLink"></div>
+   </div>
+   <div class="header">
+    <h1></h1>
+   </div>
+  </div>
+ </body>
+<script>
+$(document).ready(function () {
+    $("#contactLink").click(function () {
+        if ($("#contactForm").is(":hidden")) {
+            $("#contactForm").slideDown("slow");
+        }
+        else {
+            $("#contactForm").slideUp("slow");
+        }
+    });
+});
+function closeForm() {
+    $("#messageSent").show("slow");
+    setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+}
+</script>
+</html>

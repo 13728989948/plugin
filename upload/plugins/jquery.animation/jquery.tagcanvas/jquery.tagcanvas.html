@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.tagcanvas</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.tagcanvas.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.tagcanvas.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body id="introduction">
+  <div id="page">
+   <div id="container" class="content clearfix">
+    <canvas width="300" height="300" id="myCanvas">
+     <p>Anything in here will be replaced on browsers that support the canvas element</p>
+     <ul>
+      <li><a href="http://www.luidea.com" target="_blank">Google</a></li>
+      <li><a href="/fish">Fish</a></li>
+      <li><a href="/chips">Chips</a></li>
+      <li><a href="/salt">Salt</a></li>
+      <li><a href="/vinegar">Vinegar</a></li>
+      <li><a href="/fish">Fish</a></li>
+      <li><a href="/chips">Chips</a></li>
+      <li><a href="/salt">Salt</a></li>
+      <li><a href="/vinegar">Vinegar</a></li>
+      <li><a href="/fish">Fish</a></li>
+      <li><a href="/chips">Chips</a></li>
+      <li><a href="/salt">Salt</a></li>
+      <li><a href="/vinegar">Vinegar</a></li>
+     </ul>
+    </canvas>
+   </div>   
+  </div> 
+ </body>
+ <script>
+$(document).ready(function () {
+    if (!$('#myCanvas').tagcanvas({
+            textColour: '#ffffff',
+            outlineThickness: 1,
+            maxSpeed: 0.03,
+            depth: 0.75
+        })) {
+        $('#myCanvasContainer').hide();
+    }
+});
+ </script>
+</html>

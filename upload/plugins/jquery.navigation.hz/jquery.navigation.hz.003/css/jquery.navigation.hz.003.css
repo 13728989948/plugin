@@ -1,0 +1,71 @@
+body
+,div
+,dl
+,dt
+,dd
+,ul
+,ol
+,li
+,h1
+,h2
+,h3
+,h4
+,h5
+,h6
+,pre
+,form
+,fieldset
+,input
+,textarea
+,p
+,blockquote
+,th
+,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset
+,img{border:0;}
+address
+,caption
+,cite
+,code
+,dfn
+,em
+,strong
+,th
+,var{font-style:normal;font-weight:normal;}
+ol
+,ul{list-style:none;}
+caption
+,th{text-align:left;}
+h1
+,h2
+,h3
+,h4
+,h5
+,h6{font-size:100%;font-weight:normal;}
+q:before
+,q:after{content:'';}
+abbr
+,acronym{border:0;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+a{color:#15adff;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+body{background:#79694C;}
+#page-wrap{margin:0 auto;width:960px;}
+h2{color:#fff;font:30px Arial,Helvetica,sans-serif;margin:20px 0 40px 0;}
+#content{width:960px;position:absolute;top:224px;}
+ul#nav li
+,ul#nav li a{background:url(../images/jquery.navigation.hz.003_p_001.png) no-repeat left top;height:67px;width:192px;}
+ul#nav li{float:left;border:1px solid #243e3b;border-left:none;}
+ul#nav li a{display:block;text-indent:-9999px;}
+ul#nav li.home{background-position:-1px -1px;border-left:1px solid #243e3b;}
+ul#nav li.about{background-position:-194px -1px;}
+ul#nav li.contact{background-position:-387px -1px;}
+ul#nav li.freebies{background-position:-580px -1px;}
+ul#nav li.home a{background-position:-1px -69px;}
+ul#nav li.about a{background-position:-194px -69px;}
+ul#nav li.contact a{background-position:-387px -69px;}
+ul#nav li.freebies a{background-position:-580px -69px;}

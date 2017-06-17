@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.image.023</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.image.023.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.flow.1.1.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="wrap">
+   <div id="controller" class="hidden">
+   <span class="jFlowControl">No 1</span> 
+   <span class="jFlowControl">No 2</span> 
+   <span class="jFlowControl">No 3</span></div>
+   <div id="prevNext">
+   <img src="images/jquery.image.023_p_006.png" alt="Previous Tab" class="jFlowPrev" />
+   <img src="images/jquery.image.023_p_005.png" alt="Next Tab" class="jFlowNext" />
+   </div>
+   <div id="slides">
+    <div>
+     <img src="images/jquery.image.023_002.jpg" alt="photo" />
+     <p>This is photo number one. Neato!</p>
+    </div>
+    <div>
+     <img src="images/jquery.image.023_002.jpg" alt="photo" />
+     <p>This is photo number two. Neato!</p>
+    </div>
+    <div>
+     <img src="images/jquery.image.023_002.jpg" alt="photo" />
+     <p>This is photo number three. Neato!</p>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+$(function() {
+    $("div#controller").jFlow({
+        slides: "#slides",
+        width: "980px",
+        height: "313px"
+    });
+});
+ </script>
+</html>

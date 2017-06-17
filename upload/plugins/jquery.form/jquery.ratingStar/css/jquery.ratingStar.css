@@ -1,0 +1,7 @@
+.webwidget_rating_sex{padding:0;margin:0;float:left;}
+.webwidget_rating_sex li{line-height:0;width:25px;height:25px;padding:0;margin:0;margin-left:2px;list-style:none;float:left;cursor:pointer;}
+.webwidget_rating_sex li span{display:none;}
+
+.webwidget_rating_bar{padding:0;margin:0;float:left;}
+.webwidget_rating_bar li{line-height:0;width:25px;height:25px;padding:0;margin:0;margin-left:2px;list-style:none;float:left;cursor:pointer;}
+.webwidget_rating_bar li div{height:25px;}

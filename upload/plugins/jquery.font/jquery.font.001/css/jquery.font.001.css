@@ -1,0 +1,10 @@
+*{margin:0;padding:0;}
+body{font-size:14px;color:#ccc;background-color:#141414;font-family:Arial,Helvetica,sans-serif;}
+#neonText span{width:700px;height:150px;position:absolute;left:0;top:0;background:url('../images/jquery.font.001_001.jpg') no-repeat left top;}
+span#version1{z-index:100;}
+span#version2{background-position:left bottom;z-index:99;}
+#neonText{height:150px;margin:180px auto 0;position:relative;width:650px;text-indent:-9999px;}
+h2{color:#777;font-size:18px;font-weight:normal;margin:150px auto 20px;text-indent:35px;width:650px;font-family:"Myriad Pro",Arial,Helvetica,sans-serif;font-style:italic;}
+a
+,a:visited{color:#0196e3;text-decoration:none;outline:none;}
+a:hover{text-decoration:underline;}

@@ -1,0 +1,5 @@
+*{margin:0;padding:0;}
+body{text-align:center;background:#191919;color:#FFF;}
+a{color:#FC0;}
+img{border:none;}
+#welcome{position:fixed;top:5%;left:50%;margin-left:-271px;background:#A8D2F5;}

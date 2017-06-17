@@ -1,0 +1,95 @@
+html
+,body
+,div
+,span
+,applet
+,object
+,iframe
+,h1
+,h2
+,h3
+,h4
+,h5
+,h6
+,p
+,blockquote
+,pre
+,a
+,abbr
+,acronym
+,address
+,big
+,cite
+,code
+,del
+,dfn
+,em
+,font
+,img
+,ins
+,kbd
+,q
+,s
+,samp
+,small
+,strike
+,strong
+,sub
+,sup
+,tt
+,var
+,dl
+,dt
+,dd
+,ol
+,ul
+,li
+,fieldset
+,form
+,label
+,legend
+,table
+,caption
+,tbody
+,tfoot
+,thead
+,tr
+,th
+,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-decoration:none;}
+:focus
+,:active{outline:0;}
+ol
+,ul{list-style:none;}
+.right{float:right;}
+.left{float:left;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+* html .clearfix{zoom:1;}
+*:first-child+html .clearfix{zoom:1;}
+header
+,nav{display:block;}
+html{background:#d5bd89;}
+body{min-height:450px;}
+header{width:960px;margin:0 auto;padding-top:30px;}
+ul li{display:inline-block;position:relative;float:left;margin:0 6px 20px 0;}
+ul li a{background:url(../images/jquery.fictiveCompany_p_003.png) no-repeat;text-indent:-9999px;height:80px;width:155px;text-align:center;display:block;position:relative;float:left;}
+.last{margin-right:0;}
+#nHom{background-position:0 0;}
+#nAbo{background-position:-155px 0;}
+#nPro{background-position:-310px 0;}
+#nNew{background-position:-465px -80px;}
+#nSer{background-position:-620px -80px;}
+#nCon{background-position:-775px 0;}
+ul li a span{background:url(../images/jquery.fictiveCompany_p_003.png) no-repeat;display:none;position:absolute;left:0;top:0;height:80px;width:155px;}
+#nHom span{background-position:0 -80px;}
+#nAbo span{background-position:-155px -80px;}
+#nPro span{background-position:-310px -80px;}
+#nNew span{background-position:-465px 0;display:block;}
+#nSer span{background-position:-620px 0;display:block;}
+#nCon span{background-position:-775px -80px;}
+.cssOnly #nHom:hover{background-position:0 -80px;}
+.cssOnly #nAbo:hover{background-position:-155px -80px;}
+.cssOnly #nPro:hover{background-position:-310px -80px;}
+.cssOnly #nNew span:hover{background-position:-465px -80px;}
+.cssOnly #nSer span:hover{background-position:-620px -80px;}
+.cssOnly #nCon:hover{background-position:-775px -80px;}
+.active #nHom{background-position:0 -160px;}

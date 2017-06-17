@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.image.003</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.image.003.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+<body>
+ <div class="thumbnail-item">
+  <a href="#"><img src="images/jquery.image.003_004.jpg" class="thumbnail"/></a>
+  <div class="tooltip">
+   <img src="images/jquery.image.003_001.jpg" alt="" width="330" height="185" />
+   <span class="overlay"></span>
+  </div>
+ </div>
+ <div class="thumbnail-item">
+  <a href="#"><img src="images/jquery.image.003_005.jpg" class="thumbnail"/></a>
+  <div class="tooltip">
+   <img src="images/jquery.image.003_002.jpg" alt="" width="330" height="185" />
+   <span class="overlay"></span>
+  </div>
+ </div>
+</body>
+<script>
+// Load this script once the document is ready
+$(document).ready(function () {
+// Get all the thumbnail
+    $('div.thumbnail-item').mouseenter(function (e) {
+// Calculate the position of the image tooltip
+        x = e.pageX - $(this).offset().left;
+        y = e.pageY - $(this).offset().top;
+// Set the z-index of the current item,
+// make sure it's greater than the rest of thumbnail items
+// Set the position and display the image tooltip
+        $(this).css('z-index', '15')
+            .children("div.tooltip")
+            .css({'top': y + 10, 'left': x + 20, 'display': 'block'});
+    }).mousemove(function (e) {
+// Calculate the position of the image tooltip
+        x = e.pageX - $(this).offset().left;
+        y = e.pageY - $(this).offset().top;
+// This line causes the tooltip will follow the mouse pointer
+        $(this).children("div.tooltip").css({'top': y + 10, 'left': x + 20});
+    }).mouseleave(function () {
+// Reset the z-index and hide the image tooltip
+        $(this).css('z-index', '1')
+            .children("div.tooltip")
+            .animate({"opacity": "hide"}, "fast");
+    });
+});
+</script>
+</html>

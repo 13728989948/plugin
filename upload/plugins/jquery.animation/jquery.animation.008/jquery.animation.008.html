@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.animation.008</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.animation.008.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="container">
+   <div id="header">
+    <h1>
+     Animated Background Image
+    </h1><br>
+   </div>
+  </div>
+<script>
+   var scrollSpeed = 1;   // Speed in milliseconds
+   var step = 1;     // How many pixels to move per step
+   var current = 0;   // The current pixel row
+   var imageWidth = 2247;  // Background image width
+   var headerWidth = 1280;  // How wide the header is.
+   //The pixel row where to start a new loop
+   var restartPosition = -(imageWidth - headerWidth);
+   function scrollBg(){
+    //Go to next pixel row.
+    current -= step;
+    //If at the end of the image, then go to the top.
+    if (current == restartPosition){
+     current = 0;
+    }
+    //Set the CSS of the header.
+    $('#header').css("background-position",current+"px 0");
+   }
+   //Calls the scrolling function repeatedly
+   var init = setInterval("scrollBg()", scrollSpeed);
+ </script>
+ </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML> 
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.fixedNavigationTutorial</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.fixedNavigationTutorial.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="header"></div>
+  <div class="scroll"></div>
+  <ul id="navigation">
+   <li class="home"><a href="" title="Home"></a></li>
+   <li class="about"><a href="" title="About"></a></li>
+   <li class="search"><a href="" title="Search"></a></li>
+   <li class="photos"><a href="" title="Photos"></a></li>
+   <li class="rssfeed"><a href="" title="Rss Feed"></a></li>
+   <li class="podcasts"><a href="" title="Podcasts"></a></li>
+   <li class="contact"><a href="" title="Contact"></a></li>
+  </ul>
+ </body>
+<script type="text/javascript">
+$(function () {
+    $('#navigation a').stop().animate({'marginLeft': '-85px'}, 1000);
+
+    $('#navigation > li').hover(
+        function () {
+            $('a', $(this)).stop().animate({'marginLeft': '-2px'}, 200);
+        },
+        function () {
+            $('a', $(this)).stop().animate({'marginLeft': '-85px'}, 200);
+        }
+    );
+});
+</script>
+</html>

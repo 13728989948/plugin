@@ -1,0 +1,18 @@
+*{margin:0;padding:0;}
+body{font-family:Arial,Helvetica,sans-serif;background:#666 url(../images/jquery.latestTweetsTooltip_g_003.gif) repeat top left;}
+#content{background-color:#333;width:960px;padding:40px 40px 80px 40px;margin:0 auto 40px auto;}
+.head
+,.meta a{font-family:Helvetica,Arial,Verdana;text-transform:uppercase;font-weight:bold;font-size:12px;letter-spacing:3px;color:#ccc;padding-bottom:10px;margin-bottom:10px;text-shadow:1px 1px 1px #000;text-decoration:none;}
+.line{background-color:#444;border-bottom:1px solid #222;height:1px;margin:0 0 15px 0;}
+#content h1{color:#fff;font-weight:normal;font-size:56px;text-shadow:1px 1px 1px #000;}
+.subline{font-size:22px;margin:20px 0;color:#999;text-shadow:1px 1px 1px #000;}
+.meta{text-align:right;}
+.meta a:hover{color:#aaa;}
+.article p{margin:20px;line-height:26px;text-align:justify;color:#ddd;float:left;width:280px;text-shadow:1px 1px 1px #000;}
+.article a{color:#aaa;text-transform:uppercase;text-decoration:none;font-weight:bold;}
+.article a:hover{color:#0968A0;}
+.clr{clear:both;}
+.search_results{width:300px;position:absolute;display:none;}
+
+span.twitter_search{padding-right:20px;background:transparent url(../images/jquery.latestTweetsTooltip_p_004.png) no-repeat center right;cursor:pointer;}
+.twitterSearchClose{position:absolute;right:0;top:0;background:#aaa url(../images/jquery.latestTweetsTooltip_p_001.png) no-repeat center right;width:13px;height:13px;cursor:pointer;}

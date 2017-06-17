@@ -1,0 +1,8 @@
+*{margin:0;padding:0;list-style-type:none;}
+a
+,img{border:0;}
+body{font:12px/180% Arial,Helvetica,sans-serif,"宋体";}
+.colockbox{width:283px;height:76px;margin:20px auto;background:url(../images/jquery.animation.018_p_001.png) no-repeat;}
+.colockbox span{float:left;display:block;width:58px;height:48px;line-height:48px;font-size:26px;text-align:center;color:#fff;margin:0 17px 0 0;}
+.colockbox span.second{margin:0;}
+#demo02{width:208px;background-position:-75px 0;}

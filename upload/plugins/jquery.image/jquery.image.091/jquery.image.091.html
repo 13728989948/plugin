@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.image.091</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.image.091.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <br />
+  <div class="sec bnspic">
+   <div class="big_pic">
+    <ul>
+     <li class="on"><a href="#"> <img src="images/jquery.image.091_007.jpg" title="狼之子雨与雪" /> <span class="txt">细田守《狼之子雨与雪》狼孩子的伟大母亲</span>
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_007.jpg" title="萤火之森" /> <span class="txt">绿川幸《萤火之森》——凄美伤感的半人半妖与人类之恋</span>
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_007.jpg" title="对某个飞行员的追忆" /> <span class="txt">犬村小六《对某个飞行员的追忆》——相爱不能相守的空战罗曼剧</span>
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_007.jpg" title="穿越时空的少女" /> <span class="txt">细田守《穿越时空的少女》——在未来等你</span>
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_007.jpg" title="AURA 魔龙院光牙最后的战斗" /> <span class="txt">田中罗密欧《AURA 魔龙院光牙最后的战斗》——中二先驱妄想战士</span>
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_007.jpg" title="被狙击的学园" /> <span class="txt">眉村卓《被狙击的学园》——穿越时间的警示</span>
+     </a></li>
+    </ul>
+   </div>
+   <!-- /big_pic -->
+   <div class="small_pic clearfix">
+    <ul>
+     <li class="on"><a href="#"> <img src="images/jquery.image.091_008.jpg" alt="图片说明" />
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_008.jpg" alt="图片说明" />
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_008.jpg" alt="图片说明" />
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_008.jpg" alt="图片说明" />
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_008.jpg" alt="图片说明" />
+     </a></li>
+     <li><a href="#"> <img src="images/jquery.image.091_008.jpg" alt="图片说明" />
+     </a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="clear"></div>
+ </body>
+<script type="text/javascript">
+ $(".small_pic li").mouseover(function() {
+  $(this).siblings().removeClass("on");
+  $(this).addClass("on");
+  var preNumber = $(this).prevAll().size() + 1;
+  $(".big_pic li").removeClass("on");
+  $(".big_pic li:nth-child(" + preNumber + ")").addClass("on");
+ });
+</script>
+</html>

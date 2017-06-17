@@ -3,37 +3,6 @@
 .mainContentInner{margin:0 5%;clear:both;}
 .mainContentInner .imgContainerDiv{text-align:left;max-width:100%;min-width:1000px !important;}
 
-/**单张图片区***********************************************************************************************/
-.caseUl li{float:left;display:inline;margin-left:0px;width:252px;height:186px;position:relative;cursor: pointer;}
-.caseUl li .singleDiv{display:block;width:210px;padding:16px;background:url(/aYm/images/qt/exJquery/exJquery_p_002.png) no-repeat;position:absolute;bottom:14px;left:0;}
-.caseUl li .singleDiv .cover{background:#282828;opacity:.3;filter:alpha(opacity=30);position:absolute;top:16px;left:16px;width:210px;height:140px;z-index:2;display:none;}
-.caseUl li .singleDiv .x
-  ,.caseUl li .singleDiv .y{width:60px;height:60px;top:60px;position:absolute;z-index:3;display:none;}
-.caseUl li .singleDiv .x{background:url(/aYm/images/qt/exJquery/exJquery_p_003.png);left:50px;}
-.caseUl li .singleDiv .y{background:url(/aYm/images/qt/exJquery/exJquery_p_004.png);right:50px;}
-.caseUl li .singleDiv img{width:210px;height:140px;}
-
-/**左侧导航区***********************************************************************************************/
-.slideNavDivStyle{float:left;font-size:14px;}
-.slideNavDivStyle .slideNavUlStyle{list-style:none;margin:0px;padding:0px;float: left;margin-left: 0px;}
-.slideNavDivStyle .slideNavUlStyle li.slidingElement h3
-  ,.slideNavDivStyle .slideNavUlStyle li.slidingElement a{display:block;width:104px;padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:30px;height:22px;margin:0;margin-bottom:5px;}
-.slideNavDivStyle .slideNavUlStyle .current{color:#2eb6aa !important;}
-.slideNavDivStyle .slideNavUlStyle li.last a{margin-bottom: 0px;}
-.slideNavDivStyle .slideNavUlStyle li.slidingElement{}
-.slideNavDivStyle .slideNavUlStyle li.slidingElement h3{color:#fff;background:#333;font-weight:normal;}
-.slideNavDivStyle .slideNavUlStyle li.slidingElement a{color:#D2D2D2;background:#2C2C2C;border-right:1px solid #000000;border-top:1px solid #000000;border-bottom:1px solid #000000;text-decoration:none;}
-.slideNavDivStyle .slideNavUlStyle li.slidingElement a:hover{color:#2eb6aa;}
-
-.slidingElement .sLiBkGd{background-position: 0px 3px;}
-.slidingElement .sLiBkGd2{background-position: 0px -20px;}
-.slidingElement .sLiBkGd3{background-position: 0px -44px;}
-.slidingElement .sLiBkGd4{background-position: 0px -68px;}
-.slidingElement .sLiBkGd5{background-position: 0px -90px;}
-.slidingElement .sLiBkGd6{background-position: 0px -112px;}
-.slidingElement .sLiBkGd7{background-position: 0px -134px;}
-.slidingElement .sLiBkGd8{background-position: 0px -156px;}
-
 /**搜索区*************************************************************************************************/
 .m-listSer{font-size:14px;min-height:40px;position:relative;left:0px;padding-bottom:10px;margin-bottom:10px;border-bottom:2px solid #2eb6aa;}
 .m-listSer .searchDivInner .on{display:block;}
@@ -43,12 +12,8 @@
 .m-listSer .searchDivTj .current{background:none repeat scroll 0 0 #2da296;color:#fff;}
 .m-listSer .searchDivTj .current:hover{color:#fff;}
 .m-listSer .searchDivTj .currentDisable{background:none repeat scroll 0 0 #eee;color:#000;}
-.m-listSer .searchDivTj .currentClose{background:url(/aYm/images/qt/exJquery/exJquery_p_007.png) no-repeat scroll right top #2da296;color:#fff;}
-.m-listSer .searchDivTj .currentClose:hover{background:url(/aYm/images/qt/exJquery/exJquery_p_007.png) no-repeat scroll right top #2eb6aa;color:#fff;}
 .m-listSer .searchDivInput{background:none repeat scroll 0 0 #fff;border:1px solid #ccc;border-radius:4px;height:34px;position:relative;top:10px;margin-bottom:10px;width:300px;}
 .m-listSer .searchDivInput input{outline:medium none;background:none repeat scroll 0 0 rgba(0,0,0,0);border:medium none;margin:0;padding:8px 15px;width:75%;}
-.m-listSer .searchDivInput .s-bg-search{background-image:url(/aLi/images/qt/onlineDesign/onlineDesign_p_002-01.png)!important;background-repeat:no-repeat!important;display:inline-block;height:34px;margin-top:-17px;position:absolute;right:0;top:50%;vertical-align:middle;width:47px;cursor:pointer;background-position:10px 5px;border-left:1px dashed #eee;}
-.m-listSer .searchDivInput .s-bg-search:hover{background-position:10px -28px;}
 
 /**数据迭代区*********************************************/
 .f-card{border:1px solid #ccc;}
@@ -71,6 +36,7 @@
   ,.u-listShow .item-bottom .con p em{display:inline-block;min-width:5px;height:14px;margin-bottom:14px;color:#999;line-height:100%;}
 .u-listShow .item-bottom .con strong{position:absolute;top:12px;right:10px;display:block;width:75px;text-align:right;}
 .u-listShow .item-bottom .con strong a{color:#333;}
+.u-listShow .item-bottom .con .icon-size-bi{position:absolute;top:13px;left:8px;width:25px;height:16px;background:url(../../../../images/cy/justPage/ymPlugin/ymPlugin_s_001.svg) no-repeat;}
 .u-listShow .item-bottom .con a{position:absolute;top:10px;right:10px;display:inline-block;width:67px;line-height:22px;background-color:#2da296;border-radius:4px;text-align:center;color:#fff;font-size:13px;}
 .u-listShow .item-bottom .con strong a:hover
   ,.u-listShow .item-bottom .con p a:hover
@@ -90,6 +56,3 @@
 .m-listCshow .listShow-more{padding-right:24px;}
 .m-listCshow .listShow-more a{display:inline-block;width:100%;height:50px;line-height:50px;}
 .m-listCshow .listShow-more a:hover{text-decoration:none;color:#71b643;}
-
-/**分页(覆盖)************************************************/
-.splitPageDivStyle{margin-left:0 !important;}

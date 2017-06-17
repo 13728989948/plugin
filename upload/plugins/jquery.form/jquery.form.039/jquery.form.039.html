@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.039</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.039.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.isoText.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="page">
+   <div id="head">
+    <h1>文字放大缩小排列</h1>
+    <h2>伪等距文本效果</h2>
+    <p class="headText">jqIsoText 是jQuery 插件伪等距效果显示文本。</p>
+    <p class="headText">jqIsoText是兼容和全面的测试与Safari2+的Internet Explorer 6+2，火狐，谷歌Chrome3，Opera 9中。</p>
+    <br />
+   </div>
+   <div id="examples">
+    <h3>举例</h3>
+    <br />
+    <span class='default'>这句话将被视为默认选项</span>
+    <br />
+    <code>$('.default').jqIsoText()</code>
+    <br />
+    <br />
+    <span class='split'>对于这句话的话将被视为单独</span>
+    <br />
+    <code>$('.split').jqIsoText({ split:'yes' })</code>
+    <br />
+    <br />
+    <span class='big'>使用自定义尺寸，并开始从更大</span>
+    <br />
+    <code>$('.big').jqIsoText({ fromSize: 50, toSize: 10 })</code>
+    <br />
+   </div>
+  </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+   $('#head h2').jqIsoText({fromSize: 25, toSize:50 });
+   $('#head h1').jqIsoText({ fromSize: 50, toSize: 90 });
+   $('.download a').jqIsoText({ fromSize: 50, toSize: 15 });
+   $('.com').jqIsoText();
+   $('.split').jqIsoText({split:'yes'});
+   $('.default').jqIsoText();
+   $('.big').jqIsoText({ fromSize: 50, toSize: 10});
+  });
+</script>
+ </body>
+</html>

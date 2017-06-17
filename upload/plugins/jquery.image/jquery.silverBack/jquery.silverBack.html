@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.silverBack</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.silverBack.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.parallax-0.2.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body class="home">
+  <div id="main">
+   <div class="wrapper outer">
+    <div class="wrapper inner">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    </div>
+   </div>
+  </div>
+ <div id="test"></div>
+<script type="text/javascript">
+$('body').parallax({
+   'elements': [
+       {
+           'selector': 'body',
+           'properties': {
+               'x': {
+                   'background-position-x': {
+                       'initial': 0,
+                       'multiplier': 0.1,
+                       'invert': true
+                   }
+               }
+           }
+       },
+       {
+           'selector': 'div.outer',
+           'properties': {
+               'x': {
+                   'background-position-x': {
+                       'initial': 50,
+                       'multiplier': 0.02,
+                       'unit': '%'
+                   }
+               }
+           }
+       },
+       {
+           'selector': 'div.inner',
+           'properties': {
+               'x': {
+                   'background-position-x': {
+                       'initial': 0,
+                       'multiplier': 0.3
+                   }
+               }
+           }
+       }
+   ]
+});
+</script>
+ </body>
+</html>

@@ -1,0 +1,8 @@
+body{background-color:#1e1e1e;padding-top:150px;font-size:11px;font-family:Arial,Helvetica,sans-serif;}
+h1{font-size:12px;font-weight:bold;color:#4de2e0;}
+a{color:#4de2e0;text-decoration:none;}
+#container{width:450px;height:150px;position:relative;overflow:hidden;z-index:0;padding:0;margin:0 auto;background-image:url(../images/jquery.imageHover_001.jpg);border:10px solid #414141;}
+#container:hover{border-color:#303030;}
+#overlay{background-color:#000;display:block;position:absolute;top:0;left:0;width:450px;height:150px;z-index:1;}
+#hover{width:400px;display:block;height:100px;position:absolute;z-index:3;padding:25px;}
+#hover p{color:#fff;font-weight:normal;}

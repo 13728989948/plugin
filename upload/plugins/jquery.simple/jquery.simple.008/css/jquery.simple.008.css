@@ -1,0 +1,9 @@
+*{margin:0;padding:0;font-size:12px;font-family:Verdana,Geneva,sans-serif;line-height:14px;}
+img{border:none;}
+a{color:#039;}
+a:hover{color:#f60;}
+.pop{position:absolute;left:30%;top:18%;width:500px;height:500px;border:1px solid #ccc;}
+.pop_head{position:relative;}
+.pop_head a.close{width:47px;height:46px;background:url(../images/jquery.simple.008_p_002.png);position:absolute;right:-23px;line-height:20px;color:#000;text-decoration:none;top:-23px;}
+.pop_body{padding:10px;background:#f7d84c;width:480px;height:480px;overflow:hidden;}
+.pop-lk{width:100px;height:100px;overflow:hidden;display:block;background-color:red;}

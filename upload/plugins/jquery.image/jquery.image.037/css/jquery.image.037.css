@@ -1,0 +1,9 @@
+body{background-color:#292929;color:white;text-align:center;font-family:'georgia';font-size:13px;}
+.thumbnailWrapper{width:600px;margin:0 auto;}
+.thumbnailWrapper ul{list-style-type:none;margin:0;padding:0;}
+.thumbnailWrapper ul li{float:left;position:relative;overflow:hidden;}
+.thumbnailWrapper ul li a img{width:200px;position:relative;border:none;}
+.caption{position:absolute;bottom:0;left:0;width:100%;display:none;background:#0c4b62;color:white;opacity:.9;}
+.caption .captionInside{padding:10px;margin:0;}
+.clear{clear:both;}
+a{color:#FC0;}

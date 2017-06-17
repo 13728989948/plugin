@@ -1,0 +1,3 @@
+body{margin:0;padding:0;}
+#waterwheelCarousel{width:960px;height:250px;}
+#waterwheelCarousel>img{display:none;cursor:pointer;}

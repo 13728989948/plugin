@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.042</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.042.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/jquery.form.042.Other_CSS.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.easyAjaxForm.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="content">
+<!--DEMO start-->
+   <div id="FormContainer">
+    <h1>Sample EasyAjax_Form</h1>
+    <p class="req_input subHead">* Starred fields required</p>
+    <form action="http://sc.chinaz.com" id="form1" method="post">
+    <p>This is for demonstration purposes only, any information submitted will not be saved!</p>
+    <label for="Fname_ID">First name:</label> 
+    <input type="text" class="OPTIONAL LENGTH_INPUT" name="first_name" id="Fname_ID" />
+    <br />
+<!--<br/> Needed for IE6 & IE7-->
+    <label for="Lname_ID">Last name: 
+    <span class="req_input">*</span></label> 
+    <input type="text" class="REQUIRED LENGTH_INPUT" name="last_name" id="Lname_ID" />
+    <br />
+    <label for="Email1_ID">Primary email: 
+    <span class="req_input">*</span></label> 
+    <input type="text" class="REQUIRED LENGTH_INPUT EMAIL" name="email_1" id="Email1_ID" />
+    <br />
+    <label for="Email2_ID">Secondary email:</label> 
+    <input type="text" class="OPTIONAL LENGTH_INPUT EMAIL" name="email_2" id="Email2_ID" />
+    <br />
+    <label for="Phone_ID">Phone number: 
+    <span class="req_input">*</span></label> 
+    <input type="text" class="REQUIRED LENGTH_INPUT PHONE" name="phone" id="Phone_ID" />
+    <br />
+    <label for="Country_ID">Country: 
+    <span class="req_input">*</span></label> 
+    <select name="country" class="REQUIRED" id="Country_ID">
+     <option value="US">United States</option>
+     <option value="China">China</option>
+     <option value="Australia">Australia</option>
+     <option value="UK">United Kingdom</option>
+     <option value="Other">Other</option>
+    </select>
+    <br />
+    <label for="Comments_ID">Comments:</label> 
+    <textarea class="OPTIONAL LENGTH_TEXT" name="comments" rows="3" cols="20" id="Comments_ID"></textarea>
+    <br />
+    <input type="submit" value="Submit" id="SubmitButton" />
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

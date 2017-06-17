@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+.slideshow-block{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top:39px;
+    left:10px;
+    overflow: hidden;
+    background: #131313;
+}
+a.link{
+    position:absolute;
+    height: 150px;
+    width: 200px;
+    display: block;
+    z-index: 10;
+}
+a.link:hover{
+    background-position: center -150px;
+}
+.slides{
+    z-index:0;
+    visibility:hidden;
+}
+.slides.active{
+    visibility:visible;
+}
+
+/* Demo Styles (You can remove these)
+-----------------------------------------*/
+body{
+    height:100%;
+    background: #eee;
+    min-width:500px;
+}
+p{
+    font: 13px "Helvetica", Arial, sans-serif;
+    color: #444;
+    padding: 10px;
+    text-align:center;
+}
+p a{
+    font-weight: bold;
+    color: #222;
+}
+#tv-wrap{
+    margin:50px auto 20px auto;
+    position:relative;
+    height:297px;
+    width:271px;
+}
+#tv{
+    position:absolute;
+    z-index:10;
+}

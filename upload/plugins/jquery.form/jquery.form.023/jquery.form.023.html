@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.023</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.023.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="wrap">
+   <div class="profile clearfix">
+    <section id="right">
+     <div class="containmsg">
+      <p id="composebtn"><img src="images/jquery.form.023_g_004.gif" alt="compose" class="compose" id="composeicon" /></p>
+      <div class="mainCompose">
+       <div class="calloutUp">
+        <div class="calloutUp2">
+        </div>
+       </div>
+       <div id="msgform">
+        <form name="sendprivatemsg" id="sendprivatemsg" action="#" method="post">
+         <label for="tofield" class="tofield">To</label>
+         <ul class="userslist clearfix">
+          <li><a href="#" target="_blank" class="recipient">Jake Rocheleau</a></li>
+         </ul>
+         <div class="break"></div>
+         <label for="mymsg" id="msmglabel">Message</label>
+         <textarea name="mymsg" id="mymsg" class="msgField"></textarea>
+         <p id="errortxt">**Enter some text!</p>
+         <div id="sendbtncontain"><a class="sendbtn">Send Message</a><img src="images/jquery.form.023_g_001.gif" class="loader" /></div>
+        </form>
+       </div>
+      </div>
+     </div>
+    <h1>Jake Rocheleau</h1>
+    <h3>blogger and freelance web designer.</h3>
+    </section>
+   </div>
+  </div>
+ </body>
+<script>
+$(document).ready(function () {
+  $(".mainCompose").hide();
+  $('.loader').hide();
+  $('#errortxt').hide();
+  $('.compose').click(function () {
+      $('.mainCompose').slideToggle();
+  });
+  $('.sendbtn').click(function (e) {
+      e.preventDefault();
+      $('.sendbtn').hide();
+      $('.loader').show();
+      if ($('#mymsg').val() == "") {
+          $('#errortxt').show();
+          $('.sendbtn').show();
+          $('.loader').hide();
+      }
+      else {
+          $('sendbtn').hide();
+          $('.loader').show();
+          $('#errortxt').hide();
+          var formQueryString = $('#sendprivatemsg').serialize(); // form data for ajax input
+          finalSend();
+      }
+// possibly include Ajax calls here to external PHP
+      function finalSend() {
+          $('.mainCompose').delay(1000).slideToggle('slow', function () {
+              $('#composeicon').addClass('sent').removeClass('compose').hide();
+// hide original link and display confirmation icon
+              $('#composebtn').append('<img src="images/jquery.form.023_p_003.png" />');
+          });
+      }
+  });
+});
+</script>
+</html>

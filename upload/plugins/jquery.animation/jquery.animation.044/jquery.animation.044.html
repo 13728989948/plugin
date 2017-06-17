@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.animation.044</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.animation.044.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body onload="initEvent()">
+  <div id="mainDiv" class="section section-3" style="width:100%px;height:631px;display:block;">
+   <div class="section-angle"></div>
+   <div class="section-body">
+    <div class="stage">
+     <div class="layer layer1">
+      <div class="light-v light-vu light-vr"></div>
+      <div class="light-h light-hr light-hb"></div>
+     </div>
+     <div class="layer layer2">
+      <div class="light-h light-hr light-hb"></div>
+     </div>
+    </div>
+    <div class="section-title"></div>
+    <div class="section-slogan"></div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   function initEvent() {
+    addClass(document.getElementById("mainDiv"), "current");
+   }
+   function addClass(element, value) {
+    if (!element.className) {
+     element.className = value;
+    } else {
+     var newClassName = element.className;
+     newClassName += " " + value;
+     element.className = newClassName;
+    }
+   }
+  </script>
+ </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.iSlider</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.iSlider.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.iSlider.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.iSlider.des.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <h4 style="text-align:center">第一张图动画类型:支持default,rotate,flip,depth效果</h4>
+  
+  <!-- 各种效果轮播 -->
+  <div id="iSlider-effect-div" class="iSlider-effect-div">
+   <div id="animation-effect" class="iSlider-effect animation-effect">
+   </div>
+  </div>
+  
+  <!-- 效果按钮 -->
+  <div id="menu-select" class="menu-select">
+   <span class="on">default</span> <span>rotate</span> <span>flip</span> <span>depth</span>
+  </div>
+
+  <h4 style="text-align: center">垂直轮播</h4>
+  <div id="vertical-slide" class="iSlider-effect">
+  </div>
+
+  <h4 style="text-align: center">水平轮播(载入Html的Dom模式)</h4>
+  <div id="dom-effect" class="iSlider-effect">
+  </div>
+
+  <h4 style="text-align: center">手动触发</h4>
+  <div id="non-looping" class="iSlider-effect">
+  </div>
+
+ </body>
+<script>
+var picList = [ {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg",
+}, {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg",
+}, {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg",
+}, {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg"
+}, {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg"
+}, {
+ width : 300,
+ height : 414,
+ content : "images/jquery.iSlider_004.jpg"
+}, {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg"
+}, {
+ width : 150,
+ height : 207,
+ content : "images/jquery.iSlider_004.jpg"
+} ];
+
+var domList = [ {
+ "height" : "100%",
+ "width" : "100%",
+ "content" : "<img src=\"images/jquery.iSlider_004.jpg\" />"
+}, {
+ "height" : "100%",
+ "width" : "100%",
+ "content" : "<img src=\"images/jquery.iSlider_004.jpg\" />"
+}, {
+ "height" : "100%",
+ "width" : "100%",
+ "content" : "<img src=\"images/jquery.iSlider_004.jpg\" />"
+}, {
+ "height" : "100%",
+ "width" : "100%",
+ "content" : "<img src=\"images/jquery.iSlider_004.jpg\" />"
+} ];
+
+// 所有效果
+var islider1 = new iSlider({
+ data : picList,
+ dom : document.getElementById("animation-effect"),
+ duration : 2000,
+ animateType : "default",
+ isAutoplay : true,
+ isLooping : true,
+// isVertical: true // 是否垂直滚动
+});
+islider1.bindMouse();
+
+// 垂直滚动
+var islider2 = new iSlider({
+ data : picList,
+ dom : document.getElementById("vertical-slide"),
+ duration : 2000,
+ animateType : "default",
+ isVertical : true,
+ isAutoplay : true,
+ isLooping : true,
+});
+islider2.bindMouse();
+
+// 水平轮播(载入Html模式)
+var islider3 = new iSlider({
+ data : domList,
+ dom : document.getElementById("dom-effect"),
+ type : "dom",
+ animateType : "default",
+ isAutoplay : true,
+ isLooping : true,
+});
+islider3.bindMouse();
+
+// 不循环不自动播放
+var islider4 = new iSlider({
+ data : picList,
+ dom : document.getElementById("non-looping"),
+ animateType : "default",
+});
+islider4.bindMouse();
+
+var menu = document.getElementById("menu-select").children;
+
+// 点击按钮后的事件
+function clickMenuActive(target) {
+ for (var i = 0; i < menu.length; i++) {
+  menu[i].className = "";
+ }
+ target.className = "on";
+}
+
+menu[0].onclick = function() {
+ clickMenuActive(this);
+ islider1._opts.animateType = this.innerHTML;
+ islider1.reset();
+};
+
+menu[1].onclick = function() {
+ clickMenuActive(this);
+ islider1._opts.animateType = this.innerHTML;
+ islider1.reset();
+};
+
+menu[2].onclick = function() {
+ clickMenuActive(this);
+ islider1._opts.animateType = this.innerHTML;
+ islider1.reset();
+};
+
+menu[3].onclick = function() {
+ clickMenuActive(this);
+ islider1._opts.animateType = this.innerHTML;
+ islider1.reset();
+};
+</script>
+</html>

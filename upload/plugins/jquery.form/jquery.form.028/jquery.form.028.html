@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.028</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.028.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <h3>Customize HTML control</h3>
+  <div>
+   <input id="CheckBox1" type="checkbox" class="CheckBoxClass"/>
+   <label id="Label1" for="CheckBox1" class="CheckBoxLabelClass">Checkbox 1</label>
+   <input id="CheckBox2" type="checkbox" class="CheckBoxClass"/>
+   <label id="Label2" for="CheckBox2" class="CheckBoxLabelClass">Checkbox 2</label>
+  </div>
+  <div>
+   <input id="Radio1" type="radio" class="RadioClass" name="group1" >
+   <label id="Label1" for="Radio1" class="RadioLabelClass">Radio 1</label>
+   <input id="Radio2" type="radio" class="RadioClass" name="group1"/>
+   <label id="Label2" for="Radio2" class="RadioLabelClass">Radio 2</label>
+   <input id="Radio3" type="radio" class="RadioClass" name="group1"/>
+   <label id="Label3" for="Radio3" class="RadioLabelClass">Radio 3</label>
+  </div>
+ </body>
+ <script type="text/javascript">
+$(document).ready(function(){
+ $(".CheckBoxClass").change(function(){
+  if($(this).is(":checked")){
+   $(this).next("label").addClass("LabelSelected");
+  }else{
+   $(this).next("label").removeClass("LabelSelected");
+  }
+ });
+ $(".RadioClass").change(function(){
+  if($(this).is(":checked")){
+   $(".RadioSelected:not(:checked)").removeClass("RadioSelected");
+   $(this).next("label").addClass("RadioSelected");
+  }
+ }); 
+});
+</script>
+</html>

@@ -1,0 +1,8 @@
+.caption{background:#333;border-right:1px solid #666;border-bottom:1px solid #666;border-left:1px solid #666;border-top:1px solid #666;font-family:Verdana;font-size:11px;padding:4px;-moz-border-radius-bottomright:6px;-moz-border-radius-bottomleft:6px;-webkit-border-bottom-right-radius:6px;-webkit-border-bottom-left-radius:6px;color:#eee;}
+body{font-family:Georgia,"Times New Roman",serif;}
+p.content{font-size:.9em;line-height:1.4em;}
+img{border:2px solid #333;margin:0;padding:6px;background:#eee;}
+img.right{float:right;margin:0 0 6px 10px;}
+img.left{float:left;margin:0 10px 6px 0;}
+.clear{clear:both;}
+.center{margin:0 auto 0 auto;text-align:center;}

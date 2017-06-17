@@ -1,0 +1,101 @@
+body{color:#3c3c3c;font-family:sans-serif;font-size:12px;background:#f5f5f5;position:absolute;left:50%;width:540px;margin-left:-270px;}
+h1{font-size:13px;line-height:24px;margin:60px 10px 10px 10px;}
+h2{font-family:sans-serif;font-size:16px;line-height:24px;margin:10px 10px 10px 10px;}
+a:link
+,a:visited{text-decoration:none;cursor:pointer;font-family:sans-serif;color:#3c3c3c;border:1px solid #3c3c3c;border-radius:15px;background:#fcfcfc;width:36px;height:16px;padding:5px 10px 5px 10px;margin:5px;box-shadow:0 0 0 3px rgba(0,0,0,0.1);}
+a:hover
+,a:active{color:#3c3c3c;background:#92e8ff;}
+#example3a>div{display:block;position:relative;}
+[id^="example1a-"]
+,[id^="example1b-"]
+,[id^="example101a-"]
+,[id^="example101b-"]
+,[id^="example2-"]
+,[id^="example3a-"]
+,[id^="example3b-"]
+,[id^="example4a-"]
+,[id^="example4b-"]
+,[id^="example9-"]
+,[id^="example10-"]
+,[id^="example11-"]
+,[id^="example12-"]
+,[id^="example13-"]
+,[id^="example14-"]
+,[id^="example15-"]{cursor:pointer;font-family:sans-serif;color:#3c3c3c;border:1px solid #3c3c3c;border-radius:15px;background:#fcfcfc;// text-decoration:none;width:450px;height:150px;padding:10px 0 5px 15px;margin:10px;font-size:20px;box-shadow:0 0 0 3px rgba(0,0,0,0.1);}
+[id^="example1b-"]
+,[id^="example101b-"]
+,[id^="example3b-"]
+,#example2-prev
+,#example2-next
+,#example9-prev
+,#example9-next
+,#example10-prev
+,#example10-next
+,[id^="example12-"]
+,[id^="example13-"]
+,[id^="example14-"]
+,[id^="example15-"]{text-decoration:none;display:block;position:relative;float:left;width:36px;height:16px;font-size:12px;padding:5px 0 5px 10px;margin:5px;}
+[id^="example4a-"]
+,[id^="example4b-"]{display:block;position:relative;float:left;width:45px;height:55px;}
+[id^="example9-"]{display:block;position:absolute;width:50px;height:50px;border-radius:200px;}
+[id^="example10-"]
+,[id^="example11-"]{display:block;position:absolute;width:45px;height:55px;}
+[id^="example12-"]{width:500px;height:16px;margin:0;clear:both;overflow:hidden;margin-top:-1px;border-radius:0;box-shadow:2px 3px 0 rgba(0,0,0,0.3);}
+[id^="example13-"]{width:440px;height:auto;clear:both;margin:10px;border-radius:0;box-shadow:2px 3px 0 rgba(0,0,0,0.3);}
+[id^="example14-"]
+,[id^="example15-"]{box-shadow:2px 3px 0 rgba(0,0,0,0.3);}
+[id^="example1a-"]
+,[id^="example101a-"]
+,[id^="example2-"]
+,[id^="example3a-"]
+,[id^="example3b-"]:not([id*=prev]):not([id*=next]):not([id*=first]):not([id*=last]){display:block;position:absolute;}
+[id^="example2-"]
+,[id^="example3a-"]{margin-left:-150px;}
+[id^="example3b-"]:not([id*=prev]):not([id*=next]):not([id*=first]):not([id*=last]){margin-left:100px;}
+[id^="example1b-"]:hover
+,[id^="example101b-"]:hover
+,[id^="example2-"]:hover
+,[id^="example3a-"]:hover
+,[id^="example3b-"]:hover
+,[id^="example4a-"]:hover
+,[id^="example4b-"]:hover
+,[id^="example9-"]:hover
+,[id^="example10-"]:hover
+,[id^="example11-"]:hover
+,[id^="example12-"]:hover
+,[id^="example13-"]:hover
+,[id^="example14-"]:hover
+,[id^="example15-"]:hover
+,[id^="example1b-"].active
+,[id^="example101b-"].active
+,[id^="example3b-"].active
+,[id^="example4a-"].active
+,[id^="example4b-"].active
+,[id^="example9-"].active
+,[id^="example10-"].active
+,[id^="example11-"].active
+,[id^="example12-"].active
+,[id^="example13-"].active
+,[id^="example14-"].active
+,[id^="example15-"].active{background:#92e8ff;}
+[id^="example1a-"]
+,[id^="example101a-"]
+,[id^="example2-"].active
+,[id^="example3a-"].active
+,[id^="example3b-"].active
+,[id^="example9-"].active
+,[id^="example10-"].active
+,[id^="example11-"].active
+,[id^="example14-"].active
+,[id^="example15-"].active{cursor:default;}
+[id^="example2-"].active
+,[id^="example3a-"].active{background:#fcfcfc;}
+#example3b-prev
+,#example3b-next{display:block;position:relative;float:left;margin-top:40px;top:10px;left:190px;}
+#example2-prev
+,#example2-next
+,#example9-prev
+,#example9-next{top:210px;left:200px;}
+#example10-prev
+,#example10-next{top:250px;left:200px;}
+#mycounter{text-decoration:none;display:block;position:relative;float:left;font-size:12px;padding:5px 0 5px 10px;margin:6px 0;}

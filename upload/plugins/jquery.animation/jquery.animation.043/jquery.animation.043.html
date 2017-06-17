@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.animation.043</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.animation.043.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body onload="initEvent()">
+  <div id="mainDiv" class="section section-2" style="width:100%;height:500px;display:block;">
+   <div class="section-angle"></div>
+   <div class="section-body">
+    <div class="section-title"></div>
+    <div class="section-slogan"></div>
+    <div class="box">
+     <div class="light-point light-point-1"></div>
+     <div class="light-point light-point-2"></div>
+     <div class="light-point light-point-3"></div>
+     <div class="light-point light-point-4"></div>
+     <div class="phone phone2"></div>
+     <div class="phone phone3"></div>
+     <div class="phone phone1"></div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   function initEvent() {
+    addClass(document.getElementById("mainDiv"), "current");
+   }
+   function addClass(element, value) {
+    if (!element.className) {
+     element.className = value;
+    } else {
+     var newClassName = element.className;
+     newClassName += " " + value;
+     element.className = newClassName;
+    }
+   }
+  </script>
+ </body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.smallslider</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.smallslider.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.smallslider.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ 
+ <body>
+  <div id="main">
+   <div id="contain">
+    <div class="expoes">
+     <div class="expo" id="expo1">
+      <div id="exp1" class="exmp smallslider">
+       <ul>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题1" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题2" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题3" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题4" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题5" /></a></li>
+       </ul>
+      </div>
+      <div class="exmp-txt">
+       <div class="insertcode">
+        <div class="codetit">javascript代码</div>
+        <ol class="javascript lang-javascript">
+         <li style="font-weight: normal;">
+          <div style=""><span style="color: rgb(0, 102, 0); font-style: italic;">//完全默认参数：</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">$<span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(51, 102, 204);">&#39;#exp1&#39;</span><span style="color: rgb(0, 153, 0);">)</span>.<span style="color: rgb(102, 0, 102);">smallslider</span><span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(0, 153, 0);">)</span><span style="color: rgb(51, 153, 51);">;</span></div>
+         </li>
+        </ol>
+       </div>
+      </div>
+      <div class="clearit"></div>
+     </div>
+     <!--  -->
+     <div class="expo"  id="expo2">
+      <div id="exp2" class="exmp smallslider">
+       <ul>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题1" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题2" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题3" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题4" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题5" /></a></li>
+       </ul>
+      </div>
+      <div class="exmp-txt">
+       <div class="insertcode">
+        <div class="codetit">javascript代码</div>
+        <ol class="javascript lang-javascript">
+         <li style="font-weight: normal;">
+          <div style=""><span style="color: rgb(0, 102, 0); font-style: italic;">// 鼠标放在图片上停止切换，向左切换</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; $<span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(51, 102, 204);">&#39;#exp2&#39;</span><span style="color: rgb(0, 153, 0);">)</span>.<span style="color: rgb(102, 0, 102);">smallslider</span><span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(0, 153, 0);">{</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; onImageStop<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(0, 51, 102); font-weight: bold;">true</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; switchEffect<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(51, 102, 204);">&#39;ease&#39;</span><span style="color: rgb(51, 153, 51);">,</span>switchEase<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;easeOutSine&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; switchPath<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;left&#39;</span><span style="color: rgb(51, 153, 51);">,</span>switchMode<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;hover&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; showText<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(0, 51, 102); font-weight: bold;">true</span><span style="color: rgb(51, 153, 51);">,</span>textSwitch<span style="color: rgb(51, 153, 51);">:</span>2</div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 153, 0);">}</span><span style="color: rgb(0, 153, 0);">)</span><span style="color: rgb(51, 153, 51);">;</span></div>
+         </li>
+        </ol>
+       </div>
+      </div>
+      <div class="clearit"></div>
+     </div>
+     <div class="expo">
+      <div id="exp3" class="exmp smallslider">
+       <ul>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题1" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题2" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题3" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题4" /></a></li>
+        <li><a href="images/jquery.smallslider_002.jpg"><img src="images/jquery.smallslider_002.jpg" title="" alt="图片标题5" /></a></li>
+       </ul>
+      </div>
+      <div class="exmp-txt">
+       <div class="insertcode">
+        <div class="codetit">javascript代码</div>
+        <ol class="javascript lang-javascript">
+         <li style="font-weight: normal;">
+          <div style=""><span style="color: rgb(0, 102, 0); font-style: italic;">// 只显示文字，不显示按钮，文字切换，文字背景不动</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; $<span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(51, 102, 204);">&#39;#exp3&#39;</span><span style="color: rgb(0, 153, 0);">)</span>.<span style="color: rgb(102, 0, 102);">smallslider</span><span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(0, 153, 0);">{</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; showButtons<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(0, 51, 102); font-weight: bold;">false</span><span style="color: rgb(51, 153, 51);">,</span> showText <span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(0, 51, 102); font-weight: bold;">true</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; switchEffect<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(51, 102, 204);">&#39;ease&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; switchEase<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;easeOutCirc&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; switchPath<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;up&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+         </li>
+         <li style="font-weight: normal;">
+          <div style="">&nbsp; &nbsp; &nbsp; &nbsp; textSwitch<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(204, 0, 0);">1</span><span style="color: rgb(51, 153, 51);">,</span>textAlign<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(51, 102, 204);">&#39;center&#39;</span><span style="color: rgb(0, 153, 0);">}</span><span style="color: rgb(0, 153, 0);">)</span><span style="color: rgb(51, 153, 51);">;</span></div>
+         </li>
+        </ol>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="code">
+     <div class="insertcode">
+      <div class="codetit">HTML代码：</div>
+       <ol class="html4strict lang-html4strict">
+        <li style="font-weight: normal;">
+         <div style=""><span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">div</span> <span style="color: rgb(0, 0, 102);">id</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">"flashbox"</span> <span style="color: rgb(0, 0, 102);">class</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">"smallslider"</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; <span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">ul</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; &nbsp; &nbsp;<span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">a</span> <span style="color: rgb(0, 0, 102);">href</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;#&quot;</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">img</span> <span style="color: rgb(0, 0, 102);">src</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;images/jquery.smallslider_001.jpg&quot;</span> <span style="color: rgb(0, 0, 102);">title</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;&quot;</span> <span style="color: rgb(0, 0, 102);">alt</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;图片标题1&quot;</span> <span style="color: rgb(102, 204, 102);">/</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">a</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; &nbsp; &nbsp;<span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">a</span> <span style="color: rgb(0, 0, 102);">href</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;#&quot;</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">img</span> <span style="color: rgb(0, 0, 102);">src</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;images/jquery.smallslider_002.jpg&quot;</span> <span style="color: rgb(0, 0, 102);">title</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;&quot;</span> <span style="color: rgb(0, 0, 102);">alt</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;图片标题2&quot;</span> <span style="color: rgb(102, 204, 102);">/</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">a</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; &nbsp; &nbsp;<span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">a</span> <span style="color: rgb(0, 0, 102);">href</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;#&quot;</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">img</span> <span style="color: rgb(0, 0, 102);">src</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;images/jquery.smallslider_003.jpg&quot;</span> <span style="color: rgb(0, 0, 102);">title</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;&quot;</span> <span style="color: rgb(0, 0, 102);">alt</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;图片标题3&quot;</span> <span style="color: rgb(102, 204, 102);">/</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">a</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; &nbsp; &nbsp;<span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">a</span> <span style="color: rgb(0, 0, 102);">href</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;#&quot;</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">img</span> <span style="color: rgb(0, 0, 102);">src</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;images/jquery.smallslider_004.jpg&quot;</span> <span style="color: rgb(0, 0, 102);">title</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;&quot;</span> <span style="color: rgb(0, 0, 102);">alt</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;图片标题4&quot;</span> <span style="color: rgb(102, 204, 102);">/</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">a</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; &nbsp; &nbsp;<span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">a</span> <span style="color: rgb(0, 0, 102);">href</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;#&quot;</span>&gt;&lt;<span style="color: rgb(0, 0, 0); font-weight: bold;">img</span> <span style="color: rgb(0, 0, 102);">src</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;images/jquery.smallslider_005.jpg&quot;</span> <span style="color: rgb(0, 0, 102);">title</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;&quot;</span> <span style="color: rgb(0, 0, 102);">alt</span><span style="color: rgb(102, 204, 102);">=</span><span style="color: rgb(255, 0, 0);">&quot;图片标题5&quot;</span> <span style="color: rgb(102, 204, 102);">/</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">a</span>&gt;&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">li</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style="">&nbsp; <span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">ul</span>&gt;</span></div>
+        </li>
+        <li style="font-weight: normal;">
+         <div style=""><span style="color: rgb(0, 153, 0);">&lt;<span style="color: rgb(102, 204, 102);">/</span><span style="color: rgb(0, 0, 0); font-weight: bold;">div</span>&gt;</span></div>
+        </li>
+       </ol>
+     </div>
+    <h2>JS部分</h2>
+    <div class="insertcode">
+     <div class="codetit">JS代码：</div>
+      <ol class="javascript lang-javascript">
+       <li style="font-weight: normal;">
+        <div style=""><span style="color: rgb(51, 153, 51);">&lt;</span>script type<span style="color: rgb(51, 153, 51);">=</span><span style="color: rgb(51, 102, 204);">&quot;text/javascript&quot;</span><span style="color: rgb(51, 153, 51);">&gt;</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; $<span style="color: rgb(0, 153, 0);">(</span>document<span style="color: rgb(0, 153, 0);">)</span>.<span style="color: rgb(102, 0, 102);">ready</span><span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(0, 51, 102); font-weight: bold;">function</span><span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(0, 153, 0);">)</span><span style="color: rgb(0, 153, 0);">{</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $<span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(51, 102, 204);">&#39;#flashbox&#39;</span><span style="color: rgb(0, 153, 0);">)</span>.<span style="color: rgb(102, 0, 102);">smallslider</span><span style="color: rgb(0, 153, 0);">(</span><span style="color: rgb(0, 153, 0);">{</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; onImageStop<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(0, 51, 102); font-weight: bold;">false</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; switchEffect<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(51, 102, 204);">&#39;ease&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; switchEase<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;easeOutBounce&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; switchPath<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;up&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; switchMode<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;hover&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textSwitch<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(204, 0, 0);">2</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textPosition<span style="color: rgb(51, 153, 51);">:</span> <span style="color: rgb(51, 102, 204);">&#39;top&#39;</span><span style="color: rgb(51, 153, 51);">,</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textAlign<span style="color: rgb(51, 153, 51);">:</span><span style="color: rgb(51, 102, 204);">&#39;center&#39;</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 153, 0);">}</span><span style="color: rgb(0, 153, 0);">)</span><span style="color: rgb(51, 153, 51);">;</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style="">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 153, 0);">}</span><span style="color: rgb(0, 153, 0);">)</span><span style="color: rgb(51, 153, 51);">;</span></div>
+       </li>
+       <li style="font-weight: normal;">
+        <div style=""><span style="color: rgb(51, 153, 51);">&lt;/</span>script<span style="color: rgb(51, 153, 51);">&gt;</span></div>
+       </li>
+      </ol>
+     </div>
+    </div>
+    <h2>参数列表：</h2>
+    <div class="para">
+     <table class="tblist" cellpadding="5" cellspacing="1">
+      <tr><th>参数</th><th>默认值</th><th>说明</th></tr>
+      <tr><th>time</th><th>3000 </th><td>切换时间间隔，单位毫秒，1秒=1000毫秒</td></tr>
+      <tr><th>autoStart</th><th>true</th><td>是否自动开始播放</td></tr>
+      <tr><th>onImageStop</th><th>false</th><td> 鼠标放在图片上时，是否停止播放</td></tr>
+      <tr><th>switchMode</th><th>'hover'</th><td>图片切换的方式，click为单击切换，hover为鼠标移动到按钮上时切换</td></tr>
+      <tr><th>switchEffect</th><th>'fadeOut'</th><td> 切换特效,fadeOut，ease，none,</td></tr>
+      <tr><th>switchPath</th><th> 'left'</th><td>切换的方向，可选值为：up ， left ，即向上，向左</td></tr>
+      <tr><th>switchEase </th><th> 'easeOutQuart' </th><td>当SwitchEffect为'ease'时可用。可选值列表如下：["easeInQuad", "easeOutQuad", "easeInOutQuad", "easeInCubic", "easeOutCubic","easeInOutCubic", "easeInQuart", "easeOutQuart", "easeInOutQuart", "easeInQuint", "easeOutQuint", "easeInOutQuint","easeInSine", "easeOutSine", "easeInOutSine", "easeInExpo", "easeOutExpo", "easeInOutExpo", "easeInCirc", "easeOutCirc", "easeInOutCirc", "easeInElastic","easeOutElastic", "easeInOutElastic", "easeInBack", "easeOutBack", "easeInOutBack","easeInBounce", "easeOutBounce", "easeInOutBounce"]，各种切换方式之间差别不是很大，有兴趣可以逐一测试</td></tr>
+      <tr><th>switchTime</th><th>600</th><td> 切换时间，单位毫秒，1秒=1000毫秒</td></tr>
+      <tr><th>actionGap</th><th>200</th><td> 鼠标触发延时，单位毫秒</td></tr>
+      <tr><th>buttonPosition</th><th>'rightBottom'</th><td>按钮位置表示，共有四个值：leftTop，leftBottom,rightTop,rightBottom</td></tr>
+      <tr><th>buttonOffsetX</th><th>10</th><td> 水平方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px</td></tr>
+      <tr><th>buttonOffsetY</th><th>4</th><td>竖直方向上的按钮偏移位置，指向中心部移动多少，这里是数值，不加px</td></tr>
+      <tr><th>buttonSpace</th><th>4</th><td> 按钮之间的间隔 单位为像素，但不要加px</td></tr>
+      <tr><th>showText</th><th>true</th><td>是否显示标题，如果不显示，则只显示按钮</td></tr>
+      <tr><th>showButtons</th><th>true</th><td>是否显示按钮，默认显示</td></tr>
+      <tr><th>textLink</th><th>true</th><td>是否给显示的标题加上链接，如果为false，只显示标题，标题不可单击</td></tr>
+      <tr><th>textSwitch</th><th>0</th><td> 标题是否运动显示，如果为0则不动，1 标题动，2 标题和背景一起动。</td></tr>
+      <tr><th>textPosition</th><th>''</th><td> 标题栏的位置，默认为空，即和按钮的位置一致，取值 top ,  bottom</td></tr>
+      <tr><th>textAlign</th><th>'center'</th><td>标题栏取 top 或 bottom 时，有效，left, center, right</td></tr>
+     </table>
+    </div>
+   </div>
+  </div>
+ </body>
+<script>
+$(document).ready(function () {
+    $('#flashbox').smallslider({
+        onImageStop: false,
+        switchEffect: 'ease',
+        switchEase: 'easeOutBounce',
+        switchPath: 'up',
+        switchMode: 'hover',
+        textSwitch: 2,
+        textPosition: 'top',
+        textAlign: 'center'
+    });
+
+    $('#exp1').smallslider();
+
+    $('#exp2').smallslider({
+        onImageStop: true,
+        switchEffect: 'ease',
+        switchEase: 'easeOutSine',
+        switchPath: 'left',
+        switchMode: 'hover',
+        showText: true,
+        textSwitch: 2
+    });
+
+    $('#exp3').smallslider({
+        showButtons: false,
+        showText: true,
+        switchEffect: 'ease',
+        switchEase: 'easeOutCirc',
+        switchPath: 'up',
+        textSwitch: 1,
+        textAlign: 'center'
+    });
+});
+</script>
+</html>

@@ -1,0 +1,24 @@
+﻿.jquery-slider-wrapper{position:relative;zoom:1;clear:both;}
+.jquery-slider-slide{position:absolute;padding-bottom:0;margin:0;padding-left:0;width:100%;padding-right:0;display:none;float:left;padding-top:0;}
+.jquery-slider-slide img{border-bottom:0;border-left:0;padding-bottom:0;margin:0;padding-left:0;padding-right:0;border-top:0;border-right:0;padding-top:0;}
+.jquery-slider-slide-current{z-index:2;display:block;}
+.jquery-slider-slide-next{z-index:1;display:block;}
+.jquery-slider-selectors{z-index:3;position:absolute;bottom:10px;display:block;overflow:hidden;right:10px;}
+.jquery-slider-selector{margin:0 0 0 5px;width:16px;display:inline;background:url(../images/jquery.image.054_p_001.png) no-repeat 0 -70px;float:left;height:16px;}
+.jquery-slider-selector-current{background:url(../images/jquery.image.054_p_001.png) no-repeat -16px -70px;}
+.jquery-slider-selector span{display:none;}
+.jquery-slider-control{z-index:4;position:absolute;margin-top:-34px;width:48px;display:none;height:69px;top:50%;cursor:pointer;right:50%;margin-right:-24px;}
+.jquery-slider-control span{display:none;}
+.jquery-slider-control-play{background:url(../images/jquery.image.054_p_001.png) no-repeat -144px 0;}
+.jquery-slider-control-pause{background:url(../images/jquery.image.054_p_001.png) no-repeat -96px 0;}
+.jquery-slider-hovered .jquery-slider-control{display:block;}
+.jquery-slider-navigation{display:block;}
+.jquery-slider-navigation-prev{z-index:4;position:absolute;margin-top:-34px;width:48px;display:none;background:url(../images/jquery.image.054_p_001.png) no-repeat 0 0;height:69px;top:50%;cursor:pointer;left:0;}
+.jquery-slider-navigation-prev span{display:none;}
+.jquery-slider-navigation-next{z-index:4;position:absolute;margin-top:-34px;width:48px;display:none;background:url(../images/jquery.image.054_p_001.png) no-repeat -48px 0;height:69px;top:50%;cursor:pointer;right:0;}
+.jquery-slider-navigation-next span{display:none;}
+.jquery-slider-hovered .jquery-slider-navigation-prev{display:block;}
+.jquery-slider-hovered .jquery-slider-navigation-next{display:block;}
+.jquery-slider-wrapper .caption{position:absolute;padding-bottom:6px;padding-left:10px;bottom:10px;padding-right:10px;background:#333;color:#fff;font-size:13px;padding-top:6px;left:10px;}
+.jquery-slider-timer{z-index:4;position:absolute;width:100%;bottom:0;height:3px;color:#000;left:0;}
+.jquery-slider-timer-bar{width:0;display:inline;background:#000;float:left;height:3px;opacity:.5;}

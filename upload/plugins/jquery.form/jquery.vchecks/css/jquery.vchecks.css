@@ -1,0 +1,22 @@
+body{color:black;font-family:arial,verdana;font-size:12px;}
+.text{color:#777;}
+.code{background-color:#F2F2F2;border:1px solid #AAA;display:block;padding:10px 10px 10px 10px;}
+a{color:#0075ce;}
+
+ul.geogoer_vchecks{list-style-type:none;padding:0 0 0 0;margin:0 0 0 0;}
+ul.geogoer_vchecks li.first{background-image:url(../images/jquery.vchecks_g_011.gif);background-repeat:no-repeat;background-position:top right;border-width:0 0 1px 0;border-style:solid;border-color:#d5d5d5;}
+ul.geogoer_vchecks li.first_hover{background-image:url(../images/jquery.vchecks_g_012.gif);}
+ul.geogoer_vchecks li.first span{background-image:url(../images/jquery.vchecks_g_013.gif);background-repeat:no-repeat;background-position:top left;padding-top:6px;height:20px;}
+ul.geogoer_vchecks li.first_hover span{background-image:url(../images/jquery.vchecks_g_014.gif);}
+ul.geogoer_vchecks li.last{background-image:url(../images/jquery.vchecks_g_001.gif);background-repeat:no-repeat;background-position:top right;border-width:0 0 0 0;}
+ul.geogoer_vchecks li.last_hover{background-image:url(../images/jquery.vchecks_g_002.gif);}
+ul.geogoer_vchecks li.last span{background-image:url(../images/jquery.vchecks_g_003.gif);background-repeat:no-repeat;background-position:top left;}
+ul.geogoer_vchecks li.last_hover span{background-image:url(../images/jquery.vchecks_g_004.gif);}
+ul.geogoer_vchecks li{position:relative;border-width:0 0 1px 0;border-style:solid;border-bottom-color:#d5d5d5;background-image:url(../images/jquery.vchecks_g_005.gif);background-repeat:no-repeat;background-position:top right;}
+ul.geogoer_vchecks li.hover{background-image:url(../images/jquery.vchecks_g_006.gif);}
+ul.geogoer_vchecks li span{color:black;font-weight:bold;font-size:11px;cursor:pointer;display:block;height:21px;padding-top:5px;padding-left:15px;background-image:url(../images/jquery.vchecks_g_007.gif);background-repeat:no-repeat;background-position:top left;}
+ul.geogoer_vchecks li.hover span{background-image:url(../images/jquery.vchecks_g_008.gif);}
+ul.geogoer_vchecks li.checked div.check_div{background-image:url(../images/jquery.vchecks_p_010.png);background-repeat:no-repeat;}
+ul.geogoer_vchecks li.unchecked div.check_div{background-image:url(../images/jquery.vchecks_p_009.png);background-repeat:no-repeat;}
+ul.geogoer_vchecks li.unchecked span{color:#999;}
+ul.geogoer_vchecks li div.check_div{display:block;height:16px;width:16px;position:absolute;top:5px;right:10px;}

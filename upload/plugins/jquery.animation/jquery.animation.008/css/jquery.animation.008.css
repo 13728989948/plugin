@@ -1,0 +1,4 @@
+body{background-color:#C0DEED;margin:0;padding:0;}
+#header{height:180px;background:#8EC1DA url(../images/jquery.animation.008_p_001.png) repeat-y scroll left top;text-align:center;margin-top:-30px;}
+#header h1{padding-top:35px;font-family:"Myriad Pro",Helvetica,Arial,sans-serif;color:white;font-size:45px;}
+#content{background-color:#fff;height:500px;width:980px;margin:25px auto 0 auto;-moz-border-radius:10px;-webkit-border-radius:10px;}

@@ -1,0 +1,9 @@
+*{margin:0;padding:0;}
+body{text-align:center;background:#4f3722 url('../images/jquery.image.031_002.jpg') repeat-x;}
+img{border:none;}
+.leftcurtain{width:50%;height:495px;top:0;left:0;position:absolute;z-index:2;}
+.rightcurtain{width:51%;height:495px;right:0;top:0;position:absolute;z-index:3;}
+.rightcurtain img
+,.leftcurtain img{width:100%;height:100%;}
+.logo{margin:0 auto;margin-top:150px;}
+.rope{position:absolute;top:-40px;left:70%;z-index:4;}

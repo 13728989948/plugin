@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.trilemma</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.trilemma.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.trilemma.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="main">
+   <form id="form1" name="form1" method="post" action="#">
+    <h1>Honda</h1>
+    <fieldset class="hondas">
+    <legend>Pick three</legend>
+    <ul>
+     <li>
+      <input type="checkbox" id="accord" name="accord" value="accord" />
+      <label for="accord">Accord</label>
+     </li>
+     <li>
+      <input type="checkbox" id="civic" name="civic" value="civic" />
+      <label for="civic">Civic</label>
+     </li>
+     <li>
+      <input type="checkbox" id="crv" name="crv" value="crv" />
+      <label for="crv">CR-V</label>
+     </li>
+     <li>
+      <input type="checkbox" id="element" name="element" value="element" />
+      <label for="element">Element</label>
+     </li>
+     <li>
+      <input type="checkbox" id="fit" name="fit" value="fit" />
+      <label for="fit">Fit</label>
+     </li>
+     <li>
+      <input type="checkbox" id="Insight" name="Insight" value="Insight" />
+      <label for="Insight">Insight</label>
+     </li>
+     <li>
+      <input type="checkbox" id="Odyssey" name="Odyssey" value="Odyssey" />
+      <label for="Odyssey">Odyssey</label>
+     </li>
+     <li>
+      <input type="checkbox" id="Pilot" name="Pilot" value="Pilot" />
+      <label for="Pilot">Pilot</label>
+     </li>
+     <li>
+      <input type="checkbox" id="Ridgeline" name="Ridgeline" value="Ridgeline" />
+      <label for="Ridgeline">Ridgeline</label>
+     </li>
+     <li>
+      <input type="checkbox" id="S2000" name="S2000" value="S2000" />
+      <label for="S2000">S2000</label>
+     </li>
+    </ul>
+    </fieldset>
+   </form>
+  <p>jQuery('.hondas').trilemma({max:3,disablelabels:true});</p>
+  </div>
+ </body>
+<script>
+$(function(){
+ jQuery('.hondas').trilemma({max:3,disablelabels:true});
+});
+</script>
+</html>

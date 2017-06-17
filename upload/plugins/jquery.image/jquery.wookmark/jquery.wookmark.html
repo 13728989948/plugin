@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.wookmark</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.wookmark.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/jquery.wookmark.demo.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.wookmark.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="container">
+   <header>
+    <h1>jQuery Wookmark Plug-in Example</h1>
+    <p>Scroll down to see the infinite scroll effect.</p>
+   </header>
+   <div id="main" role="main">
+    <ul id="tiles">
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>1</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>2</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>3</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>4</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>5</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>6</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>7</p></li>
+     <li><img src="images/jquery.wookmark_001.jpg" width="200" height="297"><p>8</p></li>
+    </ul>
+   </div>
+   <footer>
+   </footer>
+  </div>
+ </body>
+<script type="text/javascript">
+var handler = null;
+// 参数设置
+var options = {
+  autoResize: true, // 当浏览窗口大小改变时自动更新layout
+  container: $('#main'), // 容器ID,可以在该容器上放class
+  offset: 2, // 图片之间的间隔
+  itemWidth: 210 // 图片的宽度
+};
+
+// 当滑动到底部时添加额外的数据
+function onScroll(event) {
+  // 检查当滑动到离底部100像素
+  var closeToBottom = ($(window).scrollTop() + $(window).height() > $(document).height() - 100);
+  if(closeToBottom) {
+    // 获取第一个UL下的所有li并克隆,然后添加到底部
+    var items = $("#tiles li");
+    var firstTen = items.slice(0, 10);// 选取匹配的子集
+    $("#tiles").append(firstTen.clone());// 添加到底部
+    
+    // 清空当前的handler
+    if(handler) handler.wookmarkClear();
+    
+    // 创建一个新的handler
+    handler = $("#tiles li");
+    handler.wookmark(options);
+  }
+};
+  
+$(document).ready(new function() {
+   // 绑定document滑动执行的方法
+   $(document).bind("scroll", onScroll);
+
+   // 调用wookmark
+   handler = $("#tiles li");
+   handler.wookmark(options);
+});
+</script>
+</html>

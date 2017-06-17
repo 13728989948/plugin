@@ -1,0 +1,41 @@
+HTML
+,BODY{margin:0;padding:0;}
+BODY{font-family:"Lucida Grande",Arial,Helvetica,sans-serif;color:#666;font-size:12px;background:#000;height:100%;text-align:center;}
+A{color:#0A8ECC;}
+A:HOVER{text-decoration:none;color:#CCC;}
+H1
+,H2{color:#CCC;margin:0;padding:0 0 5px 0;font-size:16px;padding-bottom:3px;margin-bottom:15px;border-bottom:1px solid #ccc;}
+H1{padding-bottom:3px;margin-bottom:15px;border-bottom:1px solid #ccc;}
+H2{font-size:14px;}
+.bgstretcher-page{text-align:center;}
+#page{margin:0 auto;width:800px;text-align:left;}
+.page-top
+,.page-bottom
+,.page-content{float:left;width:100%;}
+.page-top
+,.page-bottom{height:30px;}
+.page-top{margin-top:30px;background:url("../images/jquery.image.074_p_003.png") no-repeat left top;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/bg/jquery.image.074_p_003.png',sizingMethod='image');}
+.page-bottom{background:url("../images/jquery.image.074_p_002.png") no-repeat left top;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/bg/jquery.image.074_p_002.png',sizingMethod='image');}
+.page-content{font-size:12px;color:#ccc;background:url("../images/jquery.image.074_p_001.png") repeat-y left top;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/bg/jquery.image.074_p_001.png',sizingMethod='scale');}
+.page-wrapper{float:left;width:740px;display:inline;margin-left:30px;}
+.column{float:left;width:320px;margin-right:40px;}
+.column .row{float:left;width:100%;padding-bottom:13px;}
+.column.small{width:90px;}
+.column.small .row{padding-bottom:5px;}
+.column SELECT{width:180px;}
+.column LABEL{cursor:pointer;}
+.column .row SPAN.pager{float:left;margin-right:15px;}
+.column .row A{position:relative;}
+P.larger-size{font-size:16px;}
+#page STRONG{color:#FFF;}
+#nav UL{list-style:none;margin:0;padding:0;}
+#nav UL LI{display:inline;margin-right:8px;}
+#nav UL LI.showPage A{color:#fff;}
+
+.bgstretcher-area{text-align:left;}
+.bgstretcher
+,.bgstretcher UL
+,.bgstretcher UL LI{position:absolute;top:0;left:0;}
+.bgstretcher UL
+,.bgstretcher UL LI{margin:0;padding:0;list-style:none;}
+.bgstretcher{background:black;overflow:hidden;width:100%;position:fixed;z-index:1;_position:absolute;top:0;left:0;}

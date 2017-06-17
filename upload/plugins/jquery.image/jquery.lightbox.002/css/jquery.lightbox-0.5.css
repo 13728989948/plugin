@@ -1,0 +1,48 @@
+body
+,h1
+,h2
+,h3
+,p
+,td
+,quote
+,small
+,form
+,input
+,ul
+,li
+,ol
+,label{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
+body{margin-top:20px;color:white;font-size:13px;background-color:#222;}
+.clear{clear:both;}
+a
+,a:visited{color:#0BF;text-decoration:none;outline:none;}
+a:hover{text-decoration:underline;}
+#container{width:890px;margin:20px auto;}
+#heading
+,#footer{background-color:#2A2A2A;border:1px solid #444;height:20px;padding:6px 0 25px 15px;margin-bottom:30px;overflow:hidden;}
+#footer{height:10px;margin:20px 0 20px 0;padding:6px 0 11px 15px;}
+div.nomargin{margin-right:0;}
+.pic{float:left;margin:0 15px 15px 0;border:5px solid white;width:200px;height:250px;}
+.pic a{width:200px;height:250px;text-indent:-99999px;display:block;}
+h1{font-size:28px;font-weight:bold;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;}
+h2{font-weight:normal;font-size:14px;color:white;}
+
+#jquery-overlay{position:absolute;top:0;left:0;z-index:90;width:100%;height:500px;}
+#jquery-lightbox{position:absolute;top:0;left:0;width:100%;z-index:100;text-align:center;line-height:0;}
+#jquery-lightbox a img{border:none;}
+#lightbox-container-image-box{position:relative;background-color:#fff;width:250px;height:250px;margin:0 auto;}
+#lightbox-container-image{padding:10px;}
+#lightbox-loading{position:absolute;top:40%;left:0;height:25%;width:100%;text-align:center;line-height:0;}
+#lightbox-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10;}
+#lightbox-container-image-box>#lightbox-nav{left:0;}
+#lightbox-nav a{outline:none;}
+#lightbox-nav-btnPrev
+,#lightbox-nav-btnNext{width:49%;height:100%;zoom:1;display:block;}
+#lightbox-nav-btnPrev{left:0;float:left;}
+#lightbox-nav-btnNext{right:0;float:right;}
+#lightbox-container-image-data-box{font:10px Verdana,Helvetica,sans-serif;background-color:#fff;margin:0 auto;line-height:1.4em;overflow:auto;width:100%;padding:0 10px 0;}
+#lightbox-container-image-data{padding:0 10px;color:#666;}
+#lightbox-container-image-data #lightbox-image-details{width:70%;float:left;text-align:left;}
+#lightbox-image-details-caption{font-weight:bold;}
+#lightbox-image-details-currentNumber{display:block;clear:left;padding-bottom:1.0em;}
+#lightbox-secNav-btnClose{width:66px;float:right;padding-bottom:.7em;}

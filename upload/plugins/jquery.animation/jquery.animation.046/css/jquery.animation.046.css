@@ -1,0 +1,27 @@
+/**全局**************************************************************************************************/
+body{color:#333;text-align:center;font:12px "微软雅黑";}
+a img{border:0;}
+ul
+  ,ol
+  ,li{list-style-type:none;vertical-align:0;}
+a{outline-style:none;color:#535353;text-decoration:none;}
+a:hover{color:#D40000;text-decoration:none;}
+div{text-align:left;}
+
+.clear{height:0;overflow:hidden;clear:both;}
+
+.circleImgDiv{position:relative;background:#fff;}
+.circleImgDiv .groupUl{width:936px;margin:0 auto;}
+.circleImgDiv .groupUl li{width:116px;height:116px;margin:0 20px 80px 20px;float:left;border-radius:50%;position:relative;position:relative;cursor:pointer;}
+.circleImgDiv .groupUl li p{width:100%;position:absolute;left:0;top:126px;text-align:center;}
+.circleImgDiv .groupUl li p span{font-size:16px;color:#414141;display:block;font-weight:bold;}
+
+.circleImgDiv .groupUl li .group{width:102px;height:102px;position:absolute;left:7px;top:7px;background:#424242 url(../images/jquery.animation.046_p_001.png);border-radius:50%;z-index:1;-webkit-transition:.4s all;-moz-transition:.4s all;-ms-transition:.4s all;transition:.4s all;}
+.circleImgDiv .groupUl li .group1{background-position:0 0;}
+.circleImgDiv .groupUl li .group2{background-position:-102px 0;}
+.circleImgDiv .groupUl li .group3{background-position:-204px 0;}
+.circleImgDiv .groupUl li .group4{background-position:-306px 0;}
+.circleImgDiv .groupUl li .group5{background-position:-408px 0;}
+.circleImgDiv .groupUl li .group6{background-position:-510px 0;}
+.circleImgDiv .groupUl li.on{background:rgba(0,0,0,.5);}
+.circleImgDiv .groupUl li.on .group{background-color:#0ff;-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}

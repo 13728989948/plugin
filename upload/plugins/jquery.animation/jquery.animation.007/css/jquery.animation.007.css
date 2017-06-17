@@ -1,0 +1,4 @@
+body{margin:0;padding:0;}
+#wrapper{width:100%;margin:0 auto;}
+#header{height:300px;background:#000 url(../images/jquery.animation.007_001.jpg) no-repeat;background-size:cover;}
+#header div{width:920px;height:300px;}

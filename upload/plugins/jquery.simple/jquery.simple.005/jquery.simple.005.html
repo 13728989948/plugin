@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.simple.005</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.simple.005.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.transform.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.simple.005.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="PathInner" id="PathMenu" style="margin-left:200px;margin:300px;">
+   <div class="PathMain">
+    <div class="Tmain" onclick="PathRun();">
+     <div class="rotate" data-transform="rotate(0deg)">
+      <span class="cover"></span>
+     </div>
+    </div>
+   </div>
+   <div class="PathItem">
+   <a class="link" href="#" title="更多图片">
+   <span class="item" style="background-image:url(images/jquery.simple.005_p_007.png); -moz-transform: rotate(0deg);" data-transform="rotate(0deg)"></span></a> 
+   <div class="metaicondetail shadow">
+    <div class="inner">
+    <p>官方指导价</p>暂无价格
+    <s></s></div>
+   </div></div>
+   <div class="PathItem">
+   <a class="link" href="#" title="详细参数">
+   <span class="item" style="background-image:url(images/jquery.simple.005_p_006.png); -moz-transform: rotate(0deg);" data-transform="rotate(0deg)"></span></a> 
+   <div class="metaicondetail shadow">
+    <div class="inner">
+    <p>官方指导价</p>暂无价格
+    <s></s></div>
+   </div></div>
+   <div class="PathItem">
+   <a class="link" href="#" title="玛百莉官方专卖店地址">
+   <span class="item" style="background-image: url(images/jquery.simple.005_p_005.png); -moz-transform: rotate(0deg);" data-transform="rotate(0deg)"></span></a> 
+   <div class="metaicondetail shadow">
+    <div class="inner">
+    <p>官方指导价</p>暂无价格
+    <s></s></div>
+   </div></div>
+   <div class="PathItem">
+   <a class="link" href="#">
+   <span class="item" style="background-image: url(images/jquery.simple.005_p_008.png); -moz-transform: rotate(0deg);" data-transform="rotate(0deg)"></span></a> 
+   <div class="metaicondetail shadow">
+    <div class="inner">
+    <p>官方指导价</p>暂无价格
+    <s></s></div>
+   </div></div>
+  </div>
+ </body>
+<script type="text/javascript">
+$(document).ready(function(){
+ $(".PathItem").hover(function(){
+  $(this).find(".metaicondetail").show();
+ },function(){
+  $(this).find(".metaicondetail").hide();
+ }); 
+});
+</script>
+</html>

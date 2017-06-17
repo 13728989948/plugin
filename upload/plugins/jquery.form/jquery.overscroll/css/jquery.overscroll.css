@@ -1,0 +1,7 @@
+#overscroll{width:500px;height:500px;overflow:hidden;border:solid 1px #000;margin:30px auto;position:relative;}
+#overscroll ul{width:2500px;margin:0;padding:0;}
+#overscroll li{display:block;float:left;width:100px;height:100px;background-color:#FFF;}
+#overscroll li.alt{background-color:#bdce4e;}
+#overscroll li.no-drag{background-color:green;color:#FFF;}
+#overscroll li.last{clear:both;visibility:hidden;height:0;padding:0;}
+#overscroll li img{width:80px;padding:10px;}

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.css3Loading</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.css3Loading.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="ma-div">
+   <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare" style="margin:10px 0 0 -4px">
+    <a class="bds_tsina"></a>
+    <a class="bds_tqq"></a>
+    <a class="bds_renren"></a>
+    <a class="bds_qzone"></a>
+    <a class="bds_douban"></a>
+    <a class="bds_xg"></a>
+    <span class="bds_more">更多</span>
+    <a class="shareCount"></a>
+   </div>
+  </div>
+  <div class="container">
+   <ul id="progress">
+    <li>
+     <div id="layer1" class="ball">
+     </div>
+     <div id="layer7" class="pulse">
+     </div>
+    </li>
+   <li>
+   <div id="layer2" class="ball"></div>
+   <div id="layer8" class="pulse"></div>
+   </li>
+   <li>
+    <div id="layer3" class="ball"></div>
+    <div id="layer9" class="pulse"></div>
+   </li>
+   <li>
+    <div id="layer4" class="ball"></div>
+    <div id="layer10" class="pulse"></div>
+   </li>
+   <li>
+    <div id="layer5" class="ball"></div>
+    <div id="layer11" class="pulse"></div>
+   </li>
+   </ul>
+   <a class="trigger" href="#">Start/Restart Animation</a>
+  </div>
+  <div style="text-align:center;clear:both"></div>
+  <div id="content">
+   <span class="expand"></span>
+  </div>
+  <a class="triggerFull" href="#">Start/Restart Animation</a>
+  <div class="container">
+   <ul id="loadbar">
+    <li>
+     <div id="layerFill1" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill2" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill3" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill4" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill5" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill6" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill7" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill8" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill9" class="bar"></div>
+    </li>
+    <li>
+     <div id="layerFill10" class="bar"></div>
+    </li>
+   </ul><a class="triggerBar" href="#">Start/Restart Animation</a>
+  </div>
+ </body>
+ <script type="text/javascript">
+$(document).ready(function () {
+    $('#progress').removeClass('running');
+    $('.trigger').click(function () {
+        $('#progress').removeClass('running').delay(10).queue(function (next) {
+            $(this).addClass('running');
+            next();
+        });
+        return false;
+    });
+});
+$(document).ready(function () {
+    $('#content').removeClass('fullwidth');
+    $('.triggerFull').click(function () {
+        $('#content').removeClass('fullwidth').delay(10).queue(function (next) {
+            $(this).addClass('fullwidth');
+            next();
+        });
+        return false;
+    });
+});
+$(document).ready(function () {
+    $('#loadbar').removeClass('ins');
+    $('.triggerBar').click(function () {
+        $('#loadbar').removeClass('ins').delay(10).queue(function (next) {
+            $(this).addClass('ins');
+            next();
+        });
+        return false;
+    });
+});
+ </script>
+</html>

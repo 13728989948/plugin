@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.012</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.012.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="container">
+   <h2 class="acc_trigger"><a href="#">Web Design &amp; Development</a></h2>
+   <div class="acc_container">
+    <div class="block">
+     <h3>Need a Website?</h3>
+     <a href="#"><img src="images/jquery.form.012_g_002.gif" alt="" /></a>
+     <p>Consequat te olim letalis premo ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at. Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius autem exerci accumsan. </p>
+     <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus praesent sed meus velit si quis lobortis praemitto, uxor. </p>
+    </div>
+   </div>
+   <h2 class="acc_trigger"><a href="#">Logo / Corporate Identity</a></h2>
+   <div class="acc_container">
+    <div class="block">
+     <h3>Need a Logo?</h3>
+     <a href="#"><img src="images/jquery.form.012_g_003.gif" alt="" /></a>
+     <p>Consequat te olim letalis premo ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at. Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius autem exerci accumsan. </p>
+     <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus praesent sed meus velit si quis lobortis praemitto, uxor. </p>
+    </div>
+   </div>
+   <h2 class="acc_trigger"><a href="#">Seach Engine Optimization</a></h2>
+   <div class="acc_container">
+   <div class="block">
+    <h3>Need to be Heard?</h3>
+    <a href="#"><img src="images/jquery.form.012_g_004.gif" alt="" /></a>
+    <p>Consequat te olim letalis premo ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at. Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius autem exerci accumsan. </p>
+    <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus praesent sed meus velit si quis lobortis praemitto, uxor. </p>
+   </div>
+   </div>
+   <h2 class="acc_trigger"><a href="#">eCommerce</a></h2>
+   <div class="acc_container">
+    <div class="block">
+     <h3>Have Product to Sell?</h3>
+     <a href="#"><img src="images/jquery.form.012_g_005.gif" alt="" /></a>
+     <p>Consequat te olim letalis premo ad hos olim odio olim indoles ut venio iusto. Euismod, sagaciter diam neque antehabeo blandit, jumentum transverbero luptatum. Lenis vel diam praemitto molior facilisi facilisi suscipere abico, ludus, at. Wisi suscipere nisl ad capto comis esse, autem genitus. Feugiat immitto ullamcorper hos luptatum gilvus eum. Delenit patria nunc os pneum acsi nulla magna singularis proprius autem exerci accumsan. </p>
+     <p>Praesent duis vel similis usitas camur, nostrud eros opes verto epulae feugiat ad. Suscipit modo magna letalis amet et tego accumsan facilisi, meus. Vindico luptatum blandit ulciscor mos caecus praesent sed meus velit si quis lobortis praemitto, uxor. </p>
+    </div>
+   </div>
+  </div>
+ </body>
+<script>
+$(document).ready(function () {
+    // Set default open/close settings
+    $('.acc_container').hide(); // Hide/close all containers
+    $('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+    // On Click
+    $('.acc_trigger').click(function () {
+        if ($(this).next().is(':hidden')) {// If immediate next container is closed...
+            $('.acc_trigger').removeClass('active').next().slideUp();// Remove all .acc_trigger classes and slide up the immediate next container
+            $(this).toggleClass('active').next().slideDown();// Add .acc_trigger class to clicked trigger and slide down the immediate next container
+        }
+        return false;// Prevent the browser jump to the link anchor
+    });
+});
+</script>
+</html>

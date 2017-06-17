@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.vchecks</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.vchecks.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.vchecks.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <h1>JQuery Geogoer VChecks Plugin</h1>
+  <h3>How it works?</h3>
+  <font class="text">Well, having simple list:</font>
+  <pre class="code">
+  &lt;ul id="custom_list" style="width: 300px"&gt;
+  &lt;li&gt;&lt;input name="first" type="checkbox"&gt;&lt;span&gt;First checkbox&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;input name="second" type="checkbox" checked&gt;&lt;span&gt;Simple checkbox is checked&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;input name="third" type="checkbox"&gt;&lt;span&gt;Another simple&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;input name="last" type="checkbox" checked&gt;&lt;span&gt;Last checkbox is checked&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;</pre>
+  <font class="text">Just add simple javascript:</font>
+  <pre class="code">
+  $(function(){
+  $("#custom_list").vchecks();
+  });</pre>
+  <font class="text">And here is a result:</font>
+  <ul id="custom_list" style="width: 300px;">
+   <li><input type="checkbox"><span>First checkbox</span></li>
+   <li><input type="checkbox" checked><span>Simple checkbox is checked</span></li>
+   <li><input type="checkbox"><span>Another simple</span></li>
+   <li><input type="checkbox" checked><span>Last checkbox is checked</span></li>
+  </ul>
+ </body>
+<script type="text/javascript">
+ $(function(){
+   $("#custom_list").vchecks();
+ });
+</script>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.fullPageWithNav</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.easings.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.fullPage.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+
+<!-- 导航区 -->
+  <div class="nav">
+   <div class="wrap">
+    <a href=""><img class="logo" src="images/jquery.fullPageWithNav_p_005.png" /></a>
+    <ul>
+     <li><a class="current" href="#">首页</a></li>
+     <li><a href="#">更新日志</a></li>
+     <li><a href="#">开放平台</a></li>
+     <li><a href="#">论坛</a></li>
+     <li class="app">
+      <a href="#">
+       <img src="images/jquery.fullPageWithNav_p_001.png" /><span>APP</span><span class="icon-arrow"></span>
+       <div class="qrcode">
+        <img src="images/jquery.fullPageWithNav_p_003.png" />
+       </div>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="sections fullpage-wrapper fp-easing" style="height: 100%; position: relative; touch-action: none; -webkit-transform: translate3d(0px, -677px, 0px); transform: translate3d(0px, -677px, 0px);">
+
+<!-- 第一页 -->
+   <div class="section section1 fp-section fp-table" data-anchor="A0">
+    <div class="main">
+     <div class="phone">
+      <img src="images/jquery.fullPageWithNav_p_014.png" />
+     </div>
+     <div class="downloads">
+      <div class="slogan">
+       <img src="images/jquery.fullPageWithNav_p_004.png" />
+      </div>
+      <div class="text">随时随地,发现身边的精彩</div>
+      <div class="mobile">
+       <a class="button btn-mobile" href="#"><span class="icon-down"></span><span>手机版下载</span></a>
+      </div>
+      <div class="buttons">
+       <div class="pc">
+        <a class="button btn-pc" href="#">电脑版</a> <a class="link-beta" href="#">beta版下载&gt;&gt;</a>
+       </div>
+       <div class="web">
+        <a class="button btn-web" href="#" target="_blank">网页版</a>
+       </div>
+      </div>
+     </div>
+     <div class="line"></div>
+    </div>
+    <div class="footer">
+     <div class="float-icons"></div>
+     <div class="bg bg1"></div>
+     <div class="bg bg2"></div>
+    </div>
+   </div>
+ 
+<!-- 第二页 -->
+   <div class="section section2 fp-section fp-table animate" data-anchor="A1">
+    <div class="main">
+     <h2>
+      <div class="circle">
+       <div class="c1"></div>
+       <div class="c2"></div>
+       <div class="c3"></div>
+      </div>
+      <img src="images/jquery.fullPageWithNav_p_011.png">
+     </h2>
+     <div class="bg">
+      <img src="images/jquery.fullPageWithNav_p_015.png">
+     </div>
+    </div>
+   </div>
+   
+<!-- 第三页 -->
+   <div class="section section3 fp-section fp-table" data-anchor="A2">
+    <div class="main">
+     <h2>
+      <div class="circle">
+       <div class="c1"></div>
+       <div class="c2"></div>
+       <div class="c3"></div>
+      </div>
+      <img src="images/jquery.fullPageWithNav_p_009.png">
+     </h2>
+     <div class="bg">
+      <img src="images/jquery.fullPageWithNav_p_007.png">
+      <div class="pos pos1">
+       <img src="images/jquery.fullPageWithNav_p_016.png">
+      </div>
+      <div class="pos pos2">
+       <img src="images/jquery.fullPageWithNav_p_013.png">
+      </div>
+      <div class="pos pos3">
+       <img src="images/jquery.fullPageWithNav_p_017.png">
+      </div>
+     </div>
+    </div>
+   </div>
+ 
+<!-- 第四页 -->
+   <div class="section section4 fp-section fp-table" data-anchor="A3">
+    <div class="main">
+     <h2>
+      <div class="circle">
+       <div class="c1"></div>
+       <div class="c2"></div>
+       <div class="c3"></div>
+      </div>
+      <img src="images/jquery.fullPageWithNav_p_010.png">
+     </h2>
+     <div class="bg">
+      <img src="images/jquery.fullPageWithNav_p_006.png">
+     </div>
+    </div>
+   </div>
+ 
+<!-- 第五页 -->
+   <div class="section section5 fp-section fp-table" data-anchor="A4">
+    <div class="main">
+     <h2>
+      <div class="circle">
+       <div class="c1"></div>
+       <div class="c2"></div>
+       <div class="c3"></div>
+      </div>
+      <img src="images/jquery.fullPageWithNav_p_002.png">
+     </h2>
+     <div class="bg">
+      <img src="images/jquery.fullPageWithNav_p_012.png">
+      <div class="mobile">
+       <a class="button btn-mobile" href="#"><span class="icon-down"></span><span>手机版下载</span></a>
+      </div>
+     </div>
+    </div>
+    <div class="footer"></div>
+   </div>
+  </div>
+  
+ </body>
+
+<script>
+ !(function() {
+  function e(e) {
+   e.preventDefault(), $(".mask, .popdownload").show()
+  }
+  function t(e) {
+   e && e.preventDefault(), $(".mask, .popdownload").hide()
+  }
+  "webkitAnimation" in document.body.style || $(".pos").css("opacity", 1), $(".sections").show().fullpage({
+   css3 : !0,
+   navigation : !0,
+   navigationPosition : "right",
+   navigationColor : "#83c3d2",
+   responsive : 1,
+   anchors : [ "A0", "A1", "A2", "A3", "A4", "A5" ],
+   afterRender : function() {
+    $("#fp-nav em").hide();
+    $("#fp-nav").find("a.active").html("<span></span><em>01</em>").find("em").show();
+   },
+   onLeave : function(e, t) {
+    $("#fp-nav em").hide(), $("#fp-nav").find("a").eq(t - 1).html("<span></span><em>0" + t + "</em>").find("em").show(), $(".section" + e).removeClass("animate"), e == 3 && $(".pos").hide()
+   },
+   afterLoad : function(e, t) {
+    $(".section" + t).addClass("animate"), t == 3 && $(".pos").show()
+   }
+  }), $(".btn-mobile").on("click", e), $(document).on("keyup", function(e) {
+   e.keyCode === 27 && t()
+  }), $(".mask, .pop-close").on("click", function(e) {
+   e.preventDefault(), t()
+  })
+ })()
+</script>
+</html>

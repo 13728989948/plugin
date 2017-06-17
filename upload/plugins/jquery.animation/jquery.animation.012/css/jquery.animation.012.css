@@ -1,0 +1,15 @@
+body{background-color:#cccccc}
+body,html {height:100%}
+
+img.bg{min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0;}
+h1{font-family:'Chelsea Market',cursive;color:#FFF;font-size:90px;text-align:center;line-height:95px;font-weight:normal;margin-top:350px;text-shadow:5px 5px 5px #000;}
+@media screen and (max-width:1024px){img.bg{left:50%;margin-left:-512px;}}
+html
+,body{font-family:Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;padding:0;margin:0;color:#333;}
+.bar{background-color:#111;color:#f0f0f0;box-shadow:0 0 2px #333;line-height:25px;padding:0 20px;opacity:.7;}
+.bar:hover{opacity:1;}
+.bar a{color:#DDD;}
+.bar a:hover{color:#FFF;}
+a{color:#CCC;text-decoration:none;}
+a:hover{color:#FFF;}
+#page{position:relative;}

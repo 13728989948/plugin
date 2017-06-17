@@ -1,0 +1,94 @@
+<!DOCTYPE HTML> 
+<html>
+ <head>
+  <!-- 1个JS只能加在最下面 -->
+  <!-- SEO优化 -->
+  <title>jquery.cursorFollowingMenu</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ 
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.cursorFollowingMenu.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.easing.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ 
+ <body>
+ <!-- cursor following menu -->
+  <div id="cf_menu">
+   <div class="container">
+    <div class="title">MENU</div>
+    <ul>
+      <li><a href="#" onclick="Animate2id('#home');return false">&uarr; Home</a></li>
+      <li><a href="#" onclick="Animate2id('#about');return false">About me</a></li>
+      <li>
+       <a href="work">+ Work</a>
+       <ul>
+        <li><a href="#" onclick="Animate2id('#recent');return false">Recent</a></li>
+        <li><a href="#" onclick="Animate2id('#web');return false">Web</a></li>
+        <li><a href="#" onclick="Animate2id('#print');return false">Print</a></li>
+       </ul>
+      </li>
+      <li><a href="#" onclick="Animate2id('#blog');return false">Blog</a></li>
+      <li>
+       <a href="links">+ Interesting links</a>
+       <ul>
+        <li><a href="#" onclick="Animate2id('#freebies');return false">Freebies &amp; Resources</a></li>
+        <li><a href="#" onclick="Animate2id('#people');return false">People</a></li>
+      </ul>
+      </li>
+     <li><a href="#" onclick="Animate2id('#contact');return false">Contact</a></li>
+      <li>
+       <a href="info">+ Script info</a>
+       <ul>
+        <li><a href="http://manos.malihu.gr/cursor-following-menu/">See the post</a></li>
+        <li><a href="http://manos.malihu.gr/tuts/cursor_following_menu.zip">&darr; Download</a></li>
+       </ul>
+      </li>
+      <li><a href="http://manos.malihu.gr">malihu</a></li>
+    </ul>
+   </div>
+  </div>
+ <!-- demo content markup -->
+  <div class="demo_content">
+   <h1>cursor following menu demo</h1>
+   <hr />
+   <h2 id="home">Lorem ipsum dolor sit amet</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin arcu sapien, malesuada vitae volutpat eu, volutpat et sem. Ut augue dui, varius at porttitor et, condimentum a lectus. Sed luctus vulputate lacus, ac rhoncus neque commodo vitae. In egestas iaculis placerat. Nullam sit amet orci ut augue sodales porta nec eu velit. Mauris vitae massa ligula, sed convallis leo. Aenean pulvinar metus at ante suscipit aliquam. Mauris non diam a neque ullamcorper laoreet sit amet eget leo. Phasellus quis quam ut libero facilisis eleifend. Donec ac massa leo, vel tincidunt est. Vestibulum id metus interdum felis aliquam malesuada. Donec auctor dui vestibulum leo sodales et fermentum ante ornare. Aliquam ac ante non nisi fermentum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sodales mattis leo, sit amet elementum nulla eleifend eu. Quisque euismod, eros in adipiscing aliquam, sem risus facilisis diam, a condimentum enim metus quis odio. Duis ac ligula eget erat consequat fermentum ultrices vitae massa. </p>
+   <blockquote><span class="bqstart">&#8220;</span>Nullam sit amet orci ut augue sodales porta nec eu velit. Mauris vitae massa ligula, sed convallis leo. Aenean pulvinar metus at ante suscipit aliquam. Mauris non diam a neque ullamcorper laoreet sit amet eget leo.<span class="bqend">&#8221;</span></blockquote>
+   <hr />
+   <h2 id="about">About me</h2>
+   <p class="inner_white">Mauris fringilla viverra molestie. Fusce suscipit placerat ligula, in ultricies est venenatis nec. Vestibulum condimentum sollicitudin lorem et imperdiet. Integer cursus auctor bibendum. Morbi enim lorem, feugiat vehicula rhoncus ut, dapibus sed ante. Maecenas euismod aliquet erat, euismod vestibulum augue pellentesque ut. Donec at lectus at orci convallis suscipit at sed enim. Sed id mi vel leo auctor consectetur. Nam vestibulum, dolor venenatis dignissim tincidunt, nulla sapien posuere quam, sed elementum ipsum nisi vel risus. Donec pretium, nibh sed accumsan fringilla, turpis eros consequat quam, a ornare libero magna quis enim. Aenean eget urna augue. <br /><br />Nunc faucibus, nunc eget hendrerit egestas, nisi justo gravida orci, quis tincidunt urna elit sit amet enim. Aliquam nisi justo, faucibus sit amet tincidunt quis, blandit eu dui. Integer aliquet purus id orci auctor facilisis. Ut porttitor mattis metus, quis interdum purus egestas ut. Proin commodo urna eget leo lacinia vitae molestie est dictum. Donec eu rhoncus turpis. <br /><br />Praesent mattis vulputate facilisis. Aliquam malesuada quam eu eros posuere interdum. Pellentesque ullamcorper velit eget mi iaculis euismod dictum ipsum porta. Maecenas ornare ante at tortor varius eget lacinia lacus pretium. Etiam nec erat sapien, ut pretium ipsum. </p>
+   <h2>My work</h2>
+   <p>Nunc faucibus, nunc eget hendrerit egestas, nisi justo gravida orci, quis tincidunt urna elit sit amet enim. Aliquam nisi justo, faucibus sit amet tincidunt quis, blandit eu dui.</p>
+   <h3 id="recent">Recent projects</h3>
+   <p>Integer aliquet purus id orci auctor facilisis. </p>
+   <p>Ut porttitor mattis metus, quis interdum purus egestas ut. </p>
+   <p>Proin commodo urna eget leo lacinia vitae molestie est dictum. </p>
+   <p>Donec eu rhoncus turpis. Praesent mattis vulputate facilisis. Aliquam malesuada quam eu eros posuere interdum. Pellentesque ullamcorper velit eget mi iaculis euismod dictum ipsum porta. Maecenas ornare ante at tortor varius eget lacinia lacus pretium. Etiam nec erat sapien, ut pretium ipsum. </p>
+   <h3 id="web">Web design/development</h3>
+   <p>Integer aliquet purus id orci auctor facilisis. </p>
+   <p>Ut porttitor mattis metus, quis interdum purus egestas ut. </p>
+   <p>Proin commodo urna eget leo lacinia vitae molestie est dictum. </p>
+   <h3 id="print">Print/DTP</h3>
+   <p>Donec eu rhoncus turpis. Praesent mattis vulputate facilisis. </p>
+   <p>Aliquam malesuada quam eu eros posuere interdum. </p>
+   <p>Pellentesque ullamcorper velit eget mi iaculis euismod dictum ipsum porta. Maecenas ornare ante at tortor varius eget lacinia lacus pretium. Etiam nec erat sapien, ut pretium ipsum. </p>
+   <hr />
+   <h2 id="blog">Blog</h2>
+   <p class="inner">In bibendum, turpis id cursus consequat, risus turpis venenatis mauris, in feugiat felis est vitae tortor. Phasellus a vestibulum est. Etiam aliquam, magna auctor rutrum faucibus, sapien nibh porttitor leo, sit amet dignissim lorem mauris ac tortor. Etiam ut leo vitae felis vulputate tincidunt. Nam at enim neque. Sed porttitor gravida varius. Aliquam ultrices congue urna vehicula accumsan. Curabitur odio nunc, rutrum vitae faucibus dignissim, pulvinar nec orci. Mauris id justo ut dolor vehicula tristique ut id urna. Quisque sed velit ac enim semper ornare. In eu mauris nulla, eget tincidunt nunc. Vivamus felis odio, malesuada sit amet accumsan in, venenatis eget arcu. Pellentesque dolor ipsum, tincidunt nec porttitor eget, lobortis nec nisl. Nunc urna lorem, congue eget accumsan vitae, blandit rhoncus nulla. Aenean quis placerat dolor. </p>
+  </div>
+ </body>
+<script>
+  //cursor following menu config
+  $mouseover_title="+ MENU"; //menu title text on mouse-over
+  $mouseout_title="MENU"; //menu title text on mouse-out
+  $menu_following_speed=2000; //the speed in which the menu follows the cursor (in milliseconds)
+  $menu_following_easing="easeOutCirc"; 
+  $menu_cursor_space=30; //space between cursor and menu
+  $menu_show_speed="slow"; //menu open animation speed
+  $menu_show_easing="easeOutExpo"; //menu open animation easing type
+  $menu_hide_speed="slow"; //menu close animation speed
+  $menu_hide_easing="easeInExpo"; //menu close animation easing type
+</script>
+<script src="js/jquery.malihu.cfm.js" type="text/javascript" charset="UTF-8"></script>
+</html>

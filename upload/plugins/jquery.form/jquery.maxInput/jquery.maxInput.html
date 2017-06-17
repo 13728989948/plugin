@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.maxInput</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.maxInput.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.maxInput.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="content">
+   <div class="demo">
+    <h1>
+     Demo 1
+    </h1>
+    <div id="demo1" class="jMax">
+    </div>
+   </div>
+   <div class="demo">
+    <h1>
+     Demo 2
+    </h1>
+    <div id="demo2" class="jMax">
+    </div>
+   </div>
+   <div class="demo">
+    <h1>
+     Demo 3
+    </h1>
+    <div id="demo3" class="jMax">
+    </div>
+   </div>
+   <div class="demo">
+    <h1>
+     Demo 4
+    </h1>
+    <div id="demo4" class="jMax">
+    </div>
+   </div>
+   <div class="about">
+    <div class="text">
+     <h1>
+      Demo 1
+     </h1>
+     <p>
+      Demo 1 shows the default message of the maximal number of input characters in the top left corner.
+     </p>
+    </div>
+    <div class="text">
+     <h1>
+      Demo 2
+     </h1>
+     <p>
+      Here just the number of characters are shown that are left to type. The position of the number is bottom left.
+     </p>
+    </div>
+    <div class="text">
+     <h1>
+      Demo 3
+     </h1>
+     <p>
+      The position of the number is top right.
+     </p>
+    </div>
+    <div class="text">
+     <h1>
+      Demo 4
+     </h1>
+     <p>
+      Demo 4 shows a customized message. The message show can be adapted. The default message is shown in Demo 1.
+     </p>
+    </div>
+   </div>
+  </div>
+<script type="text/javascript">
+  $(function() {
+   $("#demo1").maxinput({
+    position : 'topleft',
+    showtext  : true,
+    limit  : 130
+   });
+   $("#demo2").maxinput({
+    position : 'bottomleft',
+    limit  : 10
+   });
+   $("#demo3").maxinput({
+    limit  : 20
+   });
+   $("#demo4").maxinput({
+    limit  : 5,
+    showtext  : true,
+    message  : 'left' 
+   });
+  });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.simple.011</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.simple.011.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body style="overflow: hidden">
+  <div style="width: 200px; position: absolute; bottom: 0">
+   <div id="test" style="position: relative; top: 50px;">
+    <img src="images/jquery.simple.011_p_001.png" />
+   </div>
+  </div>
+ </body>
+<script type="text/javascript">
+slideDown();
+function slideUp() {
+ $("#test").stop().animate({
+  top : "50px"
+ }, 1000, function() {
+  slideDown();
+ });
+}
+function slideDown() {
+ $("#test").stop().animate({
+  top : "0px"
+ }, 1000, function() {
+  slideUp();
+ });
+}
+</script>
+</html>

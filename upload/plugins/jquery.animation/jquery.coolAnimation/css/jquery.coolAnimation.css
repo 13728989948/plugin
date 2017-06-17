@@ -1,0 +1,11 @@
+body{background:#29b0b1;}
+h1{color:#FFF;font-size:20px;text-align:center;margin-bottom:60px;}
+.container{margin:80px auto;width:500px;height:1000px;}
+.logo{width:500px;height:120px;float:left;overflow:hidden;position:relative;}
+.ani-bg{position:absolute;top:-500px;left:0;}
+.frame{position:absolute;top:0;left:0;z-index:1!important;}
+button{margin:60px 0 40px 196px;cursor:pointer;}
+div.link{width:100%;float:left;text-align:center;}
+a
+,a:active
+,a:visited{color:#fff;text-decoration:underline;}

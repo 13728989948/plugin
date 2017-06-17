@@ -1,0 +1,68 @@
+<!DOCTYPE HTML> 
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.navigation.hz.014</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.navigation.hz.014.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ <body>
+  <div class="title"></div>
+  <div class="navigation">
+   <ul class="menu" id="menu">
+    <li>
+     <span class="ipod"></span><a href="" class="first">Players</a>
+    </li>
+    <li>
+     <span class="video_camera"></span><a href="">Cameras</a>
+    </li>
+    <li>
+     <span class="television"></span><a href="">TVs</a>
+    </li>
+    <li>
+     <span class="monitor"></span><a href="">Screens</a>
+    </li>
+    <li>
+     <span class="toolbox"></span><a href="">Tools</a>
+    </li>
+    <li>
+     <span class="telephone"></span><a href="">Phones</a>
+    </li>
+    <li>
+     <span class="print"></span><a href="" class="last">Printers</a>
+    </li>
+   </ul>
+  </div>
+<script type="text/javascript">
+$(function() {
+	var d = 1000;
+	$('#menu span').each(function() {
+		$(this).stop().animate( {
+			'top' : '-17px'
+		}, d += 250);
+	});
+
+	$('#menu > li').hover(function() {
+		var $this = $(this);
+		$('a', $this).addClass('hover');
+		$('span', $this).stop().animate( {
+			'top' : '40px'
+		}, 300).css( {
+			'zIndex' : '10'
+		});
+	}, function() {
+		var $this = $(this);
+		$('a', $this).removeClass('hover');
+		$('span', $this).stop().animate( {
+			'top' : '-17px'
+		}, 800).css( {
+			'zIndex' : '-1'
+		});
+	});
+});
+</script>
+ </body>
+</html>

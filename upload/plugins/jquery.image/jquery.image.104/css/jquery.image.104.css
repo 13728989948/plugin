@@ -1,0 +1,3 @@
+@-webkit-keyframes rotater{0%{-webkit-transform:rotate(0) scale(1);}50%{-webkit-transform:rotate(360deg) scale(2);}100%{-webkit-transform:rotate(720deg) scale(1);}}
+a.advert{width:125px;height:125px;display:block;text-indent:-3000px;}
+a.advert:hover{-webkit-animation-name:rotater;-webkit-animation-duration:500ms;-webkit-animation-iteration-count:1;-webkit-animation-timing-function:ease-out;-moz-transform:rotate(360deg) scale(2);-moz-transition-duration:500ms;-moz-transition-timing-function:ease-out;-o-transform:rotate(360deg) scale(2);-o-transition-duration:500ms;-p-transition-timing-function:ease-out;-ms-transform:rotate(360deg) scale(2);-ms-transform-duration:500ms;-ms-transform-timing-function:ease-out;}

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.014</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.014.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <dl id="sample" class="dropdown">
+   <dt><a href="#"><span>Please select the country</span></a></dt>
+   <dd>
+    <ul>
+     <li><a href="#">Brazil<img class="flag" src="images/jquery.form.014_p_002.png" alt="" /><span class="value">BR</span></a></li>
+     <li><a href="#">France<img class="flag" src="images/jquery.form.014_p_005.png" alt="" /><span class="value">FR</span></a></li>
+     <li><a href="#">Germany<img class="flag" src="images/jquery.form.014_p_004.png" alt="" /><span class="value">DE</span></a></li>
+     <li><a href="#">India<img class="flag" src="images/jquery.form.014_p_007.png" alt="" /><span class="value">IN</span></a></li>
+     <li><a href="#">Japan<img class="flag" src="images/jquery.form.014_p_008.png" alt="" /><span class="value">JP</span></a></li>
+     <li><a href="#">Serbia<img class="flag" src="images/jquery.form.014_p_003.png" alt="" /><span class="value">CS</span></a></li>
+     <li><a href="#">United Kingdom<img class="flag" src="images/jquery.form.014_p_006.png" alt="" /><span class="value">UK</span></a></li>
+     <li><a href="#">United States<img class="flag" src="images/jquery.form.014_p_009.png" alt="" /><span class="value">US</span></a></li>
+    </ul>
+   </dd>
+  </dl>
+  <span id="result"></span><br /><br />
+ </body>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".dropdown img.flag").addClass("flagvisibility");
+
+    $(".dropdown dt a").click(function () {
+        $(".dropdown dd ul").toggle();
+    });
+
+    $(".dropdown dd ul li a").click(function () {
+        var text = $(this).html();
+        $(".dropdown dt a span").html(text);
+        $(".dropdown dd ul").hide();
+        $("#result").html("Selected value is: " + getSelectedValue("sample"));
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dropdown")){
+            $(".dropdown dd ul").hide();
+        }
+    });
+
+    $("#flagSwitcher").click(function () {
+        $(".dropdown img.flag").toggleClass("flagvisibility");
+    });
+});
+</script>
+</html>

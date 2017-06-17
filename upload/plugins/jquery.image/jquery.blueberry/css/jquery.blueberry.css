@@ -1,0 +1,32 @@
+*{margin:0;border:0;padding:0;}
+body{background:#f0f0f0;font:14px/20px Arial,San-Serif;color:#404040;}
+a{color:#264c99;text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1
+,h2
+,h3
+,h4
+,p{margin-bottom:20px;}
+h1{font-size:48px;line-height:60px;color:#fff;text-transform:lowercase;}
+h2
+,h3{font-weight:normal;font-size:22px;line-height:40px;color:#808080;}
+h3{font-size:18px;color:#404040;}
+h5{font-weight:bold;font-size:14px;color:#000;}
+#header{height:60px;padding-top:20px;padding-bottom:20px;text-align:center;background:#405580;}
+#header h1{margin:0 auto;min-width:740px;max-width:1140px;}
+#doc{margin:40px 0;}
+#content{margin:0 auto;min-width:740px;max-width:1140px;}
+
+.blueberry{margin:0 auto;max-width:960px;}
+.blueberry .slides{display:block;position:relative;overflow:hidden;}
+.blueberry .slides li{position:absolute;top:0;left:0;overflow:hidden;}
+.blueberry .slides li img{display:block;width:100%;max-width:none;}
+.blueberry .slides li.active{display:block;position:relative;}
+.blueberry .crop li img{width:auto;}
+.blueberry .pager{height:40px;text-align:center;}
+.blueberry .pager li{display:inline-block;}
+.blueberry .pager li a
+,.blueberry .pager li a span{display:block;height:4px;width:4px;}
+.blueberry .pager li a{padding:18px 8px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+.blueberry .pager li a span{overflow:hidden;background:#c0c0c0;text-indent:-9999px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;}
+.blueberry .pager li.active a span{background:#404040;}

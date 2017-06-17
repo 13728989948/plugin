@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.flip</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.flip.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="../../jquery.ui.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.flip.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ <body>
+  <section class="container">
+   <div id="test" class="clearfix">
+    <article class="main">
+     <div id="flipbox">Hello! I'm a flip-box!</div>
+     <div id="flipPad">
+      <a href="" class="left" rel="rl" rev="#39AB3E" title="Change content as you like!">left</a>
+      <a href="" class="top" rel="bt" rev="#B0EB17" title="Ohhh yeah!">top</a>
+      <a href="" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
+      <a href="" class="right" rel="lr" rev="#C8D97E" title="Waiting for css3...">right</a>
+      <a href="" class="revert">revert!</a>
+     </div>
+    </article>
+   </div>
+  </section>
+ </body>
+<script>
+$("#flipPad a:not(.revert)").bind("click", function() {
+    var $this = $(this);
+    $("#flipbox").flip( {
+        direction : $this.attr("rel"),// 方向,如rl表示right,left
+        color : $this.attr("rev"),// 颜色
+        content : $this.attr("title"),// 内容
+        onBefore : function() {
+            $(".revert").show();
+        }
+    });
+    return false;
+});
+$(".revert").bind("click", function() {
+    $("#flipbox").revertFlip();
+    return false;
+});
+</script>
+</html>

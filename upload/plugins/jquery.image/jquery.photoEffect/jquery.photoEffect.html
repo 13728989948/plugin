@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.photoEffect</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.photoEffect.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="header"></div>
+  <div class="content">
+   <div class="photo1 pht">
+    <p style="display:none;"></p>
+   </div>
+   <div class="photo2 pht">
+    <p style="display:none;"></p>
+   </div>
+   <div class="photo3 pht">
+    <p style="display:none;"></p>
+   </div>
+   <p class="link">
+    <a href="#">Image: graur razvan ionut / FreeDigitalPhotos.net</a>
+   </p>
+   <p class="link">
+    <a href="#">Image: Dynamite Imagery / FreeDigitalPhotos.net</a>
+   </p>
+   <p class="link">
+    <a href="#">Image: Bob Lowe / FreeDigitalPhotos.net</a>
+   </p>
+  </div>
+ </body>
+<script type="text/javascript">
+$(function () {
+    $('.pht').hover(
+        function () {
+            var $this = $(this);
+            $this.find('p').stop(true, true).fadeIn('fast');
+        },
+        function () {
+            var $this = $(this);
+            $this.find('p').stop(true, true).fadeOut('fast');
+        }
+    );
+});
+</script>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.weimob</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.weimob.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div class="Public-content clearfix">
+   <div class="Public">
+    <div class="Public-box clearfix">
+     <ul id="nav_lis" class="case-nav left">
+      <li data-index="0" data-hash="#case-g" class="hover">电商</li>
+      <li data-index="1" data-hash="#case-a" class="">汽车</li>
+      <li data-index="2" data-hash="#case-b" class="">房产</li>
+     </ul>
+
+     <div id="nav_uls" style="overflow:hidden;">
+      <div data-index="0" class="wm_case_mod_bd right show">
+       <ul class="wm_case_list">
+        <li class="wm_case_item" data-id="0"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds1"></i></span>
+         <h4 class="wm_case_t">俏十岁官方商城</h4></li>
+        <li class="wm_case_item" data-id="1"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds2"></i></span>
+         <h4 class="wm_case_t">男人帮家纺</h4></li>
+        <li class="wm_case_item" data-id="2"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds3"></i></span>
+         <h4 class="wm_case_t">沈郎乡有机山茶油</h4></li>
+        <li class="wm_case_item" data-id="3"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds4"></i></span>
+         <h4 class="wm_case_t">莱粉微商城</h4></li>
+        <li class="wm_case_item" data-id="4"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds5 on"></i></span>
+         <h4 class="wm_case_t">天晴朗朗食品</h4></li>
+        <li class="wm_case_item" data-id="5"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds6"></i></span>
+         <h4 class="wm_case_t">虎都北京</h4></li>
+        <li class="wm_case_item" data-id="6"><span class="icon_wrapper"> <i class="icon_wm_case o2o ds7"></i></span>
+         <h4 class="wm_case_t">榆次妈咪好孩子</h4></li>
+       </ul>
+      </div>
+      <div data-index="1" class="wm_case_mod_bd right">
+       <ul class="wm_case_list">
+        <li class="wm_case_item" data-id="0"><span class="icon_wrapper"> <i class="icon_wm_case auto car1"></i></span>
+         <h4 class="wm_case_t">绿地宝马5S</h4></li>
+        <li class="wm_case_item" data-id="1"><span class="icon_wrapper"> <i class="icon_wm_case auto car2"></i></span>
+         <h4 class="wm_case_t">V车志</h4></li>
+        <li class="wm_case_item" data-id="2"><span class="icon_wrapper"> <i class="icon_wm_case auto car5"></i></span>
+         <h4 class="wm_case_t">济南金天易江淮</h4></li>
+        <li class="wm_case_item" data-id="3"><span class="icon_wrapper"> <i class="icon_wm_case auto car6 on"></i></span>
+         <h4 class="wm_case_t">泽通车业</h4></li>
+        <li class="wm_case_item" data-id="4"><span class="icon_wrapper"> <i class="icon_wm_case auto car7"></i></span>
+         <h4 class="wm_case_t">上饶星徽行奔驰</h4></li>
+       </ul>
+      </div>
+      <div data-index="2" class="wm_case_mod_bd right">
+       <ul class="wm_case_list">
+        <li class="wm_case_item" data-id="0"><span class="icon_wrapper"> <i class="icon_wm_case real on"></i></span>
+         <h4 class="wm_case_t">嘉丰万悦城</h4></li>
+        <li class="wm_case_item" data-id="1"><span class="icon_wrapper"> <i class="icon_wm_case real est2"></i></span>
+         <h4 class="wm_case_t">浩创·梧桐郡</h4></li>
+        <li class="wm_case_item" data-id="2"><span class="icon_wrapper"> <i class="icon_wm_case real est3"></i></span>
+         <h4 class="wm_case_t">康桥九溪郡</h4></li>
+        <li class="wm_case_item" data-id="3"><span class="icon_wrapper"> <i class="icon_wm_case real est4"></i></span>
+         <h4 class="wm_case_t">锦艺国际轻纺城</h4></li>
+        <li class="wm_case_item" data-id="4"><span class="icon_wrapper"> <i class="icon_wm_case real est5"></i></span>
+         <h4 class="wm_case_t">绿城玉兰公馆</h4></li>
+        <li class="wm_case_item" data-id="5"><span class="icon_wrapper"> <i class="icon_wm_case real est6"></i></span>
+         <h4 class="wm_case_t">龙鼎创富中心</h4></li>
+        <li class="wm_case_item" data-id="6"><span class="icon_wrapper"> <i class="icon_wm_case real est7"></i></span>
+         <h4 class="wm_case_t">香江丽景</h4></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+<script>
+$(".wm_case_item").hover(
+  function () {
+    var parent = $(this).parent().parent();
+    var dataId = $(this).attr("data-id");
+    $(".icon_wm_case", $($(this).parent())).removeClass("on");
+    $(this).find(".wm_case_item").eq(0).addClass("on");
+    $(".wm_case_desc", $(parent)).hide();
+    $(".wm_case_desc[data-id='"+dataId+"']", $(parent)).show();
+  },
+  function () {
+  }
+);
+  
+$("#nav_lis>li").hover(
+    function () {
+      var dataIndex = $(this).attr("data-index");
+      $("#nav_lis>li").removeClass("hover");
+      $(this).addClass("hover");
+      
+      $(".wm_case_mod_bd").removeClass("show");
+      $(".wm_case_mod_bd[data-index='"+dataIndex+"']").addClass("show");
+    },
+    function () {
+    }
+  );
+</script>
+</html>

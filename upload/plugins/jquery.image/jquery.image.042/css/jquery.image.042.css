@@ -1,0 +1,238 @@
+html
+,body{margin:0;padding:0;}
+body{background-color:#f3f3f3;font-size:12px;line-height:20px;margin-right:auto;margin-left:auto;color:#333;text-align:center;}
+div
+,li
+,ul
+,dt
+,dd
+,dl{text-align:left;font-size:12px;margin:0;padding:0;font-family:"宋体","微软雅黑","Arial Narrow",HELVETICA,Arial,Helvetica,sans-serif;}
+ul
+,li{list-style-type:none;}
+td
+,th{font-size:12px;line-height:150%;}
+img{border:none;}
+a{text-decoration:none;color:#333;}
+a:visited{text-decoration:none;}
+a:hover{color:#C31400;}
+a:active{color:#717171;text-decoration:none;}
+.ccenter{width:990px;margin-right:auto;margin-left:auto;}
+.left{float:left;}
+.right{float:right;}
+.blank10{clear:both;height:10px;line-height:10px;overflow:hidden;}
+.blank20{clear:both;height:20px;line-height:20px;overflow:hidden;}
+.blank1{clear:both;height:1px;line-height:1px;overflow:hidden;}
+.font14{font-size:14px;color:#333;}
+.fontred14{font-size:14px;color:#F00;}
+a.Close{font-size:14px;float:left;display:block;width:20px;height:16px;line-height:80px;overflow:hidden;background-attachment:scroll;background-repeat:no-repeat;background-position:5px 3px;}
+a:hover.Close{font-size:14px;float:left;display:block;width:20px;height:16px;line-height:80px;overflow:hidden;background-attachment:scroll;background-repeat:no-repeat;background-position:5px 3px;}
+a.button1{font-size:14px;float:left;display:block;width:112px;height:31px;line-height:28px;text-align:center;overflow:hidden;background-attachment:scroll;background-repeat:no-repeat;background-position:center center;}
+a:hover.button1{font-size:14px;float:left;display:block;width:112px;height:31px;line-height:28px;overflow:hidden;background-attachment:scroll;background-repeat:no-repeat;background-position:center center;}
+a.red{font-size:14px;color:#C00;text-decoration:underline;}
+a:hover.red{font-size:14px;color:#C00;text-decoration:none;}
+#header{float:left;width:990px;height:123px;}
+#header .logo{float:left;width:260px;height:110px;padding-top:13px;}
+#header .topnav{float:right;width:720px;position:relative;}
+#header .topnav .righttop{float:right;width:auto;height:39px;padding-top:10px;background-attachment:scroll;background-repeat:repeat-x;background-position:0 10px;}
+#header .topnav .righttop li{float:left;line-height:35px;height:38px;color:#ccc;}
+#header .topnav .righttop li.tleft{float:left;width:6px;height:39px;background-attachment:scroll;background-repeat:no-repeat;}
+#header .topnav .righttop li.tright{float:left;width:6px;height:39px;line-height:38px;background-attachment:scroll;background-repeat:no-repeat;}
+#header .topnav .righttop li a{float:left;padding-left:15px;padding-right:15px;height:35px;line-height:35px;text-align:center;font-size:14px;color:#009899;font-weight:bold;}
+#header .topnav .righttop li a:hover{color:#f60;}
+#header .topnav .righttop li a.blue{color:#099;font-weight:bold;}
+#header .topnav .righttop .open{position:relative;z-index:200;}
+#header .topnav .righttop .open .my{display:none;position:absolute;padding-top:10px;float:left;width:109px;margin:0;top:29px;left:-11px;background-attachment:scroll;background-repeat:no-repeat;}
+#header .topnav .righttop .open .my .list{float:left;width:89px;padding:0 10px 0 10px;background-attachment:scroll;background-repeat:repeat;}
+#header .topnav .righttop .open .my .list a{float:left;width:74px;padding:0;margin:0;padding-left:12px;text-align:left;font-size:12px;line-height:30px;height:30px;font-weight:normal;color:#009899;background-attachment:scroll;background-repeat:no-repeat;background-position:0 7px;}
+#header .topnav .righttop .open .my .list a:hover{color:#F00;background-attachment:scroll;background-repeat:no-repeat;background-position:0 -17px;}
+#header .topnav .righttop .open .my .bottom{float:left;width:109px;height:7px;background-attachment:scroll;background-repeat:no-repeat;}
+#header .topnav .toptips{float:left;padding-top:10px;text-align:right;overflow:hidden;}
+#header .topnav .city{float:left;width:auto;position:absolute;left:10px;top:90px;}
+#header .topnav .city a{font-size:14px;float:left;padding-right:10px;background-attachment:scroll;background-repeat:no-repeat;background-position:right center;}
+#header .topnav .citytips{float:left;width:auto;height:50px;padding-left:70px;position:absolute;left:50px;top:60px;background-attachment:scroll;background-repeat:no-repeat;background-position:0 5px;}
+#header .topnav .citytips li{float:left;font-size:14px;line-height:16px;}
+#footer{height:130px;width:100%;float:left;background-color:#666;white-space:nowrap;}
+#footer .footerlink{text-align:center;color:#ccc;line-height:30px;padding-top:15px;}
+#footer .footerlink a{color:#ccc;margin-left:10px;margin-right:10px;}
+.BDCard{float:left;height:208px;width:990px;background-attachment:scroll;background-repeat:no-repeat;}
+.BDCard .BDClose{float:left;height:20px;width:980px;padding-right:10px;padding-top:10px;}
+.BDCard .BDClose a{float:right;}
+.BDCard .BDInfo{padding-left:20px;float:left;height:75px;width:970px;font-size:14px;}
+.BDCard .BDInfo span{font-size:36px;line-height:36px;font-family:"Arial Narrow";}
+.BDCard .BDGo{float:right;padding-right:22px;}
+.BDCard .BDGo a{float:left;width:167px;height:40px;background-attachment:scroll;background-repeat:no-repeat;display:block;line-height:120px;overflow:hidden;}
+.BDCard .BDGo a:hover{float:left;width:167px;height:40px;background-attachment:scroll;background-repeat:no-repeat;display:block;line-height:120px;overflow:hidden;}
+.bbbox{float:left;width:990px;clear:both;padding-bottom:10px;}
+.bbbox .bbtop{float:left;background-attachment:scroll;background-repeat:repeat-y;height:7px;line-height:0;font-size:0;width:990px;}
+.bbbox .bbcon{float:left;background-attachment:scroll;background-repeat:repeat-y;width:990px;}
+.bbbox .bbbot{float:left;background-attachment:scroll;background-repeat:no-repeat;height:7px;line-height:0;font-size:0;width:990px;}
+.pagelist{float:left;width:100%;padding-top:20px;}
+.pagelist ul{text-align:center;line-height:50px;}
+.pagelist ul a{margin-right:10px;font-size:12px;padding:5px 10px 5px 10px;border:1px solid #D5D5D5;line-height:26px;height:26px;color:#333;background-color:#FFF;}
+.pagelist ul a.current{border:1px solid #FF9E20;background-color:#FF9000;font-weight:bold;color:#FFF;}
+.pagelist ul span{font-size:14px;}
+.tipSharebox{float:left;width:85px;position:absolute;top:20px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#CCC;}
+.tipSharebox .tsbTop{float:left;background-attachment:scroll;background-repeat:no-repeat;height:8px;width:85px;background-position:center top;}
+.tipSharebox .tsbmain{float:left;background-color:#FFF;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-right-color:#CCC;border-bottom-color:#CCC;border-left-color:#CCC;padding:10px 0 10px 0;}
+.tipSharebox a{display:block;width:85px;line-height:25px;float:left;z-index:100;text-indent:30px;}
+.tipSharebox a.sina{background-attachment:scroll;background-repeat:no-repeat;background-position:8px -67px;padding:0;}
+.tipSharebox a.tqq{background-attachment:scroll;background-repeat:no-repeat;background-position:8px -30px;padding:0;}
+.clear{clear:both;padding:0;margin:0;height:0;font-size:0;overflow:hidden;}
+.show_huodong_t{position:relative;zoom:1;z-index:90;}
+#header .topnav .righttop li.huodong_hover a{border:1px #ccc solid;border-bottom:none;height:38px;width:58px;background:#FFF;padding:0;}
+#show_huodong{position:absolute;border:1px #CCC solid;border-top:none;background:#FFF;top:38px;left:0;z-index:90;width:277px;display:none;}
+#show_huodong a
+,#show_huodong img{display:block;}
+.main{width:988px;border:1px #CCC solid;margin:0 auto;margin-bottom:10px;background:#FFF;}
+.main .ad_box{padding:10px 0 10px 9px;overflow:hidden;zoom:1;}
+.main ul li{float:left;margin-right:6px;display:inline;}
+.main ul li a{border:2px #FFF solid;display:block;}
+.main ul li img{display:block;}
+.main ul li a:hover{border:2px #f60 solid;}
+
+.ShopWel{float:left;width:990px;}
+.ShopWel .ShopWelTop{float:left;width:990px;height:5px;line-height:0;fon-size:0;background-attachment:scroll;background-repeat:no-repeat;}
+.ShopWel .ShopWelBot{float:left;width:990px;height:4px;line-height:0;fon-size:0;background-attachment:scroll;background-repeat:no-repeat;}
+.ShopWel .ShopWelCon{float:left;width:990px;background-attachment:scroll;background-repeat:repeat;}
+.ShopWel .ShopWelCon .AD{float:left;width:670px;height:409px;padding-left:12px;padding-top:6px;overflow:hidden;}
+.ShopWel .ShopWelCon .AD .slides{position:relative;overflow:hidden;width:650px;height:400px;float:left;}
+.ShopWel .ShopWelCon .AD .slides .slide-pic{overflow:hidden;}
+.ShopWel .ShopWelCon .AD .slides .slide-pic img{width:650px;height:400px;border:1px solid #E4E4E4;}
+.ShopWel .ShopWelCon .AD .slides .slide-pic li{display:none;}
+.ShopWel .ShopWelCon .AD .slides .slide-pic li.cur{display:block;}
+.ShopWel .ShopWelCon .AD .slides .slide-li{position:absolute;right:3px;bottom:3px;float:right;}
+.ShopWel .ShopWelCon .AD .slides .slide-li li{float:left;width:25px;height:18px;line-height:18px;margin-right:1px;text-align:center;}
+.ShopWel .ShopWelCon .AD .slides .slide-li a{display:block;width:25px;height:18px;font-size:12px;color:#FFF;}
+.ShopWel .ShopWelCon .AD .slides .slide-li .cur a
+,.slide-li a:hover{color:#333;text-decoration:none;}
+.ShopWel .ShopWelCon .AD .slides .op li{background:#666;opacity:.6;filter:alpha(opacity=60);}
+.ShopWel .ShopWelCon .AD .slides .op li.cur{background:#FFF;}
+.ShopWel .ShopWelCon .AD .slides .slide-txt span{display:none;}
+.ShopInfo{float:right;width:270px;padding-right:25px;padding-top:17px;}
+.ShopInfo .face{float:left;width:270px;}
+.ShopInfo .face .logo{float:left;border:1px solid #CCC;padding:5px;width:50px;}
+.ShopInfo .face .logo img{float:left;width:50px;height:50px;}
+.ShopInfo .face .shopname{float:right;width:190px;height:60px;font-size:14px;}
+.ShopInfo .face .shopname strong{color:#099;}
+.ShopInfo .face .shopname b{color:#f90;}
+.ShopInfo .infotxt{float:left;width:270px;padding-top:10px;}
+.ShopInfo .infotxt .blue{color:#099;}
+.ShopCom{float:left;width:990px;padding-top:10px;padding-bottom:10px;}
+.ShopCom .left{float:left;width:662px;}
+.ShopCom .right{float:right;width:318px;}
+.ShopCom .Comment{float:left;width:662px;}
+.ShopCom .Comment .ComTop{float:left;width:662px;height:5px;font-size:0;line-height:0;background-attachment:scroll;background-repeat:no-repeat;}
+.ShopCom .Comment .ComCon{float:left;width:662px;background-attachment:scroll;background-repeat:repeat;}
+.ShopCom .Comment .ComBot{float:left;width:662px;height:7px;font-size:0;line-height:0;background-attachment:scroll;background-repeat:no-repeat;}
+.ShopCom .Comment .ComTitle{float:left;width:660px;padding:1px;}
+.ShopCom .Comment .ComTitle div{float:left;width:638px;font-size:14px;font-weight:bold;height:38px;padding-left:22px;line-height:38px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#CCC;}
+.ShopCom .Comment .ComInput{float:left;width:638px;padding:10px 0 10px 22px;}
+.ShopCom .Comment .ComInput .input{float:left;width:596px;padding:10px;border:2px solid #74D0BC;background-attachment:scroll;background-repeat:no-repeat;background-position:right bottom;}
+.ShopCom .Comment .ComInput .input textarea{border:0;background-color:transparent;width:600px;overflow:hidden;}
+.ShopCom .Comment .ComInput .btn{float:left;width:622px;padding-top:10px;}
+.ShopCom .Comment .ComInput .btn .left{float:left;width:350px;padding-top:10px;}
+.ShopCom .Comment .ComInput .btn .left2{float:left;width:180px;}
+.ShopCom .Comment .ComInput .btn .right2{float:right;width:170px;text-align:right;}
+.ShopCom .Comment .ComInput .btn .right{float:right;width:180px;text-align:right;}
+.ShopCom .Comment .ComList{float:left;width:622px;padding:10px 0 10px 22px;}
+.ShopCom .Comment .ComList .ComListTitle{float:left;width:612px;font-size:14px;line-height:25px;font-weight:bold;color:#FFF;background-color:#999;height:25px;padding-left:10px;}
+.ShopCom .Comment #ListArea{float:left;width:612px;padding-top:10px;}
+.ShopCom .Comment .ComList .List{float:left;width:620px;padding-bottom:10px;}
+.ShopCom .Comment .ComList .List .UserComment{float:left;width:580px;padding:20px;background-color:#F1FAF8;border:1px solid #C7EAE3;}
+.ShopCom .Comment .ComList .List .left{float:left;width:100px;}
+.ShopCom .Comment .ComList .List .left .head{float:left;padding:3px;border:1px solid #CCC;}
+.ShopCom .Comment .ComList .List .right{float:right;width:480px;}
+.ShopCom .Comment .ComList .List .right .Content strong{color:#009899;}
+.ShopCom .Comment .ComList .List .right .Content{float:right;width:480px;min-height:55px;overflow:inherit;}
+.ShopCom .Comment .ComList .List .right .explain{float:right;width:480px;color:#009899;}
+.commentpagelist{float:left;width:640px;height:50px;}
+.commentpagelist #LoadState{float:left;width:100px;height:50px;padding-left:20px;line-height:25px;background-attachment:scroll;background-repeat:no-repeat;background-position:0 5px;text-align:left;}
+.commentpagelist ul{float:right;padding-right:30px;padding-top:2px;}
+.commentpagelist a{float:left;height:20px;line-height:20px;font-size:12px;display:block;padding:0 10px 0 10px;white-space:nowrap;outline:none;border:1px solid #CCC;background-color:#F7F7F7;margin-left:2px;}
+.commentpagelist a:hover{background-color:#FFF;}
+.commentpagelist a.current{background-color:#E7E7E7;border:1px solid #E7E7E7;}
+.ShopCom .KouBei{float:left;width:318px;}
+.ShopCom .KouBei .KouTop{float:left;width:318px;height:5px;font-size:0;line-height:0;background-attachment:scroll;background-repeat:no-repeat;}
+.ShopCom .KouBei .KouCon{float:left;width:316px;padding:1px;background-attachment:scroll;background-repeat:repeat;}
+.ShopCom .KouBei .KouBot{float:left;width:318px;height:7px;font-size:0;line-height:0;background-attachment:scroll;background-repeat:no-repeat;}
+.ShopCom .KouBei .KouTtitle{float:left;width:316px;height:40px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#CCC;}
+.ShopCom .KouBei .KouTtitle .tleft{float:left;width:200px;line-height:40px;font-size:14px;font-weight:bold;padding-left:20px;}
+.ShopCom .KouBei .KouTtitle .tright{float:right;width:50px;padding-right:10px;line-height:40px;}
+.pinfen{float:left;width:280px;padding-left:20px;padding-top:20px;}
+.pinfen .fen1{float:left;width:280px;}
+.pinfen .fen1 .fenzhi1{float:left;width:40px;}
+.pinfen .fen1 .fenzhi2{float:left;width:91px;height:19px;background-attachment:scroll;background-repeat:repeat-x;}
+.pinfen .fen1 .fenzhi2 .val{float:left;width:91px;height:19px;background-attachment:scroll;background-repeat:repeat-x;background-position:0 -19px;}
+.pinfen .fen1 .fenzhi3{float:left;padding-left:20px;}
+.pinfen .fen2{float:left;width:280px;padding-top:10px;line-height:13px;}
+.pinfen .fen2 .fenzhi1{float:left;width:40px;}
+.pinfen .fen2 .fenzhi2{float:left;width:155px;height:13px;background-attachment:scroll;background-repeat:no-repeat;background-position:0 0;}
+.pinfen .fen2 .fenzhi2 .val{float:left;width:155px;height:13px;background-attachment:scroll;background-repeat:no-repeat;background-position:0 -13px;}
+.pinfen .fen2 .fentxt{float:left;padding-left:40px;}
+.pinfen .fen2 .fentxt li{float:left;width:31px;text-align:center;color:#999;}
+.pinfen .fen2 .fen8{float:left;padding-top:10px;}
+.pinfen .fen2 .fen8 span{font-size:22px;color:#F90;}
+.pinfenleft{float:left;padding-left:60px;padding-bottom:30px;width:250px;}
+.pinfenname{padding-left:20px;font-size:14px;}
+.pinfenright{float:right;width:250px;padding-top:18px;}
+.pinfenright .rleft{float:left;width:70px;height:100px;line-height:40px;}
+.pinfenright .rright{float:left;width:150px;height:100px;}
+.pinfenright .rright span{float:left;padding:3px;background-color:#FFF5DE;border:1px solid #FCE7C8;margin-right:5px;margin-top:5px;}
+.ShopCom .KouBei .impression{float:left;width:270px;padding:20px 0 20px 20px;}
+.ShopCom .KouBei .impression .imlist{float:left;width:270px;padding:15px 0 20px 0;border-top-width:1px;border-bottom-width:1px;border-top-style:dotted;border-bottom-style:dotted;border-top-color:#CCC;border-bottom-color:#CCC;}
+.ShopCom .KouBei .impression .imlist span{float:left;color:#666;background-color:#FFF5DE;border:1px solid #FCE7C8;padding:2px 5px 2px 5px;margin-right:5px;margin-top:5px;}
+.ShopCom .KouBei .KouUser{float:left;width:290px;padding-left:20px;height:40px;}
+.ShopCom .KouBei .KouUser strong{color:#F09000;}
+.ShopCom .KouBei .kUserlist{float:left;width:290px;padding-left:20px;}
+.ShopCom .KouBei .kUserlist li{float:left;padding-right:10px;}
+.ShopCom .KouBei .addkoubei{float:left;width:150px;height:60px;padding-top:20px;padding-left:80px;}
+.ShopCom .map{float:left;width:314px;height:300px;padding-top:10px;padding-left:2px;}
+.ShopCom .map #map_canvas{float:left;border:1px solid #CCC;width:312px;height:300px;}
+.ShopCom .rightAD{float:right;width:315px;height:425px;padding-top:10px;padding-right:3px;}
+.ShopCom .rightAD img{float:left;width:315px;height:425px;border:solid 1px #CCC;}
+.shopbranch{float:left;width:990px;background-color:#FFF;border:1px solid #CCC;}
+.shopbranch .left{float:left;width:700px;height:500px;background-color:#FFF;}
+.shopbranch .right{float:right;width:270px;padding:10px;height:480px;background-color:#FFF;}
+.shopbranch .right .shopname{font-size:14px;font-weight:bold;background-color:#099;color:#FFF;line-height:30px;height:30px;text-indent:20px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.shopbranch .right dl{float:left;width:268px;padding-top:10px;}
+.shopbranch .right .dl2{background-color:#E3F6F2;}
+.shopbranch .right dt{float:left;width:230px;line-height:40px;height:40px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.shopbranch .right dt img{margin-right:-2px;margin-bottom:-10px;padding:0;}
+.shopbranch .right dt a{font-size:14px;font-weight:bold;}
+.shopbranch .right dd{float:left;width:220px;padding-left:25px;}
+.shopbranch .right .branchstore{overflow-x:hidden;overflow-y:auto;overflow:hidden;width:270px;height:450px;}
+.CouponArea{float:left;width:660px;}
+.CouponArea .CouponTitle{float:left;width:660px;height:50px;background-attachment:scroll;background-repeat:no-repeat;background-position:right center;}
+.CouponArea .CouponTitle .title{float:left;width:125px;height:50px;line-height:45px;text-align:center;font-size:14px;font-weight:bold;color:#FFF;padding-left:140px;}
+.CouponArea .commentpagelist{float:left;padding-top:20px;padding-left:30px;}
+.CouponArea .CouList{float:left;width:660px;padding-top:20px;}
+.CouponArea .CouList .logo{float:left;width:70px;height:70px;padding:5px;background-color:#FFF;border:1px solid #CCC;}
+.CouponArea .CouList .Coupon{float:right;width:570px;}
+.CouponArea .CouList .Coupon .CouTop{float:right;width:570px;height:52px;background-attachment:scroll;background-repeat:no-repeat;background-position:1px 0;}
+.CouponArea .CouList .Coupon .CouTop2{float:right;width:570px;height:52px;background-attachment:scroll;background-repeat:no-repeat;background-position:1px 1px;}
+.CouponArea .CouList .Coupon .CouTop .shopname{float:left;padding-left:20px;width:300px;height:53px;line-height:75px;font-size:14px;font-weight:bold;color:#099;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.CouponArea .CouList .Coupon .CouTop .time{float:right;padding-right:20px;width:200px;height:53px;line-height:75px;color:#099;}
+.CouponArea .CouList .Coupon .CouMain{float:right;width:570px;background-attachment:scroll;background-repeat:repeat-y;background-position:right top;}
+.CouponArea .CouList .Coupon .CouMain .CouPic{float:left;padding-left:22px;width:230px;}
+.CouponArea .CouList .Coupon .CouMain .CouPic img{border:solid 1px #CCC;}
+.CouponArea .CouList .Coupon .CouMain .CouName{float:right;padding-right:22px;width:280px;}
+.CouponArea .CouList .Coupon .CouAddress{float:right;width:548px;padding-top:20px;padding-bottom:10px;padding-left:28px;background-attachment:scroll;background-repeat:repeat-y;background-position:right top;}
+.CouponArea .CouList .Coupon .BranchList{float:left;width:522px;border:solid 1px #C7EAE3;}
+.CouponArea .CouList .Coupon .BranchList .BranchCount{float:left;width:522px;height:23px;background-color:#F1FAF8;border-bottom:solid 1px #C7EAE3;}
+.CouponArea .CouList .Coupon .BranchList .BranchCount .count{float:left;color:#099;padding-left:5px;width:300px;height:23px;line-height:23px;}
+.CouponArea .CouList .Coupon .BranchList .BranchCount .count strong{color:#F90;}
+.CouponArea .CouList .Coupon .BranchList .BranchCount .open{float:right;width:100px;height:23px;position:relative;}
+.CouponArea .CouList .Coupon .BranchList .BranchCount .open a{float:right;width:152px;height:25px;display:block;background-attachment:scroll;background-repeat:no-repeat;line-height:80px;overflow:hidden;position:absolute;top:-1px;right:-1px;}
+.CouponArea .CouList .Coupon .BranchList .branchload{float:left;width:498px;height:auto;padding:10px;text-align:center;display:none;}
+.CouponArea .CouList .Coupon .BranchList .BranchCount .open a.a2{float:right;width:152px;height:25px;display:block;background-attachment:scroll;background-repeat:no-repeat;line-height:80px;overflow:hidden;position:absolute;top:-1px;right:-1px;}
+.CouponArea .CouList .Coupon .BranchList .BrList{float:left;width:498px;background-attachment:scroll;background-repeat:repeat;}
+.CouponArea .CouList .Coupon .BranchList ul{float:left;width:488px;line-height:25px;padding-left:10px;background-color:#F0F0F0;}
+.CouponArea .CouList .Coupon .BranchList .ul2{float:left;width:488px;line-height:25px;padding-left:10px;background-color:#FFF;}
+.CouponArea .CouList .Coupon .BranchList ul span{color:#666;}
+.CouponArea .CouList .Coupon .BranchList ul span.s{font-weight:bold;padding-right:10px;}
+.CouponArea .CouList .Coupon .BranchList ul span.t{padding-right:10px;}
+.CouponArea .CouList .Coupon .CouBtn{float:right;width:528px;padding-left:28px;padding-right:30px;background-attachment:scroll;background-repeat:repeat-y;background-position:right top;text-align:right;}
+.CouponArea .CouList .Coupon .CouBtn ul{float:right;}
+.CouponArea .CouList .Coupon .CouBtn li{float:left;padding-left:10px;padding-right:10px;}
+.CouponArea .CouList .Coupon .CouBtn li a{color:#099;}
+.CouponArea .CouList .Coupon .CouBot{float:right;width:570px;height:11px;background-attachment:scroll;background-repeat:no-repeat;background-position:right top;}

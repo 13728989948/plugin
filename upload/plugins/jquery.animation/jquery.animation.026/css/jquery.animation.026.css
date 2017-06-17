@@ -1,0 +1,10 @@
+body{margin:0;padding:0;background-color:#333;color:#fff;-moz-user-select:none;-webkit-user-select:none;}
+#cv{background:#000;margin:0;display:block;}
+p{padding-left:1em;margin:8px;font-family:Arial,sans-serif;}
+div{width:480px;background-color:#222;margin:0;padding-bottom:1em;}
+ul.navi{margin-top:0;}
+ul.navi li{display:inline;padding:5px 1em;}
+ul.navi .selected{background:#222;color:#fff;}
+ul.navi a{color:#f80;}
+address{width:470px;text-align:right;}
+address img{border:none;}

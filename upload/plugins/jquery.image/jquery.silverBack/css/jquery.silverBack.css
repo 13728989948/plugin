@@ -1,0 +1,9 @@
+*{margin:0;padding:0;}
+body{background:#6e9b68 url('../images/jquery.silverBack_g_001.gif') -10% 0 repeat-x;color:#333;font-family:'Helvetica Neue',Helvetica,Arial;line-height:1.3;}
+a
+,img{border:0;}
+p{margin:1em 0 .8em;}
+.clear{clear:both;}
+#main .outer{background:transparent url('../images/jquery.silverBack_p_003.png') 70% 0 repeat-x;}
+#main .inner{background:transparent url('../images/jquery.silverBack_p_002.png') 300% 0 repeat-x;}
+#main .content{width:838px;margin:0 auto;padding:80px 0;}

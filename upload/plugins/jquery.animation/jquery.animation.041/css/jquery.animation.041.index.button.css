@@ -1,0 +1,4 @@
+.createAppDiv{position:relative;top:400px;width:180px;margin:0 auto;}
+
+.create-app{position:relative;display:block;width:180px;height:40px;top:70%;left:50%;margin-left:-90px;border:1px solid rgba(255,255,255,.4);background-image:url(../images/jquery.animation.041_p_002.png);background-position:center center;background-repeat:no-repeat;background-color:rgba(255,255,255,.2);background-size:auto 75%;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;-o-border-radius:20px;border-radius:20px;}
+.create-app:hover{box-shadow:0 0 20px rgba(255,255,255,.55);}

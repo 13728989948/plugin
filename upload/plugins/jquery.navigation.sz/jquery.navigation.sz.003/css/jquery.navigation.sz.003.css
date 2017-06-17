@@ -1,0 +1,15 @@
+*{margin:0;padding:0;list-style-type:none;}
+a
+,img{border:0;}
+body{font:12px/180% Arial,Helvetica,sans-serif,"新宋体";}
+.none{display:none;}
+.operate{width:221px;margin:20px auto;border:1px solid #eaeaea;}
+.operate h3{font-family:"Microsoft YaHei",微软雅黑;font-size:16px;background:#f7f7f7;height:43px;line-height:43px;padding-left:12px;}
+.operate li{border-bottom:1px dotted #d2d2d2;display:inline-block;width:100%;position:relative;min-height:43px;_height:43px;z-index:10;zoom:1;}
+.operate li h4{cursor:pointer;background:url(../images/jquery.navigation.sz.003_p_002.png) no-repeat 200px 18px;padding-left:30px;text-decoration:none;font-size:14px;color:#555;display:block;line-height:43px;font-weight:normal;}
+.operate li.selected h4{background-position:200px -37px;}
+.operate li .list-item{padding:5px 0;position:relative;zoom:1;}
+.operate li .list-item p{padding-left:8px;}
+.operate li .list-item p.on a{color:#8caf00;font-weight:bold;}
+.operate li .list-item p a{background:url(../images/jquery.navigation.sz.003_p_001.png) no-repeat 42px 12px;color:#333;display:block;height:32px;line-height:32px;margin:0 -1px 0 1px;padding-left:60px;position:relative;text-decoration:none;font-size:12px;}
+.operate li .list-item p.hover a{background-color:#8caf00;color:#fff;text-decoration:none;background-position:42px -14px;font-weight:800;}

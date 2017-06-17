@@ -1,0 +1,8 @@
+body{font-family:Arial,Helvetica;color:white;background-color:#ddd;margin:0;overflow:hidden;}
+.link-overlay a
+,.link-overlay a:visited
+,.link-overlay a:active
+,.link-overlay a:hover{color:#e34c26;font-size:.6em;padding:0;}
+.button-overlay{position:absolute;left:2px;top:2px;}
+.link-overlay{position:absolute;left:180px;top:0;}
+canvas{background-color:#ddd;}

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.image.089</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.image.089.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <div id="change_1" class="changeBox_a1">
+   <div class="changeBox_imgs">
+    <ul class="changeBox_imgs_list">
+     <li><a href="#" target="_blank"> <img width="732" height="354" alt="户外摄影" src="images/jquery.image.089_002.jpg" />
+     </a></li>
+     <li><a href="#" target="_blank"> <img width="732" height="354" alt="户外摄影" src="images/jquery.image.089_002.jpg" />
+     </a></li>
+     <li><a href="#" target="_blank"> <img width="732" height="354" alt="户外摄影" src="images/jquery.image.089_002.jpg" />
+     </a></li>
+    </ul>
+   </div>
+   <ul class="ul_change">
+    <li id="changeBox_arrow_bar" class="arrow_bar"></li>
+    <li class="tagLi3" idx="1">户外摄影</li>
+    <li class="tagLi2" idx="2">户外摄影</li>
+    <li class="tagLi1" idx="3">户外摄影</li>
+   </ul>
+  </div>
+ <script type="text/javascript">
+ function BannerImages(){
+  var b = $("#changeBox_arrow_bar"),
+   c = $("ul.ul_change li:not(.arrw_bar)"),
+   e = $("ul.changeBox_imgs_list"),
+   d = true,
+   f = 1; 
+  
+  var a = function(){
+   var j = (732 * f - 732),j = j == 0 ? 0 : -j,i = 500;
+   e.animate({ left: j + "px" }, i)
+  };
+  e.find("img").hover(function(){
+   clearInterval(h)
+  },function(){
+   g()
+  });
+   
+  c.click(function(){
+   var j = $(this), i = j.position().left + 3;
+   f = j.attr("idx");
+   a();
+   b.animate({ left: i + "px" },500,function(){
+    d = true
+   })
+  }).mouseover(function(){
+   if(!d){
+    return
+   }
+   clearInterval(h);
+   d = false; 
+   $(this).click()
+  }).mouseout(function(){
+   if(!d){
+    return
+   }
+   g();
+  });
+   
+  var h = null;
+   
+  var g = function(){
+   h = setInterval(function(){
+    f++;
+    if (f > 3){
+     f = 1
+    }
+    c.eq(f).click()
+   }, 4000)
+  };
+  g();
+ };
+ $(document).ready(function(){
+  BannerImages();//Banner滑动效果
+ });
+</script>
+ </body>
+</html>

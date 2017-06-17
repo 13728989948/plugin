@@ -1,0 +1,6 @@
+#lottery{background:url("../images/jquery.chouJiang_g_003.gif?v=79804") no-repeat scroll 0 0 transparent;height:450px;left:50px;position:absolute;width:450px;}
+#lottery .arrow{background:url("../images/jquery.chouJiang_p_001.png?v=1bde2") no-repeat scroll 0 0 transparent;height:191px;left:207px;position:absolute;top:91px;width:32px;}
+#lottery .lot-btn{height:92px;left:177px;overflow:hidden;position:absolute;top:181px;width:91px;}
+#lottery .lot-btn span{cursor:pointer;display:block;height:92px;position:relative;width:91px;}
+#lottery .first span{background:url("../images/jquery.chouJiang_p_002.png?v=8bc8e") no-repeat scroll 0 0 transparent;}
+#lottery .lottery-img{position:absolute;left:47px;top:47px;width:352px;height:352px;}

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML> 
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.byc</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.byc.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.backgroundPosition.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+ <body>
+  <div class="BYContainer">
+<!-- BY-百叶窗 -->
+   <ul id="menuback">
+    <li class="shutter" id="shutter1">
+     <a class="link" href="javascript:;">Link 1</a>
+    </li>
+    <li class="shutter" id="shutter2">
+     <a class="link" href="javascript:;">Link 2</a>
+    </li>
+    <li class="shutter" id="shutter3">
+     <a class="link" href="javascript:;">Link 3</a>
+    </li>
+    <li class="shutter" id="shutter4">
+     <a class="link" href="javascript:;">Link 4</a>
+    </li>
+   </ul>
+  </div>
+<script type="text/javascript">
+$(document).ready(function() {
+	// 设置让IE可以用
+	$('#shutter1').css( {
+		backgroundPosition : '0px 0px'
+	});
+	$('#shutter2').css( {
+		backgroundPosition : '0px 0px'
+	});
+	$('#shutter3').css( {
+		backgroundPosition : '0px 0px'
+	});
+	$('#shutter4').css( {
+		backgroundPosition : '0px 0px'
+	});
+	//开始动画
+	$(".link").hover(function() {
+		$(this).parent().animate( {
+			backgroundPosition : '(0px -100px)'
+		}, 500);
+	}, function() {
+		$(this).parent().animate( {
+			backgroundPosition : '(0px 0px)'
+		}, 500);
+	});
+});
+</script>
+ </body>
+</html>

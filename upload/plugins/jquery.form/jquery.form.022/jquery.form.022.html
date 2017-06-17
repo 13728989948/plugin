@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.form.022</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.form.022.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="../../jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+ </head>
+
+ <body>
+  <h2><img src="images/jquery.form.022_p_003.png" alt="Account information" /></h2>
+  <ul>
+   <li class="first">
+    <h3>Your Name</h3>
+    <p>
+     <input type="text" value="First and Last name" id="name" name="name" />
+    </p>
+   </li>
+   <li>
+   <h3>Email</h3>
+   <p>
+    <input type="text" value="my@email.com" name="email"  />
+   </p>
+   </li>
+   <li>
+    <h3>Password</h3>
+   <p>
+    <input type="password" name="passwd" />
+   </p>
+   </li>
+   <li>
+    <h3>Password confirmation</h3>
+    <p>
+    <input type="password" name="passwd_conf"  /></p>
+   </li>
+   <li>
+    <h3>User name</h3>
+    <p>
+    <input type="text" value="MyUserName" id="userName" name="user_name"  /></p>
+   </li>
+   <li class="last">
+    <a id="signup" href="#"><img src="images/jquery.form.022_p_001.png" alt="Fake signup button" style="vertical-align:middle;" /></a><img src="images/jquery.form.022_p_002.png" alt="" style="vertical-align:middle;" />
+   </li>
+  </ul>
+ </body>
+<script>
+$(document).ready(function() {
+ $("#signup").click(function() {
+   resetFields();
+   var emptyfields = $("input[value=]");
+   if (emptyfields.size() > 0) {
+    emptyfields.each(function() {
+     $(this).stop().animate( {
+      left : "-10px"
+     }, 100).animate( {
+      left : "10px"
+     }, 100).animate( {
+      left : "-10px"
+     }, 100).animate( {
+      left : "10px"
+     }, 100).animate( {
+      left : "0px"
+     }, 100).addClass("required");
+    });
+   }
+  });
+ });
+ function resetFields() {
+  $("input[type=text], input[type=password]").removeClass("required");
+ }
+</script>
+</html>

@@ -1,0 +1,266 @@
+html
+  ,body
+  ,div
+  ,span
+  ,applet
+  ,object
+  ,iframe
+  ,h1
+  ,h2
+  ,h3
+  ,h4
+  ,h5
+  ,h6
+  ,p
+  ,blockquote
+  ,pre
+  ,a
+  ,abbr
+  ,acronym
+  ,address
+  ,big
+  ,cite
+  ,code
+  ,del
+  ,dfn
+  ,em
+  ,img
+  ,ins
+  ,kbd
+  ,q
+  ,s
+  ,samp
+  ,small
+  ,strike
+  ,strong
+  ,sub
+  ,sup
+  ,tt
+  ,var
+  ,b
+  ,u
+  ,i
+  ,center
+  ,dl
+  ,dt
+  ,dd
+  ,ol
+  ,ul
+  ,li
+  ,fieldset
+  ,form
+  ,label
+  ,legend
+  ,table
+  ,caption
+  ,tbody
+  ,tfoot
+  ,thead
+  ,tr
+  ,th
+  ,td
+  ,article
+  ,aside
+  ,canvas
+  ,details
+  ,embed
+  ,figure
+  ,figcaption
+  ,footer
+  ,header
+  ,hgroup
+  ,menu
+  ,nav
+  ,output
+  ,ruby
+  ,section
+  ,summary
+  ,time
+  ,mark
+  ,audio
+  ,video{margin:0;padding:0;border:0 none;font-family:inherit;font-style:inherit;font-variant:inherit;font-weight:inherit;line-height:inherit;font-size-adjust:inherit;font-stretch:inherit;-moz-font-feature-settings:inherit;-moz-font-language-override:inherit;font-size:100%;vertical-align:baseline;}
+html{line-height:1;}
+body{background:none repeat scroll 0 0 black;}
+ol
+  ,ul{list-style:none outside none;}
+a img{border:medium none;}
+article
+  ,aside
+  ,details
+  ,figcaption
+  ,figure
+  ,footer
+  ,header
+  ,hgroup
+  ,menu
+  ,nav
+  ,section
+  ,summary{display:block;}
+html
+  ,body{width:100%;height:100%;padding:0;margin:0;overflow-x:hidden;}
+
+.skrollable{position:fixed;z-index:100;}
+.skrollable .skrollable{position:absolute;}
+.small_subheader_copy
+  ,h5{color:#84887c;font-family:"BodoniBT-Book","Times New Roman";font-style:normal;font-weight:normal;font-size:.938rem;line-height:.938rem;letter-spacing:.108rem;}
+.body_copy
+  ,body
+  ,#culture_blog .post_text
+  ,#culture_blog .culture_pagination a{color:#8a887c;font-family:"FranklinGothicURW-Boo","Arial";font-weight:normal;font-size:.875rem;line-height:1.313rem;letter-spacing:.066rem;}
+.list_copy
+  ,li{color:#8a887c;font-family:"FranklinGothicURW-Boo","Arial";font-weight:normal;font-size:.875rem;line-height:1.625rem;letter-spacing:.066rem;}
+.text_link_copy
+  ,a
+  ,a.themed_color{color:#864747;font-family:"BodoniBT-BookItalic","Georgia";font-style:normal;font-weight:normal;font-size:.938rem;line-height:1.438rem;letter-spacing:.066rem;}
+.text_link_copy.rose
+  ,a.rose{color:#864747;}
+.button_link_copy
+  ,.button{color:#e9e7d9;font-family:"BodoniBT-BookItalic","Georgia";font-style:normal;font-weight:normal;font-size:.938rem;line-height:1.438rem;letter-spacing:.07rem;}
+a
+  ,a.themed_color{text-decoration:none;}
+a:active
+  ,a.themed_color:active{text-decoration:none;}
+a:hover
+  ,a.themed_color:hover{text-decoration:none;}
+a.nav_reserve_link:hover
+  ,a.nav_header_link:hover
+  ,a.themed_color.nav_reserve_link:hover
+  ,a.themed_color.nav_header_link:hover{color:#864747;opacity:1;}
+a.reserve_form_link
+  ,a.themed_color.reserve_form_link{color:#e8e6d8;}
+a.reserve_form_link:hover
+  ,a.themed_color.reserve_form_link:hover{color:#864747;opacity:1;}
+a.themed_color{transition:all .3s ease 0s;opacity:1;}
+a.themed_color:hover{text-decoration:none;opacity:.8;}
+.button{transition:border .3s ease 0s;border:1px solid #000;float:left;color:#e9e7d9;}
+.button:hover{color:#e9e7d9;}
+.button .button_content{display:block;position:relative;text-align:center;padding:5px 0;background:none repeat scroll 0 0 #000;border:1px solid #e8e6d8;width:196px;transition:all .3s ease 0s;}
+.fl{float:left;}
+.text_upper{text-transform:uppercase;}
+.rose{color:#864747;}
+.clear_fix{overflow:hidden;}
+.icon_after:after{content:".";font-size:0;line-height:0;text-indent:-999999em;position:absolute;}
+.icon_small_arrow{position:relative;}
+.icon_small_arrow.icon_rose.icon_after
+  ,a.nav_reserve_link:hover .icon_small_arrow.icon_after.icon
+  ,a.nav_header_link:hover .icon_small_arrow.icon_after.icon
+  ,a.reserve_form_link:hover .icon_small_arrow.icon_after.icon
+  ,.button.internal.rose_hover:hover .icon_small_arrow.icon_after{padding:0 20px 0 0;}
+.icon_small_arrow.icon_rose.icon_after:after
+  ,a.nav_reserve_link:hover .icon_small_arrow.icon_after.icon:after
+  ,a.nav_header_link:hover .icon_small_arrow.icon_after.icon:after
+  ,a.reserve_form_link:hover .icon_small_arrow.icon_after.icon:after
+  ,.button.internal.rose_hover:hover .icon_small_arrow.icon_after:after{background:url('') repeat scroll 0 -1457px transparent;height:4px;width:14px;right:0;top:6px;}
+.icon_small_arrow.icon_light.icon_after
+  ,.themed_link_list.blue_link_list a:hover .icon_small_arrow.icon_after.icon
+  ,.themed_link_list.rose_link_list a:hover .icon_small_arrow.icon_after.icon
+  ,.themed_link_list.jade_link_list a:hover .icon_small_arrow.icon_after.icon
+  ,#footer .footer_bg .footer_content .info .footer_links a .icon_small_arrow.icon_after{padding:0 20px 0 0;}
+.icon_small_arrow.icon_light.icon_after:after
+  ,.themed_link_list.blue_link_list a:hover .icon_small_arrow.icon_after.icon:after
+  ,.themed_link_list.rose_link_list a:hover .icon_small_arrow.icon_after.icon:after
+  ,.themed_link_list.jade_link_list a:hover .icon_small_arrow.icon_after.icon:after
+  ,#footer .footer_bg .footer_content .info .footer_links a .icon_small_arrow.icon_after:after{background:url('') repeat scroll 0 -1466px transparent;height:4px;width:14px;right:0;top:6px;}
+
+#header{position:fixed;z-index:3;width:100%;height:100px;}
+#header .header_background{position:absolute;top:0;background:url('http://ycre.image.alimmdn.com/aYm/upload/plugins/jquery.image.bi/gramercyparkhotel/images/gramercyparkhotel_p_009.png') repeat-x scroll left top transparent;width:100%;height:100px;}
+#site_logo{position:relative;display:block;margin:0 auto;width:450px;}
+#site_nav{position:relative;margin:0 auto;width:970px;z-index:2;}
+#site_nav .social_icons{position:absolute;margin-top:15px;right:0;top:0;width:48px;}
+#site_nav .social_icons .link_divider{background:url('') no-repeat scroll center center transparent;width:1px;height:10px;display:inline-block;margin:7px 4px;float:left;}
+#site_nav .social_icons a{padding:5px;float:left;}
+#site_nav .social_icons .facebook_icon .icon{background:url('') repeat scroll 0 -1212px transparent;height:13px;width:7px;display:block;}
+#site_nav .social_icons .facebook_icon:hover .icon{background:url('') repeat scroll 0 -1158px transparent;}
+#site_nav .social_icons .twitter_icon{margin-top:2px;}
+#site_nav .social_icons .twitter_icon .icon{background:url('') repeat scroll 0 -1077px transparent;height:10px;width:11px;display:block;}
+#site_nav .social_icons .twitter_icon:hover .icon{background:url('') repeat scroll 0 -1107px transparent;}
+#site_nav .nav_list_left{position:absolute;left:0;top:0;margin-top:45px;}
+#site_nav .nav_list_right{position:absolute;right:0;top:0;margin-top:45px;}
+#site_nav li{float:left;margin-left:18px;}
+#site_nav li.first{padding-left:0;margin-left:0;}
+#site_nav li.first:after{display:none;}
+#site_nav li.last{padding-right:0;margin-right:0;}
+#site_nav li.last:after{display:none;}
+#site_nav li a{color:#787771;text-transform:uppercase;font-family:"BodoniBT-Book","Times New Roman";font-style:normal;padding-bottom:14px;font-size:.8rem;position:relative;transition:all .3s ease-in-out 0s;}
+#site_nav li a:hover{color:#939189;}
+#site_nav li a.reserve{color:#e7e5d7;}
+#site_nav li a.reserve:hover
+  ,#site_nav li a.reserve.active{color:#f8f6e7;}
+#site_sub_nav{position:absolute;width:100%;height:0;overflow:hidden;top:100px;background:url('') repeat-x scroll left top transparent;transition:all .3s ease-in-out 0s;}
+#site_sub_nav li.tab_content{width:970px;margin:0 auto;}
+#site_sub_nav li.tab_content .content{padding:60px 0;}
+#site_sub_nav li.tab_content .content .subnav_subhead_border{background:url('') repeat-x scroll 0 80% transparent;width:85%;padding-bottom:20px;}
+#site_sub_nav li.tab_content .content #main_nav_reserve_form .subnav_subhead_border{width:236px;}
+#site_sub_nav li.tab_content .content h5{font-family:"BodoniBT-Book","Times New Roman";color:#e8e6d8;font-style:normal;font-size:1rem;}
+#site_sub_nav li.tab_content .content ul.link_list a{font-family:"BodoniBT-Book","Times New Roman";font-style:normal;font-size:.813rem;color:#787771;transition:padding .1s ease-in-out 0s;}
+#site_sub_nav li.tab_content .content ul.link_list a:hover
+  ,#site_sub_nav li.tab_content .content ul.link_list a.active{color:#864747;padding-left:10px;background:url('') no-repeat scroll left 4px transparent;}
+#site_sub_nav li.tab_content .content .offer .subnav_subhead_border{width:100%;}
+#site_sub_nav li.tab_content .content .offer .bordered_photo{border:4px solid #262525;width:129px;height:129px;margin-top:13px;}
+#site_sub_nav li.tab_content .content .offer .grid_66{margin-top:13px;}
+#site_sub_nav li.tab_content .content .offer .grid_66 h5{font-size:1.125rem;line-height:1.125rem;color:#cbc9bb;}
+#site_sub_nav li.tab_content .content .offer .grid_66 p{line-height:.938rem;font-size:.813rem;margin:15px 0 10px;color:#8a887c;font-family:"FranklinGothicURW-Boo","Arial";font-style:normal;}
+#site_sub_nav li.tab_content .content .offer .grid_66 a{color:#e8e6d8;}
+#site_sub_nav li.tab_content .content .offer .grid_66 a:hover
+  ,#site_sub_nav li.tab_content .content .offer .grid_66 a.active{color:#864747;}
+#site_sub_nav li.tab_content .content .subnav_header_link{display:block;}
+#site_sub_nav li.tab_content .content .subnav_header_link h5{color:#e8e6d8;transition:all .3s ease-in-out 0s;}
+#site_sub_nav li.tab_content .content .subnav_header_link:hover h5{color:#864747;opacity:1;}
+#main_nav_reserve_form .calendars{margin-top:-24px;}
+
+.reservation_wrapper{width:820px;height:218px;}
+.reservation_wrapper .calendars{float:left;}
+.reservation_wrapper .main_fields{float:left;padding:0 20px 0 0;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form{padding-top:10px;padding-right:20px;float:left;height:204px;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .arrival{margin-top:1px;overflow:hidden;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .departure{margin-top:14px;overflow:hidden;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form input:focus
+  ,.reservation_wrapper .reserve_form_wrapper .reserve_form select:focus
+  ,.reservation_wrapper .reserve_form_wrapper .reserve_form a:focus{outline:medium none;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .arrival_input{color:#864747;font-size:.875rem;text-indent:82px;border:medium none;padding:0;width:236px;height:31px;line-height:27px;background:url('') repeat scroll 0 0 transparent;float:left;border-radius:0;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .departure_input{color:#864747;font-size:.875rem;text-indent:95px;border:medium none;padding:0;width:236px;height:31px;line-height:26px;background:url('') repeat scroll 0 0 transparent;float:left;border-radius:0;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .guests{overflow:hidden;margin-top:14px;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .guests .adults{margin-right:5px;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_now{float:left;margin:14px 0 0;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_now .button{border-color:#864747;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_now .button:hover{border-color:#262525;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_now .button:hover .button_content{background:none repeat scroll 0 0 #262525;color:#e8e6d8;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_now .button_content{background:none repeat scroll 0 0 #864747;border-color:#141414;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_select .select_label{float:left;color:#e8e6d8;font-size:.688rem;font-family:"BodoniBT-Book","Times New Roman";text-transform:uppercase;margin:2px 5px;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_select .select_wrap{border:medium none;background:url('') no-repeat scroll 0 0 transparent;width:53px;height:25px;float:left;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_select .select_wrap select{float:left;width:72px;height:25px;line-height:27px;color:#6e6d60;font-family:"BodoniBT-Book","Times New Roman";font-size:1rem;padding-left:6px;padding-top:3px;}
+.reservation_wrapper .reserve_form_wrapper .reserve_form .reserve_select .select_wrap select option{background:none repeat scroll 0 0 #e8e6d8;}
+
+.tab_content{transition:all .3s ease-in-out 0s;display:none;opacity:0;}
+.select_wrap{border:2px solid #bab8ac;border-radius:0;overflow:hidden;}
+.select_wrap select{-moz-appearance:none;border-radius:0;border:medium none;background:none repeat scroll 0 0 transparent;}
+.diamond
+  ,#story_nav .chapter_diamond{width:261px;height:161px;}
+.grid_25{float:left;width:242.5px;}
+.grid_34{float:left;width:329.8px;}
+.grid_34.sub_grid{width:34%;}
+.grid_50{float:left;width:485px;}
+.grid_50.sub_grid{width:50%;}
+.grid_66{float:left;width:640.2px;}
+.grid_66.sub_grid{width:66%;}
+.unrendered{display:none;}
+.initial{display:block;}
+.unrendered{display:none!important;}
+.background_image{width:150%;height:auto;display:block;}
+.section{width:100%;height:100%;top:0;left:0;}
+
+#skrollr-body{width:100%;}
+#header{z-index:1000;top:0;left:0;}
+#story_nav{width:100%;height:100%;}
+#story_nav .chapter_select{width:970px;height:100%;margin:0 auto;position:relative;}
+#story_nav .chapter_diamond{position:absolute;display:block;top:290px;text-align:center;color:#e9e7da;font-size:13px;letter-spacing:1px;}
+#story_nav .chapter_diamond .chapter_number{font-family:"Times New Roman";font-size:40px;font-style:normal;display:inline-block;padding-top:52px;letter-spacing:-1px;}
+#story_nav #scroll_diamond.chapter_diamond{left:353px;bottom:100px;top:auto;background-image:url('http://ycre.image.alimmdn.com/aYm/upload/plugins/jquery.image.bi/gramercyparkhotel/images/gramercyparkhotel_p_008.png');}
+#story_nav #scroll_diamond.chapter_diamond .inner_scroll_1{width:100%;height:100%;position:absolute;top:0;left:0;background-image:url('http://ycre.image.alimmdn.com/aYm/upload/plugins/jquery.image.bi/gramercyparkhotel/images/gramercyparkhotel_p_005.png');opacity:0;}
+#story_nav #scroll_diamond.chapter_diamond .inner_scroll_2{width:100%;height:100%;position:absolute;top:0;left:0;background-image:url('http://ycre.image.alimmdn.com/aYm/upload/plugins/jquery.image.bi/gramercyparkhotel/images/gramercyparkhotel_p_006.png');opacity:0;}
+#story_nav #scroll_diamond.chapter_diamond .inner_scroll_3{width:100%;height:100%;position:absolute;top:0;left:0;background-image:url('http://ycre.image.alimmdn.com/aYm/upload/plugins/jquery.image.bi/gramercyparkhotel/images/gramercyparkhotel_p_007.png');opacity:0;}
+#story_nav #chapter_1_anchor.chapter_diamond{left:91px;}
+#story_nav #chapter_2_anchor.chapter_diamond{left:222px;top:370px;}
+#story_nav #chapter_3_anchor.chapter_diamond{left:353px;}
+#story_nav #chapter_4_anchor.chapter_diamond{top:370px;left:484px;}
+#story_nav #chapter_5_anchor.chapter_diamond{left:616px;}

@@ -1,0 +1,15 @@
+body{font-family:arial;}
+.qitem{width:126px;height:126px;border:4px solid #222;margin:5px 5px 5px 0;background:url('../images/jquery.image.001_g_010.gif') no-repeat;overflow:hidden;position:relative;float:left;cursor:hand;cursor:pointer;}
+.qitem img{border:0;position:absolute;z-index:200;}
+.qitem .caption{position:absolute;z-index:0;color:#ccc;display:block;}
+.qitem .caption h4{font-size:12px;padding:10px 5px 0 8px;margin:0;color:#369ead;}
+.qitem .caption p{font-size:10px;padding:3px 5px 0 8px;margin:0;}
+.topLeft
+,.topRight
+,.bottomLeft
+,.bottomRight{position:absolute;background-repeat:no-repeat;float:left;}
+.topLeft{background-position:top left;}
+.topRight{background-position:top right;}
+.bottomLeft{background-position:bottom left;}
+.bottomRight{background-position:bottom right;}
+.clear{clear:both;}

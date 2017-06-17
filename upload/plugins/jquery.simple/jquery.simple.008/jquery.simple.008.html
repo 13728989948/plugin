@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <!-- SEO优化 -->
+  <title>jquery.simple.008</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+  <!-- CSS和JS导入区 -->
+  <link href="css/jquery.simple.008.css" rel="stylesheet" type="text/css" media="all" />
+ </head>
+
+ <body>
+<!-- 首先设置一个层 -->
+  <div id="pop" class="pop" style="display:none">
+   <div class="pop_head">
+    <a class="close" href="javascript:void(0);" onclick="hide()"></a>
+   </div>
+   <div class="pop_body">谢谢光临……</div>
+  </div>
+<!-- 弹出层的按钮 -->
+  <a class="pop-lk" href="javascript:void(0);" onclick="show();">
+  </a>
+ </body>
+<script type="text/javascript">
+var EX = {
+ addEvent:function(k,v){
+  var me = this;
+  if(me.addEventListener)
+  me.addEventListener(k, v, false);
+  else if(me.attachEvent)
+  me.attachEvent("on" + k, v);
+  else
+  me["on" + k] = v;
+ },
+ removeEvent:function(k,v){
+  var me = this;
+  if(me.removeEventListener)
+  me.removeEventListener(k, v, false);
+  else if(me.detachEvent)
+  me.detachEvent("on" + k, v);
+  else
+  me["on" + k] = null;
+ },
+ stop:function(evt){
+  evt = evt || window.event;
+  evt.stopPropagation?evt.stopPropagation():evt.cancelBubble=true;
+ }
+};
+document.getElementById('pop').onclick = EX.stop;
+var url = '#'; 
+function show(){ 
+ var o = document.getElementById('pop'); 
+ o.style.display = ""; 
+ setTimeout(function(){
+  EX.addEvent.call(document,'click',hide);
+ });
+}
+function hide(){ 
+ var o = document.getElementById('pop'); 
+ o.style.display = "none"; 
+ EX.removeEvent.call(document,'click',hide);
+} 
+</script>
+</html>

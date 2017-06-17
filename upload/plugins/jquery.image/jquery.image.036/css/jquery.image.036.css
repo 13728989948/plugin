@@ -1,0 +1,10 @@
+body{background:#EEE;font-family:"Trebuchet MS",Verdana,Arial,sans-serif;font-size:14px;line-height:1.6;}
+#content{width:750px;margin:50px auto;padding:20px;}
+h1{margin:0;}
+hr{border:none;height:1px;line-height:1px;background:#CCC;margin-bottom:20px;}
+
+.container{position:relative;width:480px;height:360px;margin:0 auto;}
+.container img{position:absolute;top:0;left:0;z-index:10;}
+.container span{position:absolute;top:20px;left:10px;width:440px;padding:10px;color:#FFF;z-index:11;}
+.container span a{float:right;color:#FFF;font-size:12px;}
+.tooltip{position:absolute;display:none;padding:3px 10px;background:#fff;color:#222;border:1px solid #CCC;font-family:Arial;font-size:10px;letter-spacing:1px;z-index:11;}

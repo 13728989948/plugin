@@ -1,0 +1,6 @@
+.demo{width:980px;margin:0 auto;}
+.zp_box{width:310px;height:190px;display:inline;overflow:hidden;float:left;margin:7px 7px;cursor:pointer;}
+.zp_box img{width:310px;height:190px;}
+.pop_tit{width:290px;height:40px;padding:10px 10px 5px 10px;background:url(../images/jquery.image.043_g_011.gif) no-repeat 0 0;display:none;}
+.p_tit1{line-height:18px;color:#fff;font-size:18px;padding-right:18px;}
+.p_tit2{line-height:15px;font-family:Arial;color:#fd8200;font-size:12px;}
