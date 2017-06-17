@@ -95,6 +95,7 @@ function getAllEsSites() {
 
 function getEsSiteHtml(result) {
 	var html = "";
+	var imgSec = (qzSec ? ("/" + qzSec) : "");
 	if (result && result.length > 0) {
 		var len = result.length;
 		for (var i = 0; i < len; i++) {
@@ -102,7 +103,7 @@ function getEsSiteHtml(result) {
 			var lxIds = sin.lxIds;
 			var title = sin.linkTitle;
 			var hrefLink = sin.link;
-			var imagePath = sin.imagePath;
+			var imagePath = imgSec + sin.imagePath;
 
 			html += "      <div data-lx-ids=\"" + lxIds + "\" class=\"item\">" + "\n";
 			html += "       <div class=\"u-listShow f-card\">" + "\n";
