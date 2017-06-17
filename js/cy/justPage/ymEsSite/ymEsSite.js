@@ -48,7 +48,7 @@ function bindJqueryBubbleUp() {
 
 // 获取站点类型们
 function getEsSiteLx() {
-	var url = "json/esSiteLx.json";
+	var url = "../json/esSiteLx.json";
 	$.ajax({
 		url : url,
 		type : "get",
@@ -77,7 +77,7 @@ function getEsSiteLx() {
 }
 
 function getAllEsSites() {
-	var url = "json/esSite.json";
+	var url = "../json/esSite.json";
 	$.ajax({
 		url : url,
 		type : "get",
@@ -99,17 +99,15 @@ function getEsSiteHtml(result) {
 		var len = result.length;
 		for (var i = 0; i < len; i++) {
 			var sin = result[i];
-			var size = sin.size;
 			var lxIds = sin.lxIds;
-			var title = sin.title;
-			var sizeCls = size ? "icon-size-bi" : "";
-			var demoLink = "/upload/esSites" + sin.demoLink;
+			var title = sin.linkTitle;
+			var hrefLink = sin.link;
 			var imagePath = sin.imagePath;
 
 			html += "      <div data-lx-ids=\"" + lxIds + "\" class=\"item\">" + "\n";
 			html += "       <div class=\"u-listShow f-card\">" + "\n";
 			html += "        <div class=\"item-top\">" + "\n";
-			html += "         <a href=\"javascript:click_jump('" + demoLink + "');\">" + "\n";
+			html += "         <a href=\"javascript:click_jump('" + hrefLink + "');\">" + "\n";
 			html += "          <img src=\"" + imagePath + "\" />" + "\n";
 			html += "          <span></span>" + "\n";
 			html += "         </a>" + "\n";
@@ -118,12 +116,11 @@ function getEsSiteHtml(result) {
 			html += "        <div class=\"item-bottom s-bg-fff\">" + "\n";
 			html += "         <div class=\"tit\">" + "\n";
 			html += "          <h4>" + "\n";
-			html += "           <a href=\"javascript:click_jump('" + demoLink + "');\">" + title + "</a>" + "\n";
+			html += "           <a href=\"javascript:click_jump('" + hrefLink + "');\">" + title + "</a>" + "\n";
 			html += "          </h4>" + "\n";
 			html += "         </div>" + "\n";
 			html += "         <div class=\"con\">" + "\n";
-			html += "           <span class=\"" + sizeCls + "\"></span>" + "\n";
-			html += "          <a href=\"javascript:click_jump('" + demoLink + "');\" class=\"item_get is_vip\">查看演示</a>" + "\n";
+			html += "          <a href=\"javascript:click_jump('" + hrefLink + "');\" class=\"item_get is_vip\">进入网站</a>" + "\n";
 			html += "         </div>" + "\n";
 			html += "        </div>" + "\n";
 			html += "       </div>" + "\n";
@@ -134,16 +131,6 @@ function getEsSiteHtml(result) {
 	return html;
 }
 
-function click_jump(demoLink) {
-	// 试探网站是否可访问正常
-	$.ajax({
-		url : demoLink,
-		type : "get",
-		success : function() {
-			window.open(demoLink);
-		},
-		error : function(e) {
-			alert("目标网站已经不能访问了");
-		}
-	});
+function click_jump(hrefLink) {
+	window.open(hrefLink);
 }
