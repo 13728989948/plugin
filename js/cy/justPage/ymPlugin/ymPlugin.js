@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	wrap_ymPlugin();
 });
+
 function wrap_ymPlugin() {
 	getAllPlugins();
 	bindJqueryBubbleUp();
@@ -102,7 +103,7 @@ function getPluginHtml(result) {
 			var lxIds = sin.lxIds;
 			var title = sin.title;
 			var sizeCls = size ? "icon-size-bi" : "";
-			var demoLink = "/upload/plugins" + sin.demoLink;
+			var demoLink = "/(" + (env ? "plugin/" : "") + ")upload/plugins" + sin.demoLink;
 			var imagePath = sin.imagePath;
 
 			html += "      <div data-lx-ids=\"" + lxIds + "\" class=\"item\">" + "\n";
