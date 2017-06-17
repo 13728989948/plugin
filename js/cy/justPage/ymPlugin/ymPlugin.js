@@ -95,7 +95,8 @@ function getAllPlugins() {
 
 function getPluginHtml(result) {
 	var html = "";
-	var qzSec = (env ? "plugin/" : "");
+	var lkSec = (qzSec ? (qzSec + "/") : "");
+	var imgSec = (qzSec ? ("/" + qzSec) : "");
 	if (result && result.length > 0) {
 		var len = result.length;
 		for (var i = 0; i < len; i++) {
@@ -104,8 +105,8 @@ function getPluginHtml(result) {
 			var lxIds = sin.lxIds;
 			var title = sin.title;
 			var sizeCls = size ? "icon-size-bi" : "";
-			var demoLink = "/" + qzSec + "upload/plugins" + sin.demoLink;
-			var imagePath = qzSec + sin.imagePath;
+			var demoLink = "/" + lkSec + "upload/plugins" + sin.demoLink;
+			var imagePath = imgSec + sin.imagePath;
 
 			html += "      <div data-lx-ids=\"" + lxIds + "\" class=\"item\">" + "\n";
 			html += "       <div class=\"u-listShow f-card\">" + "\n";
